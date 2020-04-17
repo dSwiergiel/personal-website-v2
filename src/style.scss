@@ -35,3 +35,20 @@ body {
   background: #555;
 }
 /* //Custom Scroll bar*/
+
+.slide-up-button {
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, #004080 50%, #fff 50%);
+  transition: 0.4s;
+}
+
+.slide-up-button:hover {
+  color: #333;
+  background-position: 0 -100%;
+}
+button:focus {
+  outline: none;
+}
