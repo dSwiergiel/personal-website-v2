@@ -5,9 +5,22 @@
 }
 .portrait {
   width: 100%;
-  height: 100%;
   border: 5px solid rgb(255, 255, 255);
 }
-// .landing-background {
-//   background-image: url('../../assets/images/landing-background.jpg');
-// }
+.landing-fontawesome {
+  -webkit-font-smoothing: antialiased;
+  background-image: none;
+  border: 4px solid #fff;
+  box-sizing: border-box;
+  color: #fff;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 400;
+  // height: 30px;
+  text-rendering: auto;
+  transition: all 0.5s;
+}
+.landing-fontawesome:hover {
+  background-color: #282828;
+  border-color: gray;
+}
