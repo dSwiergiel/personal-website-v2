@@ -9,13 +9,12 @@ function App() {
   return (
     <div className=''>
       <Parallax
-        blur={0}
         bgImage={background}
         bgImageAlt='Deven Swiergiel'
-        strength={600}
+        strength={400}
         className='pb-5 '
       >
-        <div style={{ height: '150px' }} />
+        <div style={{ height: '100px' }} />
         <Landing></Landing>
       </Parallax>
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}

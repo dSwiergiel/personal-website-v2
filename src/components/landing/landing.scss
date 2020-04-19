@@ -7,20 +7,34 @@
   width: 100%;
   border: 5px solid rgb(255, 255, 255);
 }
-.landing-fontawesome {
+.landing-fa-github {
   -webkit-font-smoothing: antialiased;
   background-image: none;
-  border: 4px solid #fff;
+  border: 3px solid #fff;
   box-sizing: border-box;
   color: #fff;
-  padding: 5px;
+  padding: 7px 3px 7px 7px;
   font-size: 20px;
   font-weight: 400;
   // height: 30px;
-  text-rendering: auto;
+  // text-rendering: auto;
   transition: all 0.5s;
 }
-.landing-fontawesome:hover {
+.landing-fa-github:hover {
   background-color: #282828;
   border-color: gray;
+}
+
+.slide-up-button {
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, #004080 50%, #fff 50%);
+  transition: 0.4s;
+}
+
+.slide-up-button:hover {
+  color: #333;
+  background-position: 0 -100%;
 }

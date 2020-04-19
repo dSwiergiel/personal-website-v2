@@ -31,7 +31,7 @@ const Landing = () => {
             <button className='slide-up-button mt-3 mr-3'>Contact Me</button>
             <button className='slide-up-button mt-3 mr-3'>Resume</button>
             <a>
-              <i className='fab fa-github landing-fontawesome mt-3'></i>
+              <i className='fab fa-github landing-fa-github mt-3'></i>
             </a>
           </div>
         </div>
