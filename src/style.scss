@@ -17,7 +17,6 @@ button,
 a {
   text-transform: none;
   letter-spacing: 3px;
-  text-transform: uppercase;
 }
 html,
 body {
@@ -54,16 +53,20 @@ body {
 /* //Custom Scroll bar*/
 
 .slide-up-button {
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
   padding: 10px 20px;
   border: none;
-  color: #fff;
+  color: #fff !important;
   background-size: 100% 200%;
   background-image: linear-gradient(to bottom, #004080 50%, #fff 50%);
   transition: 0.4s;
 }
 
 .slide-up-button:hover {
-  color: #333;
+  text-decoration: none;
+  color: #333 !important;
   background-position: 0 -100%;
 }
 button:focus,

@@ -1,5 +1,6 @@
 import React from 'react';
 import portrait from '../../assets/images/landing-portrait.jpg';
+import resume from '../../assets/resume/currentresume.pdf';
 import './landing.scss';
 
 const Landing = () => {
@@ -27,11 +28,38 @@ const Landing = () => {
             Look around a bit to learn more about me and the projects I've
             worked on.
           </p>
-          <div className='form-row align-items-center'>
-            <button className='slide-up-button mt-3 mr-3'>Contact Me</button>
-            <button className='slide-up-button mt-3 mr-3'>Resume</button>
-            <a>
-              <i className='fab fa-github landing-fa-github mt-3'></i>
+
+          <div className='form-row align-items-center '>
+            <a
+              href='#contact'
+              rel='noopener noreferrer'
+              className='slide-up-button mt-3 mr-3'
+            >
+              Contact Me
+            </a>
+            <a
+              href={resume}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='slide-up-button mt-3 mr-3'
+            >
+              Resume
+            </a>
+            <a
+              href='https://github.com/dSwiergiel'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='mt-3 mr-3'
+            >
+              <i className='fab fa-github landing-fa-github '></i>
+            </a>
+            <a
+              href='https://www.linkedin.com/in/deven-swiergiel-155123140/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='mt-3 mr-3'
+            >
+              <i className='fab fa-linkedin-in landing-fa-linkedin '></i>
             </a>
           </div>
         </div>
