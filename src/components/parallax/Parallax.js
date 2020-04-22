@@ -32,13 +32,14 @@ const Parallax = ({
   useEffect(() => {
     jarallax(document.querySelectorAll('.jarallax'), {
       speed: speed,
+      postion: postion,
     });
   }, []);
 
   return (
     <div>
       <div className='jarallax'>
-        <img className='jarallax-img' src={background} alt='' />
+        <img className='jarallax-img' src={background} alt={alt} />
         {children}
       </div>
     </div>
