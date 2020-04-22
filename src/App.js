@@ -31,7 +31,6 @@ function App() {
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
-      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
     </div>
   );
 }
