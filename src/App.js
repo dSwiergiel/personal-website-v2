@@ -12,7 +12,6 @@ function App() {
         data-speed='-.2'
         // data-speed='.1'
         // data-img-position='50% -50px'
-        // data-img-position='50%'
         className='jarallax'
       >
         <img
