@@ -8,13 +8,15 @@ import './style.scss';
 
 function App() {
   return (
-    <div className='fade-in'>
-      <Parallax background={background}>
-        <div style={{ height: '125px' }} />
-        <div className='container py-5'>
-          <Landing></Landing>
-        </div>
-      </Parallax>
+    <div>
+      <div className='fade-in'>
+        <Parallax background={background} alt='landing backgound'>
+          <div style={{ height: '125px' }} />
+          <div className='container py-5'>
+            <Landing></Landing>
+          </div>
+        </Parallax>
+      </div>
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}

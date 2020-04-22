@@ -16,7 +16,7 @@ const Landing = () => {
             working for the government as a Full-Stack Software Developer with
             emphasis on the front end. I have experience working on a team as
             well as by myself developing and deploying enterprise software for
-            New York State.
+            New York.
           </p>
           <p className='light-text'>
             This website was designed and developed in React as a V2. The
@@ -25,11 +25,10 @@ const Landing = () => {
             outside, it was an absolute dumpster fire on the inside!
           </p>
           <p className='light-text mb-0'>
-            Look around a bit to learn more about me and the projects I've
-            worked on.
+            Look around to learn more about me and the projects I've worked on.
           </p>
 
-          <div className='form-row align-items-center '>
+          <div className='form-row align-items-center mt-3'>
             <a
               href='#contact'
               rel='noopener noreferrer'
