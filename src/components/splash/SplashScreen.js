@@ -7,7 +7,7 @@ function LoadingMessage() {
   return (
     <div className='splash-screen'>
       <img src={logo} className='App-logo' alt='logo' />
-      <p className='light-text fixed-bottom text-center  mb-5 pb-5'>
+      <p className='light-text fixed-bottom text-center h-25'>
         getting things together...
       </p>
     </div>

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { jarallax, jarallaxElement, jarallaxVideo } from 'jarallax';
+import { jarallax } from 'jarallax';
 
 const Parallax = ({
   children,
@@ -12,8 +12,10 @@ const Parallax = ({
     jarallax(document.querySelectorAll('.jarallax'), {
       speed: speed,
       postion: postion,
-      zIndex: -5,
+      //   zIndex: -1,
     });
+
+    //eslint-disable-next-line
   }, []);
 
   return (

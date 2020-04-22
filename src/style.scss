@@ -81,10 +81,6 @@ a:focus {
   width: 100%;
 }
 
-.tint {
-  box-shadow: 100vw 100vh rgba(0, 0, 0, 0.2) inset !important;
-}
-
 // .jarallax {
 //   position: relative;
 //   z-index: 0;
@@ -100,31 +96,42 @@ a:focus {
 //   height: 100%;
 //   z-index: -1;
 // }
+.fade-in-from-black {
+  animation: fade-in-from-black 1s ease-out 1;
+  z-index: 100 !important;
+  position: relative;
+}
+@keyframes fade-in-from-black {
+  0% {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(40, 44, 52, 1);
+    z-index: 100 !important;
+  }
+  100% {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: none;
+  }
+}
 
 @keyframes fade-in {
   0% {
-    // opacity: 0;
-    background-color: #282c34;
-    background-size: cover;
-    width: 100%;
-    height: 1000px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -6;
+    opacity: 0;
   }
   100% {
-    // opacity: 1;
-    background-color: #00000000;
-    width: 100%;
-    height: 1000px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
+    opacity: 1;
   }
 }
 
 .fade-in {
-  // animation: fade-in ease-out 0.5s;
-  animation: fade-in ease-out 3s;
+  animation: fade-in 2s ease-out 1;
 }
