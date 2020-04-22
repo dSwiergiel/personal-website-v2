@@ -15,12 +15,12 @@ const Landing = () => {
             My name is Deven Swiergiel and I like to make stuff. Currently
             working for the government as a Full-Stack Software Developer with
             emphasis on the front end. I have experience working on a team as
-            well as by myself creating and deploying enterprise software and
-            systems for New York State.
+            well as by myself developing and deploying enterprise software for
+            New York State.
           </p>
           <p className='light-text'>
-            This website was designed and created in React by me as a V2. The
-            pervious version was made with no frameworks while I was first
+            This website was designed and developed in React as a V2. The
+            previous version was made with no frameworks while I was first
             learning web development, and while it may have looked good on the
             outside, it was an absolute dumpster fire on the inside!
           </p>
