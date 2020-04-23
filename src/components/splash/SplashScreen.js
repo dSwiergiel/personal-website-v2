@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import logo from '../../assets/images/react-logo.svg';
 import './splash-screen.scss';
 

@@ -19,13 +19,6 @@ const Landing = () => {
             alt={'Deven Swiergiel'}
             effect='opacity'
           ></LazyLoadImage>
-          {/* <LazyLoad>
-            <img
-              src={portrait}
-              className='portrait'
-              alt='Deven Swiergiel'
-            ></img>
-          </LazyLoad> */}
         </div>
         <div className='col-lg-8'>
           <p className='light-text'>

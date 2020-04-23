@@ -5,7 +5,6 @@ import Parallax from './components/parallax/Parallax';
 import LazyLoad from 'react-lazyload';
 
 import background from './assets/images/landing-background.jpg';
-import './style.scss';
 
 function App() {
   // const [loading, setLoading] = useState(false);
