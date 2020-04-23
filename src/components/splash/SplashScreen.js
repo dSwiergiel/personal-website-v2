@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import auth0Client from '../Auth';
+
 import logo from '../../assets/images/react-logo.svg';
 import './splash-screen.scss';
 

@@ -1,4 +1,6 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
+
 import portrait from '../../assets/images/landing-portrait.jpg';
 import resume from '../../assets/resume/currentresume.pdf';
 import './landing.scss';
@@ -7,8 +9,14 @@ const Landing = () => {
   return (
     <div className='container landing-box'>
       <div className='row px-2'>
-        <div className='col-lg-4 '>
-          <img src={portrait} className='portrait' alt='Deven Swiergiel'></img>
+        <div className='col-lg-4'>
+          <LazyLoad>
+            <img
+              src={portrait}
+              className='portrait'
+              alt='Deven Swiergiel'
+            ></img>
+          </LazyLoad>
         </div>
         <div className='col-lg-8'>
           <p className='light-text'>
