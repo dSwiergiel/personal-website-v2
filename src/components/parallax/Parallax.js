@@ -12,6 +12,7 @@ const Parallax = ({
     jarallax(document.querySelectorAll('.jarallax'), {
       speed: speed,
       postion: postion,
+      disableParallax: /iPad|iPhone|iPod|Android/,
       //   zIndex: -1,
     });
 
