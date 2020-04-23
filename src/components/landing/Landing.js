@@ -1,5 +1,7 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 import portrait from '../../assets/images/landing-portrait.jpg';
 import resume from '../../assets/resume/currentresume.pdf';
@@ -10,7 +12,7 @@ const Landing = () => {
     <div className='container landing-box'>
       <div className='row px-2'>
         <div className='col-lg-4'>
-          <LazyLoad>
+          <LazyLoad className='fade-in-from-black'>
             <img
               src={portrait}
               className='portrait'
