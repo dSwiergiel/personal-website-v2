@@ -104,8 +104,7 @@ a:focus {
 //   z-index: -1;
 // }
 .fade-in-from-black {
-  animation: fade-in-from-black 0.5s ease-in-out 1;
-  -webkit-animation: fade-in-from-black 0.5s ease-in-out 1;
+  animation: fade-in-from-black 1s ease-in-out 1;
   z-index: 100 !important;
   position: relative;
 }
@@ -131,27 +130,27 @@ a:focus {
     // background-position: 0 -100%;
   }
 }
-@-webkit-keyframes fade-in-from-black {
-  0% {
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(40, 44, 52, 1);
-    z-index: 100 !important;
-  }
-  100% {
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: none;
-  }
-}
+// @-webkit-keyframes fade-in-from-black {
+//   0% {
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     background: rgba(40, 44, 52, 1);
+//     z-index: 100 !important;
+//   }
+//   100% {
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     background: none;
+//   }
+// }
 // @keyframes fade-in {
 //   0% {
 //     opacity: 0;
