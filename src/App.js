@@ -32,21 +32,26 @@ function App() {
             </div>
           </Parallax>
         </LazyLoad> */}
-
+{/* 
         <Parallax
             blur={0}
             bgImage={background}
             bgImageAlt="the cat"
             strength={-500}
         >
-             {/* REMOVE ME */}
+             REMOVE ME
              <div style={{ height: '125px' }} />
-            {/* REMOVE ME */}
+            REMOVE ME
             <div className='container py-5'>
               <Landing></Landing>
             </div>
-        </Parallax>
+        </Parallax> */}
+        <div className="landing-background">
 
+            <div className='container py-5 '>
+            <Landing></Landing>
+            </div>
+        </div>
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
