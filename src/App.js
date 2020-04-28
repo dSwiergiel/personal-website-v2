@@ -37,7 +37,7 @@ function App() {
             blur={0}
             bgImage={background}
             bgImageAlt="the cat"
-            strength={1000}
+            strength={-500}
         >
              {/* REMOVE ME */}
              <div style={{ height: '125px' }} />
