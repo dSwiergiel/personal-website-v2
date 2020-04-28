@@ -19,10 +19,8 @@ function App() {
   }, []);
   return (
     <div>
-      
-        <div className='fade-in-from-black'></div>
-        
-        {/* <LazyLoad once={true}>
+      <div className='fade-in-from-black'></div>
+      {/* <LazyLoad once={true}>
           <Parallax background={background} speed={0.1} alt='landing backgound'>
             REMOVE ME
             <div style={{ height: '125px' }} />
@@ -32,7 +30,7 @@ function App() {
             </div>
           </Parallax>
         </LazyLoad> */}
-{/* 
+      {/* 
         <Parallax
             blur={0}
             bgImage={background}
@@ -46,12 +44,11 @@ function App() {
               <Landing></Landing>
             </div>
         </Parallax> */}
-        <div className="landing-background">
-
-            <div className='container py-5 '>
-            <Landing></Landing>
-            </div>
+      <div className='landing-background'>
+        <div className='container py-5 '>
+          <Landing></Landing>
         </div>
+      </div>
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
