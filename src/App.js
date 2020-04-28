@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Landing from './components/landing/Landing';
 import SplashScreen from './components/splash/SplashScreen';
-import Parallax from './components/parallax/Parallax';
+// import Parallax from './components/parallax/Parallax';
 import LazyLoad from 'react-lazyload';
+
+import { Parallax, Background } from 'react-parallax';
 
 import background from './assets/images/landing-background.jpg';
 
@@ -17,19 +19,34 @@ function App() {
   }, []);
   return (
     <div>
-      <div>
+      
         <div className='fade-in-from-black'></div>
-        <LazyLoad once={true}>
+        
+        {/* <LazyLoad once={true}>
           <Parallax background={background} speed={0.1} alt='landing backgound'>
-            {/* REMOVE ME */}
+            REMOVE ME
             <div style={{ height: '125px' }} />
-            {/* REMOVE ME */}
+            REMOVE ME
             <div className='container py-5'>
               <Landing></Landing>
             </div>
           </Parallax>
-        </LazyLoad>
-      </div>
+        </LazyLoad> */}
+
+        <Parallax
+            blur={0}
+            bgImage={background}
+            bgImageAlt="the cat"
+            strength={1000}
+        >
+             {/* REMOVE ME */}
+             <div style={{ height: '125px' }} />
+            {/* REMOVE ME */}
+            <div className='container py-5'>
+              <Landing></Landing>
+            </div>
+        </Parallax>
+
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
