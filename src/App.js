@@ -1,6 +1,5 @@
-import React, { useState, useEffect, ueRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import LazyLoad from 'react-lazyload';
-import { TweenMax, Power3 } from 'gsap';
 
 import Landing from './components/landing/Landing';
 import Parallax from './components/parallax/Parallax';
@@ -17,7 +16,8 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => {
-      setLoading(false);
+      // setLoading(false);
+
       // enable scrolling
       document.body.style.overflow = 'auto';
     }, loadingTime);
@@ -26,9 +26,7 @@ function App() {
   return (
     <div>
       {/* Splash Screen */}
-      {loading && <Splash></Splash>}
-      {/* Fade out from black */}
-      <div className='fade-in-from-black'></div>
+      {loading && <Splash duration={loadingTime}></Splash>}
       {/* Use different parallax for mobile screens vs desktop */}
       {window.innerWidth > 768 ? (
         <LazyLoad once={true}>
