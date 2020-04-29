@@ -47,5 +47,5 @@ function App() {
   );
 }
 
-// export default App;
-export default SplashScreen(App);
+export default App;
+// export default SplashScreen(App);

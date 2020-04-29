@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 
 const ParallaxMobile = ({
   children,
