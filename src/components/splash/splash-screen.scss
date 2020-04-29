@@ -17,7 +17,8 @@
   pointer-events: none;
   position: relative;
   animation: App-logo-spin infinite 2s linear, App-logo-glow infinite 3s ease,
-    App-logo-grow infinite 3s ease, App-logo-hover infinite 3s ease;
+    App-logo-grow infinite 3s ease, App-logo-hover infinite 3s ease,
+    fade-in 0.5s ease-in-out 1;
 }
 
 // @media (prefers-reduced-motion: no-preference) {
@@ -26,6 +27,14 @@
 //       App-logo-grow infinite 3s ease, App-logo-hover infinite 3s ease;
 //   }
 // }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 @keyframes App-logo-spin {
   from {
