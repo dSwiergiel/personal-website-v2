@@ -49,10 +49,10 @@ const Splash = ({ duration }) => {
     //   delay: duration / 1000 - 0.2,
     //   ease: Power1.easeInOut,
     // });
-    TweenMax.to(splashContents, duration / 1000 - (duration / 1000) * 0.85, {
+    TweenMax.to(splashContents, duration / 1000 - (duration / 1000) * 0.9, {
       opacity: 0,
       delay: duration / 1000 - (duration / 1000) * 0.55,
-      ease: Power1.easeOut,
+      ease: Power1.easeInOut,
     });
     TweenMax.to(splashContainer, duration / 1000 - (duration / 1000) * 0.7, {
       opacity: 0,
