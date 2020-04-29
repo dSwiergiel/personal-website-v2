@@ -24,7 +24,7 @@ const Splash = ({ duration }) => {
     // });
     TweenMax.from(logoItem, 1, {
       opacity: 0.5,
-      filter: 'drop-shadow(0px 0px 5px rgba(41, 169, 255, 1))',
+      filter: 'drop-shadow(0px 0px 1mm rgba(41, 169, 255, 1))',
       width: 'calc(10px + 25vmin)',
       ease: Power1.ease,
     });
@@ -40,7 +40,7 @@ const Splash = ({ duration }) => {
       opacity: 1,
       ease: Power1.easeInOut,
       width: 'calc(10px + 35vmin)',
-      filter: 'drop-shadow(0px 0px 50px rgba(41, 169, 255,1))',
+      filter: 'drop-shadow(0 0 6mm rgba(41, 169, 255,1))',
       //   repeat: -1,
       //   yoyo: true,
     });
