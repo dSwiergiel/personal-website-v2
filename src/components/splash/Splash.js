@@ -35,7 +35,7 @@ const Splash = ({ duration }) => {
       ease: Power0.easeNone,
     });
     // hover, glow, and grow on repeat
-    TweenMax.to(logoItem, duration / 1000, {
+    TweenMax.to(logoItem, duration / 1000 - (duration / 1000) * 0.5, {
       y: -50,
       opacity: 1,
       ease: Power1.easeInOut,
@@ -49,16 +49,20 @@ const Splash = ({ duration }) => {
     //   delay: duration / 1000 - 0.2,
     //   ease: Power1.easeInOut,
     // });
-    TweenMax.to(splashContents, duration / 1000 - 1, {
+    TweenMax.to(splashContents, duration / 1000 - (duration / 1000) * 0.9, {
       opacity: 0,
-      delay: duration / 1000 - 0.2,
+      delay: duration / 1000 - (duration / 1000) * 0.55,
       ease: Power1.easeInOut,
     });
-    TweenMax.to(splashContainer, duration / 1000 - 0.5, {
+    TweenMax.to(splashContainer, duration / 1000 - (duration / 1000) * 0.7, {
       opacity: 0,
-      delay: duration / 1000,
+      delay: duration / 1000 - (duration / 1000) * 0.5,
       ease: Power1.easeInOut,
     });
+    setTimeout(() => {
+      // enable scrolling
+      document.body.style.overflow = 'auto';
+    }, duration - duration * 0.5);
   };
   return (
     <div
