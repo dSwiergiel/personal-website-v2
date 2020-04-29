@@ -20,7 +20,7 @@ function App() {
     <div>
       <div className='fade-in-from-black'></div>
       <LazyLoad once={true}>
-        <Parallax background={background} speed={0.1} alt='landing backgound'>
+        <Parallax background={background} speed={0.5} alt='landing backgound'>
           REMOVE ME
           <div style={{ height: '125px' }} />
           REMOVE ME
