@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, ueRef } from 'react';
+import LazyLoad from 'react-lazyload';
+import { TweenMax, Power3 } from 'gsap';
+
 import Landing from './components/landing/Landing';
 import Parallax from './components/parallax/Parallax';
 import ParallaxMobile from './components/parallax/ParallaxMobile';
-import LazyLoad from 'react-lazyload';
+import Splash from './components/splash/Splash';
 
-import logo from './assets/images/react-logo.svg';
 import background from './assets/images/landing-background.jpg';
 // import mobileBackground from './assets/images/el-capitan-5k.jpg';
 import mobileBackground from './assets/images/yosemite-5k.jpg';
@@ -21,14 +23,7 @@ function App() {
   return (
     <div>
       {/* Splash Screen */}
-      {loading && (
-        <div className='splash-screen'>
-          <img src={logo} className='App-logo' alt='logo' />
-          <p className='light-text fixed-bottom text-center h-25'>
-            getting things together...
-          </p>
-        </div>
-      )}
+      {loading && <Splash></Splash>}
       {/* Fade out from black */}
       <div className='fade-in-from-black'></div>
       {/* Use different parallax for mobile screens vs desktop */}
