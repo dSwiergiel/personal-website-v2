@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Landing from './components/landing/Landing';
-// import SplashScreen from './components/splash/SplashScreen';
 import Parallax from './components/parallax/Parallax';
 import ParallaxMobile from './components/parallax/ParallaxMobile';
 import LazyLoad from 'react-lazyload';
