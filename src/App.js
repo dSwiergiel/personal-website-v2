@@ -12,7 +12,7 @@ import mobileBackground from './assets/images/yosemite-5k.jpg';
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const loadingTime = 2000;
+  const loadingTime = 1500;
 
   useEffect(() => {
     setTimeout(() => {

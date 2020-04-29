@@ -9,7 +9,7 @@ const Splash = ({ duration }) => {
     animateLogo();
     setTimeout(() => {
       TweenMax.killTweensOf(logoItem);
-    }, duration);
+    }, duration + 1000);
     //eslint-disable-next-line
   }, []);
 
@@ -23,41 +23,42 @@ const Splash = ({ duration }) => {
     //   ease: Power1.ease,
     // });
     TweenMax.from(logoItem, 1, {
-      opacity: 0,
+      opacity: 0.5,
       filter: 'drop-shadow(0px 0px 5px rgba(41, 169, 255, 1))',
       width: 'calc(10px + 25vmin)',
       ease: Power1.ease,
     });
-    TweenMax.to(logoItem, 4, {
+    // spin
+    TweenMax.to(logoItem, 3, {
       rotation: 360,
       repeat: -1,
       ease: Power0.easeNone,
     });
-    TweenMax.to(logoItem, 1, {
+    // hover, glow, and grow on repeat
+    TweenMax.to(logoItem, duration / 1000, {
       y: -50,
       opacity: 1,
       ease: Power1.easeInOut,
       width: 'calc(10px + 35vmin)',
-      repeat: -1,
-      yoyo: true,
-    });
-    TweenMax.to(logoItem, 1, {
       filter: 'drop-shadow(0px 0px 50px rgba(41, 169, 255,1))',
-      ease: Power1.easeInOut,
-      repeat: -1,
-      yoyo: true,
+      //   repeat: -1,
+      //   yoyo: true,
     });
-    TweenMax.to(splashContents, 1.2, {
+    // TweenMax.to(logoItem, 0.6, {
+    //   opacity: 0,
+    //   delay: duration / 1000 - 0.2,
+    //   ease: Power1.easeInOut,
+    // });
+    TweenMax.to(splashContents, duration / 1000 - 1, {
       opacity: 0,
-      delay: 1,
+      delay: duration / 1000 - 0.2,
       ease: Power1.easeInOut,
     });
-    TweenMax.to(splashContainer, 1, {
+    TweenMax.to(splashContainer, duration / 1000, {
       opacity: 0,
-      delay: 2,
+      delay: duration / 1000,
       ease: Power1.easeInOut,
     });
-    // TweenMax.killTweensOf(logoItem);
   };
   return (
     <div
