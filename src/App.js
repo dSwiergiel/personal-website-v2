@@ -28,7 +28,17 @@ function App() {
       {/* Splash Screen */}
       {loading && <Splash duration={loadingTime}></Splash>}
       {/* Use different parallax for mobile screens vs desktop */}
-      {window.innerWidth > 768 ? (
+      <LazyLoad once={true}>
+        <Parallax background={background} speed={0.5} alt='landing backgound'>
+          REMOVE ME
+          <div style={{ height: '125px' }} />
+          REMOVE ME
+          <div className='container py-5'>
+            <Landing></Landing>
+          </div>
+        </Parallax>
+      </LazyLoad>
+      {/* {window.innerWidth > 768 ? (
         <LazyLoad once={true}>
           <Parallax background={background} speed={0.5} alt='landing backgound'>
             REMOVE ME
@@ -51,7 +61,7 @@ function App() {
             </div>
           </ParallaxMobile>
         </LazyLoad>
-      )}
+      )} */}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
