@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Landing from './components/landing/Landing';
 import SplashScreen from './components/splash/SplashScreen';
-// import Parallax from './components/parallax/Parallax';
+import Parallax from './components/parallax/Parallax';
+import ParallaxMobile from './components/parallax/ParallaxMobile';
 import LazyLoad from 'react-lazyload';
-
-import { Parallax, Background } from 'react-parallax';
 
 import background from './assets/images/landing-background.jpg';
 
@@ -20,35 +19,21 @@ function App() {
   return (
     <div>
       <div className='fade-in-from-black'></div>
-      {/* <LazyLoad once={true}>
-          <Parallax background={background} speed={0.1} alt='landing backgound'>
-            REMOVE ME
-            <div style={{ height: '125px' }} />
-            REMOVE ME
-            <div className='container py-5'>
-              <Landing></Landing>
-            </div>
-          </Parallax>
-        </LazyLoad> */}
-      {/* 
-        <Parallax
-            blur={0}
-            bgImage={background}
-            bgImageAlt="the cat"
-            strength={-500}
-        >
-             REMOVE ME
-             <div style={{ height: '125px' }} />
-            REMOVE ME
-            <div className='container py-5'>
-              <Landing></Landing>
-            </div>
-        </Parallax> */}
-      <div className='landing-background'>
+      <LazyLoad once={true}>
+        <Parallax background={background} speed={0.1} alt='landing backgound'>
+          REMOVE ME
+          <div style={{ height: '125px' }} />
+          REMOVE ME
+          <div className='container py-5'>
+            <Landing></Landing>
+          </div>
+        </Parallax>
+      </LazyLoad>
+      <ParallaxMobile background={background} strength={1000}>
         <div className='container py-5 '>
           <Landing></Landing>
         </div>
-      </div>
+      </ParallaxMobile>
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
