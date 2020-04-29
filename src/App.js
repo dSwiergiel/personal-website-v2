@@ -6,7 +6,7 @@ import Parallax from './components/parallax/Parallax';
 import ParallaxMobile from './components/parallax/ParallaxMobile';
 import Splash from './components/splash/Splash';
 
-import background from './assets/images/landing-background.jpg';
+// import background from './assets/images/landing-background.jpg';
 // import mobileBackground from './assets/images/el-capitan-5k.jpg';
 import mobileBackground from './assets/images/yosemite-5k.jpg';
 
@@ -24,9 +24,12 @@ function App() {
     <div>
       {/* Splash Screen */}
       {loading && <Splash duration={loadingTime}></Splash>}
-      {/* Use different parallax for mobile screens vs desktop */}
       <LazyLoad once={true}>
-        <Parallax background={background} speed={0.5} alt='landing backgound'>
+        <Parallax
+          background={mobileBackground}
+          speed={0.5}
+          alt='landing backgound'
+        >
           REMOVE ME
           <div style={{ height: '125px' }} />
           REMOVE ME
@@ -35,30 +38,6 @@ function App() {
           </div>
         </Parallax>
       </LazyLoad>
-      {/* {window.innerWidth > 768 ? (
-        <LazyLoad once={true}>
-          <Parallax background={background} speed={0.5} alt='landing backgound'>
-            REMOVE ME
-            <div style={{ height: '125px' }} />
-            REMOVE ME
-            <div className='container py-5'>
-              <Landing></Landing>
-            </div>
-          </Parallax>
-        </LazyLoad>
-      ) : (
-        <LazyLoad once={true}>
-          <ParallaxMobile
-            background={mobileBackground}
-            strength={1000}
-            blur={{ min: -10, max: 20 }}
-          >
-            <div className='container py-3 '>
-              <Landing></Landing>
-            </div>
-          </ParallaxMobile>
-        </LazyLoad>
-      )} */}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
@@ -67,4 +46,3 @@ function App() {
 }
 
 export default App;
-// export default SplashScreen(App);
