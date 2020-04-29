@@ -13,11 +13,14 @@ import mobileBackground from './assets/images/yosemite-5k.jpg';
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const loadingTime = 2000;
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+      // enable scrolling
+      document.body.style.overflow = 'auto';
+    }, loadingTime);
     //eslint-disable-next-line
   }, []);
   return (
