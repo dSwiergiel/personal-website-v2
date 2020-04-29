@@ -16,14 +16,16 @@
 .App-logo {
   pointer-events: none;
   position: relative;
+  animation: App-logo-spin infinite 2s linear, App-logo-glow infinite 3s ease,
+    App-logo-grow infinite 3s ease, App-logo-hover infinite 3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 2s linear, App-logo-glow infinite 3s ease,
-      App-logo-grow infinite 3s ease, App-logo-hover infinite 3s ease;
-  }
-}
+// @media (prefers-reduced-motion: no-preference) {
+//   .App-logo {
+//     animation: App-logo-spin infinite 2s linear, App-logo-glow infinite 3s ease,
+//       App-logo-grow infinite 3s ease, App-logo-hover infinite 3s ease;
+//   }
+// }
 
 @keyframes App-logo-spin {
   from {

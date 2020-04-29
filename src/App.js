@@ -5,6 +5,7 @@ import Parallax from './components/parallax/Parallax';
 import ParallaxMobile from './components/parallax/ParallaxMobile';
 import LazyLoad from 'react-lazyload';
 
+import logo from './assets/images/react-logo.svg';
 import background from './assets/images/landing-background.jpg';
 import mobileBackground from './assets/images/el-capitan-5k.jpg';
 // import mobileBackground from './assets/images/yosemite-5k.jpg';
@@ -20,6 +21,12 @@ function App() {
   }, []);
   return (
     <div>
+      <div className='splash-screen'>
+        <img src={logo} className='App-logo' alt='logo' />
+        <p className='light-text fixed-bottom text-center h-25'>
+          getting things together...
+        </p>
+      </div>
       <div className='fade-in-from-black'></div>
       {/* <LazyLoad once={true}>
         <Parallax background={background} speed={0.5} alt='landing backgound'>
@@ -47,5 +54,5 @@ function App() {
   );
 }
 
-export default App;
-// export default SplashScreen(App);
+// export default App;
+export default SplashScreen(App);
