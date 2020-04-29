@@ -6,6 +6,8 @@ import ParallaxMobile from './components/parallax/ParallaxMobile';
 import LazyLoad from 'react-lazyload';
 
 import background from './assets/images/landing-background.jpg';
+import mobileBackground from './assets/images/el-capitan-5k.jpg';
+// import mobileBackground from './assets/images/yosemite-5k.jpg';
 
 function App() {
   // const [loading, setLoading] = useState(false);
@@ -30,9 +32,9 @@ function App() {
         </Parallax>
       </LazyLoad> */}
       <ParallaxMobile
-        background={background}
-        strength={999}
-        blur={{ min: -10, max: 30 }}
+        background={mobileBackground}
+        strength={1000}
+        blur={{ min: -10, max: 20 }}
       >
         <div className='container py-3 '>
           <Landing></Landing>
