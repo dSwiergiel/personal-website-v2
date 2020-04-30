@@ -3,11 +3,10 @@ import LazyLoad from 'react-lazyload';
 
 import Landing from './components/landing/Landing';
 import Parallax from './components/parallax/Parallax';
-import ParallaxMobile from './components/parallax/ParallaxMobile';
 import Splash from './components/splash/Splash';
 
 // import background from './assets/images/landing-background.jpg';
-import mobileBackground from './assets/images/el-capitan-5k.jpg';
+import mobileBackground from './assets/images/el-capitan.jpg';
 // import mobileBackground from './assets/images/yosemite-5k.jpg';
 
 function App() {
