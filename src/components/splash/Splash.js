@@ -6,9 +6,7 @@ import logo from '../../assets/images/react-logo.svg';
 
 const Splash = ({ duration }) => {
   useEffect(() => {
-    setTimeout(() => {
-      animateLogo();
-    }, 300);
+    animateLogo();
     setTimeout(() => {
       TweenMax.killTweensOf(logoItem);
     }, duration + 1000);
@@ -20,13 +18,12 @@ const Splash = ({ duration }) => {
   let logoItem = useRef(null);
 
   const animateLogo = () => {
-    TweenMax.to(splashContents, 0.5, {
-      opacity: 1,
-      ease: Power1.ease,
-    });
-
+    // TweenMax.from(splashContents, 0.5, {
+    //   opacity: 0,
+    //   ease: Power1.ease,
+    // });
     TweenMax.from(logoItem, 1, {
-      opacity: 0,
+      opacity: 0.5,
       filter: 'drop-shadow(0px 0px 1mm rgba(41, 169, 255, 1))',
       width: 'calc(10px + 25vmin)',
       ease: Power1.ease,
