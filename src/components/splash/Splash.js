@@ -6,7 +6,9 @@ import logo from '../../assets/images/react-logo.svg';
 
 const Splash = ({ duration }) => {
   useEffect(() => {
-    animateLogo();
+    setTimeout(() => {
+      animateLogo();
+    }, 250);
     setTimeout(() => {
       TweenMax.killTweensOf(logoItem);
     }, duration + 1000);
@@ -18,14 +20,9 @@ const Splash = ({ duration }) => {
   let logoItem = useRef(null);
 
   const animateLogo = () => {
-    // TweenMax.from(splashContents, 0.5, {
-    //   opacity: 0,
-    //   ease: Power1.ease,
-    // });
     TweenMax.from(logoItem, 1, {
-      opacity: 0.5,
+      opacity: 0,
       filter: 'drop-shadow(0px 0px 1mm rgba(41, 169, 255, 1))',
-      width: 'calc(10px + 25vmin)',
       ease: Power1.ease,
     });
     // spin
@@ -36,8 +33,8 @@ const Splash = ({ duration }) => {
     });
     // hover, glow, and grow on repeat
     TweenMax.to(logoItem, duration / 1000 - (duration / 1000) * 0.5, {
-      y: -50,
       opacity: 1,
+      y: -50,
       ease: Power1.easeInOut,
       width: 'calc(10px + 35vmin)',
       filter: 'drop-shadow(0 0 6mm rgba(41, 169, 255,1))',
