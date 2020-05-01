@@ -20,7 +20,7 @@ const Parallax = ({
   return (
     <div className='jarallax'>
       <div className='parallax-tint' />
-      <img className='jarallax-img parallax-tint' src={background} alt={alt} />
+      <img className='jarallax-img ' src={background} alt={alt} />
       {children}
     </div>
   );

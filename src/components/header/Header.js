@@ -3,7 +3,7 @@ import './header.scss';
 
 const Header = () => {
   return (
-    <div className='container py-4'>
+    <div className='container header-container py-4'>
       <h1 className='header'>
         Deven
         <br />

@@ -27,11 +27,11 @@ function App() {
       {/* <LazyLoad once={true}> */}
       <Parallax
         background={mobileBackground}
-        speed={0.5}
+        speed={0.1}
         alt='landing backgound'
       >
-        <Header></Header>
         <div className='container pb-5'>
+          <Header></Header>
           <Landing></Landing>
         </div>
       </Parallax>
