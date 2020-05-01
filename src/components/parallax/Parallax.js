@@ -10,7 +10,8 @@ const Parallax = ({
 }) => {
   useEffect(() => {
     jarallax(document.querySelectorAll('.jarallax'), {
-      speed: speed,
+      // speed is decreased on smaller screens to reduce jank
+      speed: window.innerWidth < 768 ? 0.5 : speed,
       postion: postion,
     });
 
