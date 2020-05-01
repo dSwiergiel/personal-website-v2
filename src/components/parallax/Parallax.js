@@ -19,7 +19,8 @@ const Parallax = ({
 
   return (
     <div className='jarallax'>
-      <img className='jarallax-img' src={background} alt={alt} />
+      <div className='parallax-tint' />
+      <img className='jarallax-img parallax-tint' src={background} alt={alt} />
       {children}
     </div>
   );

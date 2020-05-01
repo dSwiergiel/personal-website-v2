@@ -1,0 +1,92 @@
+// font awesome
+@import './all.min.css';
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+@import '~bootswatch/dist/lux/variables';
+@import '~bootstrap/scss/bootstrap';
+@import '~bootswatch/dist/lux/bootswatch';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+  font-weight: 100;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+button,
+a {
+  text-transform: none;
+  letter-spacing: 3px;
+}
+body {
+  overflow: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0px;
+}
+
+.light-text {
+  color: #e6e6e6;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 1.8em;
+}
+/* Custom Scroll bar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* //Custom Scroll bar*/
+
+.slide-up-button {
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: none;
+  color: #fff !important;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, #004080 50%, #fff 50%);
+  transition: 0.4s;
+}
+
+.slide-up-button:hover {
+  text-decoration: none;
+  color: #333 !important;
+  background-position: 0 -100%;
+}
+button:focus,
+a:focus {
+  outline: none;
+}
+
+.parallax-tint {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-shadow: 100vw 100vh rgba(0, 0, 0, 0.2) inset;
+  z-index: -1;
+}

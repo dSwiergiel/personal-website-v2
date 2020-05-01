@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import LazyLoad from 'react-lazyload';
 
-import Landing from './components/landing/Landing';
-import Parallax from './components/parallax/Parallax';
 import Splash from './components/splash/Splash';
+import Header from './components/header/Header';
+import Parallax from './components/parallax/Parallax';
+import Landing from './components/landing/Landing';
 
 // import background from './assets/images/landing-background.jpg';
 import mobileBackground from './assets/images/el-capitan.jpg';
@@ -29,10 +30,8 @@ function App() {
           speed={0.5}
           alt='landing backgound'
         >
-          REMOVE ME
-          <div style={{ height: '125px' }} />
-          REMOVE ME
-          <div className='container py-5'>
+          <Header></Header>
+          <div className='container pb-5'>
             <Landing></Landing>
           </div>
         </Parallax>
