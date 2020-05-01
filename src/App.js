@@ -24,18 +24,18 @@ function App() {
     <div>
       {/* Splash Screen */}
       {loading && <Splash duration={loadingTime}></Splash>}
-      <LazyLoad once={true}>
-        <Parallax
-          background={mobileBackground}
-          speed={0.5}
-          alt='landing backgound'
-        >
-          <Header></Header>
-          <div className='container pb-5'>
-            <Landing></Landing>
-          </div>
-        </Parallax>
-      </LazyLoad>
+      {/* <LazyLoad once={true}> */}
+      <Parallax
+        background={mobileBackground}
+        speed={0.5}
+        alt='landing backgound'
+      >
+        <Header></Header>
+        <div className='container pb-5'>
+          <Landing></Landing>
+        </div>
+      </Parallax>
+      {/* </LazyLoad> */}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
