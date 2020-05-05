@@ -58,7 +58,7 @@ const Splash = ({ duration }) => {
     });
     setTimeout(() => {
       // enable scrolling
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = 'overlay';
     }, duration - duration * 0.5);
   };
   return (

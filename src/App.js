@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import LazyLoad from 'react-lazyload';
+// import LazyLoad from 'react-lazyload';
 
 import Splash from './components/splash/Splash';
 import Header from './components/header/Header';
