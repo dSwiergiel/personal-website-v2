@@ -15,6 +15,7 @@ const Splash = ({ duration }) => {
     //eslint-disable-next-line
   }, []);
 
+  // element handles
   let splashContainer = useRef(null);
   let splashContents = useRef(null);
   let logoItem = useRef(null);
@@ -31,26 +32,22 @@ const Splash = ({ duration }) => {
       repeat: -1,
       ease: Power0.easeNone,
     });
-    // hover, glow, and grow on repeat
+    // hover, grow, and glow
     TweenMax.to(logoItem, duration / 1000 - (duration / 1000) * 0.5, {
       opacity: 1,
       y: -50,
       ease: Power1.easeInOut,
       width: 'calc(10px + 35vmin)',
       filter: 'drop-shadow(0 0 6mm rgba(41, 169, 255,1))',
-      //   repeat: -1,
-      //   yoyo: true,
     });
-    // TweenMax.to(logoItem, 0.6, {
-    //   opacity: 0,
-    //   delay: duration / 1000 - 0.2,
-    //   ease: Power1.easeInOut,
-    // });
+
+    // fade out splash contents
     TweenMax.to(splashContents, duration / 1000 - (duration / 1000) * 0.9, {
       opacity: 0,
       delay: duration / 1000 - (duration / 1000) * 0.55,
       ease: Power1.easeInOut,
     });
+    // fade out splash background
     TweenMax.to(splashContainer, duration / 1000 - (duration / 1000) * 0.7, {
       opacity: 0,
       delay: duration / 1000 - (duration / 1000) * 0.5,
