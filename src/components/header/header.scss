@@ -1,0 +1,29 @@
+@import '~bootswatch/dist/lux/variables';
+
+.header-container {
+  position: relative;
+}
+
+.header {
+  font-family: 'Lucida Console', Monaco, monospace;
+  color: $gray-300;
+}
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}

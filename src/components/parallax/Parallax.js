@@ -10,10 +10,9 @@ const Parallax = ({
 }) => {
   useEffect(() => {
     jarallax(document.querySelectorAll('.jarallax'), {
-      speed: speed,
+      // speed is decreased on smaller screens to reduce jank
+      speed: window.innerWidth < 768 ? 0.5 : speed,
       postion: postion,
-      //   disableParallax: /iPad|iPhone|iPod|Android/,
-      //   zIndex: -1,
     });
 
     //eslint-disable-next-line
@@ -21,7 +20,8 @@ const Parallax = ({
 
   return (
     <div className='jarallax'>
-      <img className='jarallax-img' src={background} alt={alt} />
+      <div className='parallax-tint' />
+      <img className='jarallax-img ' src={background} alt={alt} />
       {children}
     </div>
   );
