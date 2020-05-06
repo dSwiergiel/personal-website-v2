@@ -9,9 +9,7 @@ const Splash = ({ duration }) => {
     setTimeout(() => {
       animateLogo();
     }, 250);
-    setTimeout(() => {
-      TweenMax.killTweensOf(logoItem);
-    }, duration + 1000);
+
     //eslint-disable-next-line
   }, []);
 
@@ -53,6 +51,9 @@ const Splash = ({ duration }) => {
       delay: duration / 1000 - (duration / 1000) * 0.5,
       ease: Power1.easeInOut,
     });
+    setTimeout(() => {
+      TweenMax.killTweensOf(logoItem);
+    }, duration + 1000);
     setTimeout(() => {
       // enable scrolling
       document.body.style.overflow = 'overlay';
