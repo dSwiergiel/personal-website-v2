@@ -3,12 +3,7 @@ import LazyLoad from 'react-lazyload';
 
 import Splash from './components/splash/Splash';
 import Header from './components/header/Header';
-import Parallax from './components/parallax/Parallax';
 import Landing from './components/landing/Landing';
-
-// import background from './assets/images/landing-background.jpg';
-import mobileBackground from './assets/images/el-capitan.jpg';
-// import mobileBackground from './assets/images/yosemite-5k.jpg';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -24,18 +19,12 @@ function App() {
     <div>
       {/* Splash Screen */}
       {loading && <Splash duration={loadingTime}></Splash>}
-      {/* <LazyLoad once={true}> */}
-      <Parallax
-        background={mobileBackground}
-        speed={0.1}
-        alt='landing backgound'
-      >
-        <div className='container pb-5'>
+      <LazyLoad once={true}>
+        <div className='landing-background pb-5'>
           <Header></Header>
           <Landing></Landing>
         </div>
-      </Parallax>
-      {/* </LazyLoad> */}
+      </LazyLoad>
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
