@@ -33,7 +33,7 @@ const Nav = ({ duration, target }) => {
 
     const scene = new ScrollMagic.Scene({
       triggerHook: 'onLeave',
-      duration: '10%',
+      duration: '20%',
     })
       .setTween(t1)
       .addTo(controller);
