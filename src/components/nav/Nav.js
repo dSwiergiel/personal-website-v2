@@ -18,7 +18,7 @@ const Nav = ({ duration, target }) => {
   useEffect(() => {
     animateNavOnscrol();
     animateOnLoad();
-
+    window.addEventListener('scroll', animateProgressBar);
     //eslint-disable-next-line
   }, []);
 
@@ -49,6 +49,15 @@ const Nav = ({ duration, target }) => {
     });
   };
 
+  function animateProgressBar() {
+    let winScroll = window.pageYOffset;
+    let height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
+
+    document.getElementById('progressBar').style.width = scrolled + '%';
+  }
   return (
     <div
       id='nav'
@@ -57,7 +66,9 @@ const Nav = ({ duration, target }) => {
         nav = el;
       }}
     >
-      <ReadingProgress target={target} />
+      {/* <ReadingProgress target={target} /> */}
+
+      <div id='progressBar'></div>
 
       <div className=' container  header-container py-3 '>
         <h1 className='header row mb-0 '>
