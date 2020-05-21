@@ -44,6 +44,8 @@ a {
 }
 body {
   overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  height: 100%; /*A value other than height:auto needs to be set*/
   font-family: 'Roboto Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
