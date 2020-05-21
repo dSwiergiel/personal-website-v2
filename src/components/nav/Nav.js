@@ -17,20 +17,36 @@ const Nav = ({ duration }) => {
   useEffect(() => {
     animateNavOnscrol();
     animateOnLoad();
-    window.addEventListener(
-      'scroll',
-      function () {
-        animateProgressBar();
-      },
-      true
-    );
+    // document.addEventListener(
+    //   'touchmove',
+    //   function (e) {
+    //     e.preventDefault();
+    //     // animateProgressBar();
+    //   },
+    //   true
+    // );
+    // window.addEventListener('scroll', function () {
+    //   animateProgressBar();
+    // });
+
+    // // This is the magic, this gives me "live" scroll events
+    // window.addEventListener('gesturechange', function () {
+    //   animateProgressBar();
+    // });
+    // window.addEventListener(
+    //   'scroll',
+    //   function () {
+    //     animateProgressBar();
+    //   },
+    //   true
+    // );
     //eslint-disable-next-line
   }, []);
 
   // on scroll animate progress bar
-  // window.onscroll = function () {
-  //   animateProgressBar();
-  // };
+  window.onscroll = function () {
+    animateProgressBar();
+  };
 
   const animateNavOnscrol = () => {
     let t1 = new TimelineMax();
@@ -60,7 +76,7 @@ const Nav = ({ duration }) => {
   };
 
   function animateProgressBar() {
-    let winScroll = document.documentElement.scrollTop;
+    let winScroll = window.pageYOffset;
     let height =
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight;
