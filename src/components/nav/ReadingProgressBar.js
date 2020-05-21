@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const ReadingProgress = ({ target }) => {
-  const [readingProgress, setReadingProgress] = useState(0);
+  const [scrollProgress, setReadingProgress] = useState(0);
   const scrollListener = () => {
     if (!target.current) {
       return;
@@ -32,11 +32,14 @@ const ReadingProgress = ({ target }) => {
     return () => window.removeEventListener('scroll', scrollListener);
   });
 
-  return (
-    <div
-      className={`reading-progress-bar`}
-      style={{ width: `${readingProgress}%` }}
-    />
-  );
+  const scrollProgressBar = {
+    position: 'sticky',
+    height: '4px',
+    top: '0',
+    backgroundColor: '#8b7c59',
+    transition: 'ease-out',
+    width: `${scrollProgress}%`,
+  };
+  return <div style={scrollProgressBar} />;
 };
 export default ReadingProgress;

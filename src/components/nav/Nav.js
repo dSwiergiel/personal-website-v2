@@ -1,15 +1,17 @@
-import React, { useEffect, useState, useRef } from 'react';
-import NavMenu from './NavMenu';
-import NavMenuMobile from './NavMenuMobile';
-import ReadingProgress from './ReadingProgressBar';
-import useWindowDimensions from '../../hooks/WindowDimensions';
+import React, { useEffect, useRef } from 'react';
 import { TimelineMax, TweenMax, Power0, Power1 } from 'gsap';
 import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap';
 import * as ScrollMagic from 'scrollmagic';
+import useWindowDimensions from '../../hooks/WindowDimensions';
+import NavMenu from './NavMenu';
+import NavMenuMobile from './NavMenuMobile';
+import ScrollProgressBar from './ScrollProgressBar';
+
 import './nav.scss';
+
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
-const Nav = ({ duration, target }) => {
+const Nav = ({ duration }) => {
   const { width } = useWindowDimensions();
   let nav = useRef(null);
   let name = useRef(null);
@@ -31,6 +33,7 @@ const Nav = ({ duration, target }) => {
       filter: 'drop-shadow(0 0 3mm rgba(0, 0, 0,1))',
     });
 
+    //eslint-disable-next-line
     const scene = new ScrollMagic.Scene({
       triggerHook: 'onLeave',
       duration: '20%',
@@ -56,10 +59,7 @@ const Nav = ({ duration, target }) => {
         nav = el;
       }}
     >
-      <ReadingProgress target={target} />
-
-      {/* <div id='progressBar'></div> */}
-
+      <ScrollProgressBar />
       <div className=' container  header-container py-3 '>
         <h1 className='header row mb-0 '>
           <div
@@ -73,7 +73,7 @@ const Nav = ({ duration, target }) => {
             Swiergiel
           </div>
           {width > 1010 ? (
-            <div className='col my-auto '>
+            <div className='col my-auto'>
               <NavMenu duration={duration}></NavMenu>
             </div>
           ) : (
