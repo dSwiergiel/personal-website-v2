@@ -33,20 +33,20 @@ const Nav = ({ duration }) => {
     // window.addEventListener('gesturechange', function () {
     //   animateProgressBar();
     // });
-    // window.addEventListener(
-    //   'scroll',
-    //   function () {
-    //     animateProgressBar();
-    //   },
-    //   true
-    // );
+    window.addEventListener(
+      'scroll',
+      function () {
+        animateProgressBar();
+      },
+      true
+    );
     //eslint-disable-next-line
   }, []);
 
   // on scroll animate progress bar
-  window.onscroll = function () {
-    animateProgressBar();
-  };
+  // window.onscroll = function () {
+  //   animateProgressBar();
+  // };
 
   const animateNavOnscrol = () => {
     let t1 = new TimelineMax();
