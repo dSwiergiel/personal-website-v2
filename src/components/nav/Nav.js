@@ -17,6 +17,8 @@ const Nav = ({ duration }) => {
   useEffect(() => {
     animateNavOnscrol();
     animateOnLoad();
+    document.addEventListener('touchmove', animateProgressBar, false);
+    document.addEventListener('scroll', animateProgressBar, false);
     // document.addEventListener(
     //   'touchmove',
     //   function (e) {
@@ -47,36 +49,6 @@ const Nav = ({ duration }) => {
   // window.onscroll = function () {
   //   animateProgressBar();
   // };
-
-  const scroll = function () {
-    // do the onscroll stuff you want here
-    animateProgressBar();
-  };
-  var raf =
-    window.requestAnimationFrame ||
-    window.webkitRequestAnimationFrame ||
-    window.mozRequestAnimationFrame ||
-    window.msRequestAnimationFrame ||
-    window.oRequestAnimationFrame;
-  var lastScrollTop = document.documentElement.scrollTop;
-
-  if (raf) {
-    loop();
-  }
-
-  function loop() {
-    var scrollTop = document.documentElement.scrollTop;
-    if (lastScrollTop === scrollTop) {
-      raf(loop);
-      return;
-    } else {
-      lastScrollTop = scrollTop;
-
-      // fire scroll function if scrolls vertically
-      scroll();
-      raf(loop);
-    }
-  }
 
   const animateNavOnscrol = () => {
     let t1 = new TimelineMax();
