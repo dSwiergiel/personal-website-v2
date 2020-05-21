@@ -5,7 +5,7 @@ import useWindowDimensions from '../../hooks/WindowDimensions';
 import { TimelineMax, TweenMax, Power0, Power1 } from 'gsap';
 import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap';
 import * as ScrollMagic from 'scrollmagic';
-import './header.scss';
+import './nav.scss';
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
 const Nav = ({ duration }) => {

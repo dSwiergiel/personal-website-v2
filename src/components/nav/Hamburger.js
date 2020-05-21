@@ -1,5 +1,4 @@
 import React from 'react';
-import './header.scss';
 const Hamburger = ({ fill, height = '30px', classes }) => {
   return (
     <svg
