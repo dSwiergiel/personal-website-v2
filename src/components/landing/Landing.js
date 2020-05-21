@@ -1,6 +1,7 @@
 import React from 'react';
 // import LazyLoad from 'react-lazyload';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Link } from 'react-scroll';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 import portrait from '../../assets/images/landing-portrait.jpg';
@@ -21,36 +22,41 @@ const Landing = () => {
           ></LazyLoadImage>
         </div>
         <div className='col-lg-8'>
-          <p className='light-text'>
+          <p className='text-light'>
             My name is Deven Swiergiel and I like to make stuff. Currently
             working for the government as a Full-Stack Software Developer with
             emphasis on the front end. I have experience working on a team as
             well as by myself developing and deploying enterprise software for
             New York.
           </p>
-          <p className='light-text'>
+          <p className='text-light'>
             This website was designed and developed in React as a V2. The
             previous version was made with no frameworks while I was first
             learning web development, and while it may have looked good on the
             outside, it was an absolute dumpster fire on the inside!
           </p>
-          <p className='light-text mb-0'>
+          <p className='text-light mb-0'>
             Look around to learn more about me and the projects I've worked on.
           </p>
 
           <div className='form-row align-items-center mt-3'>
-            <a
-              href='#contact'
-              rel='noopener noreferrer'
-              className='slide-up-button mt-3 mr-3'
+            <Link
+              activeClass='active'
+              to='contact'
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
             >
-              Contact Me
-            </a>
+              <button className='btn btn-primary slide-up-button mt-3 mr-3'>
+                Contact Me
+              </button>
+            </Link>
             <a
               href={resume}
               target='_blank'
               rel='noopener noreferrer'
-              className='slide-up-button mt-3 mr-3'
+              className='btn btn-primary slide-up-button mt-3 mr-3'
             >
               Resume
             </a>
@@ -60,7 +66,7 @@ const Landing = () => {
               rel='noopener noreferrer'
               className='mt-3 mr-3'
             >
-              <i className='fab fa-github landing-fa-github '></i>
+              <i className='btn btn-primary fab fa-github landing-fa-github '></i>
             </a>
             <a
               href='https://www.linkedin.com/in/deven-swiergiel-155123140/'
@@ -68,7 +74,7 @@ const Landing = () => {
               rel='noopener noreferrer'
               className='mt-3 mr-3'
             >
-              <i className='fab fa-linkedin-in landing-fa-linkedin '></i>
+              <i className='btn btn-primary  fab fa-linkedin-in landing-fa-linkedin '></i>
             </a>
           </div>
         </div>

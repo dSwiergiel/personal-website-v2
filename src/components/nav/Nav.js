@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-scroll';
 import { TimelineMax, TweenMax, Power0, Power1 } from 'gsap';
 import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap';
 import * as ScrollMagic from 'scrollmagic';
@@ -61,17 +62,26 @@ const Nav = ({ duration }) => {
     >
       <ScrollProgressBar />
       <div className=' container  header-container py-3 '>
-        <h1 className='header row mb-0 '>
-          <div
-            className='col-3'
-            ref={(el) => {
-              name = el;
-            }}
+        <div className=' row mb-0 '>
+          <Link
+            activeClass='active'
+            to='landing'
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
           >
-            Deven
-            <br />
-            Swiergiel
-          </div>
+            <h1
+              className='col-3 header text-light mb-0 link'
+              ref={(el) => {
+                name = el;
+              }}
+            >
+              Deven
+              <br />
+              Swiergiel
+            </h1>
+          </Link>
           {width > 1010 ? (
             <div className='col my-auto'>
               <NavMenu duration={duration}></NavMenu>
@@ -81,7 +91,7 @@ const Nav = ({ duration }) => {
               <NavMenuMobile duration={duration}></NavMenuMobile>
             </div>
           )}
-        </h1>
+        </div>
       </div>
     </div>
   );

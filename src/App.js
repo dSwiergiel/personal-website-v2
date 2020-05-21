@@ -27,20 +27,34 @@ function App() {
         </div>
       </LazyLoad>
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '} */}
-      <LazyLoad once={true}>
-        <Parallax
-          background={mobileBackground}
-          speed={0.1}
-          alt='landing backgound'
-        >
-          <Nav duration={loadingTime}></Nav>
-          <div className='pb-4 container content'>
-            <Landing id='landing'></Landing>
-          </div>
-        </Parallax>
-      </LazyLoad>
+      {/* <LazyLoad once={true}> */}
+      <Parallax
+        background={mobileBackground}
+        speed={0.1}
+        alt='landing backgound'
+      >
+        <Nav duration={loadingTime}></Nav>
+        <div className='pb-4 container content' name='landing'>
+          <Landing></Landing>
+        </div>
+      </Parallax>
+      {/* </LazyLoad> */}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
+      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
+      <div name='about'></div>
+      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
+      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
+      <div name='education'></div>
+      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
+      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
+      <div name='experience'></div>
+      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
+      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
+      <div name='projects'></div>
+      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
+      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
+      <div name='contact'></div>
     </div>
   );
 }

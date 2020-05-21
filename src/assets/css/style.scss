@@ -1,25 +1,8 @@
 // google fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
 
-// bootstrap theme overides go here, before the import
-$primary: #2b3c58;
-// $primary: #161e2e;
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 993px,
-  xxl: 1900px,
-);
-
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-);
+// bootstrap variable overrides
+@import './variables.scss';
 
 @import '~bootswatch/dist/lux/variables';
 @import '~bootstrap/scss/bootstrap';
@@ -31,7 +14,6 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: none;
   font-weight: 100;
   letter-spacing: 8px;
   text-transform: uppercase;
@@ -42,6 +24,7 @@ a {
   text-transform: none;
   letter-spacing: 3px;
 }
+
 body {
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
@@ -53,12 +36,12 @@ body {
   padding: 0px;
 }
 
-.light-text {
-  color: #e6e6e6;
+p {
   font-size: 20px;
   letter-spacing: 2px;
   line-height: 1.8em;
 }
+
 /* Custom Scroll bar*/
 /* width */
 ::-webkit-scrollbar {
@@ -88,15 +71,15 @@ body {
   text-transform: uppercase;
   padding: 10px 20px;
   border: none;
-  color: #fff !important;
+  color: $light !important;
   background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, $primary 50%, #fff 50%);
+  background-image: linear-gradient(to bottom, $primary 50%, $light 50%);
   transition: 0.4s;
 }
 
 .slide-up-button:hover {
   text-decoration: none;
-  color: #333 !important;
+  color: $dark !important;
   background-position: 0 -100%;
 }
 button:focus,
@@ -130,4 +113,9 @@ a:focus {
 
 .sticky + .content {
   padding-top: calc(80px + 13 * ((100vw) / 680));
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
 }

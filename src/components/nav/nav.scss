@@ -1,14 +1,14 @@
-@import '../../assets/css/style.scss';
-$header-color: #ffffffaf;
+// bootstrap variable overrides
+@import '../../assets/css/variables.scss';
+
 $ham-size: 20px;
 
 .header {
   font-family: 'Lucida Console', Monaco, monospace;
-  color: $header-color;
 }
 
 .ham {
-  fill: $header-color;
+  fill: $light;
   height: $ham-size;
 }
 
@@ -17,23 +17,7 @@ $ham-size: 20px;
     font-size: calc(20px + 10 * ((100vw - 320px) / 680));
   }
 }
-#progressBar {
-  position: fixed;
-  height: 4px;
-  // background: #5850ec;
-  // background: #aaa08d;
-  background: #8b7c59;
-  width: 0%;
-  // transition: ease-out;
-  // transition-delay: 0.01s;
-  // transition-duration: 0.4s;
-}
-.reading-progress-bar {
-  position: sticky;
-  height: 4px;
-  top: 0;
-  background-color: #8b7c59;
-  transition: ease-out;
-  // transition-delay: 0.01s;
-  // transition-duration: 0.4s;
+.link:hover {
+  color: $white !important;
+  // transform: translate(0px, -5px);
 }

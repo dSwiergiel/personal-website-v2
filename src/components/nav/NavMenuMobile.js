@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { TimelineMax, Power1 } from 'gsap';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import Hamburger from './Hamburger';
 
 const NavMobile = ({ duration }) => {

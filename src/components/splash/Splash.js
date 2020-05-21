@@ -80,7 +80,7 @@ const Splash = ({ duration }) => {
           className='App-logo'
           alt='logo'
         />
-        <p className='light-text fixed-bottom text-center h-25'>
+        <p className='text-light fixed-bottom text-center h-25'>
           getting things together...
         </p>
       </div>

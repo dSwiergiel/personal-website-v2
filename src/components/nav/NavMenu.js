@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { TimelineMax, Power1 } from 'gsap';
+import { Link } from 'react-scroll';
 const NavMenu = ({ duration }) => {
   let about = useRef(null);
   let education = useRef(null);
@@ -47,55 +48,100 @@ const NavMenu = ({ duration }) => {
 
   return (
     <div className=' my-auto d-flex justify-content-between'>
-      <div className=' px-2'>
-        <h5
-          className='mb-0 text-light'
-          ref={(el) => {
-            about = el;
-          }}
+      <div className=' px-2 '>
+        <Link
+          activeClass='active'
+          to='about'
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
         >
-          About
-        </h5>
+          <h5
+            className='mb-0 text-light link'
+            ref={(el) => {
+              about = el;
+            }}
+          >
+            About
+          </h5>
+        </Link>
       </div>
-      <div className=' px-2'>
-        <h5
-          className='mb-0 text-light'
-          ref={(el) => {
-            education = el;
-          }}
+      <div className=' px-2 '>
+        <Link
+          activeClass='active'
+          to='education'
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
         >
-          Education
-        </h5>
+          <h5
+            className='mb-0 text-light link'
+            ref={(el) => {
+              education = el;
+            }}
+          >
+            Education
+          </h5>
+        </Link>
       </div>
-      <div className=' px-2'>
-        <h5
-          className='mb-0 text-light'
-          ref={(el) => {
-            experience = el;
-          }}
+      <div className=' px-2 '>
+        <Link
+          activeClass='active'
+          to='experience'
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
         >
-          Experience
-        </h5>
+          <h5
+            className='mb-0 text-light link'
+            ref={(el) => {
+              experience = el;
+            }}
+          >
+            Experience
+          </h5>
+        </Link>
       </div>
-      <div className=' px-2'>
-        <h5
-          className='mb-0 text-light'
-          ref={(el) => {
-            projects = el;
-          }}
+      <div className=' px-2 '>
+        <Link
+          activeClass='active'
+          to='projects'
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
         >
-          Projects
-        </h5>
+          <h5
+            className='mb-0 text-light link'
+            ref={(el) => {
+              projects = el;
+            }}
+          >
+            Projects
+          </h5>
+        </Link>
       </div>
-      <div className=' px-2'>
-        <h5
-          className='mb-0 text-light'
-          ref={(el) => {
-            contact = el;
-          }}
+      <div className=' px-2 '>
+        <Link
+          activeClass='active'
+          to='contact'
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
         >
-          contact
-        </h5>
+          <h5
+            className='mb-0 text-light link'
+            ref={(el) => {
+              contact = el;
+            }}
+          >
+            Contact
+          </h5>
+        </Link>
       </div>
     </div>
   );
