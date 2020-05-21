@@ -9,20 +9,38 @@ const NavMobile = ({ duration }) => {
   }, []);
   const animateOnload = () => {
     let t1 = new TimelineMax();
-
+    // t1.from('#ham-bottom', duration / 1000 / 20, {
+    //   opacity: 0,
+    //   y: -20,
+    //   delay: duration / 1000 / 1.5,
+    //   ease: Power1.easeOut,
+    // });
+    // t1.from('#ham-middle', duration / 1000 / 20, {
+    //   opacity: 0,
+    //   y: -20,
+    //   ease: Power1.easeOut,
+    // });
+    // t1.from('#ham-top', duration / 1000 / 20, {
+    //   opacity: 0,
+    //   y: -20,
+    //   ease: Power1.easeOut,
+    // });
     t1.from('#ham-top', duration / 1000 / 10, {
       opacity: 0,
-      x: -20,
-      delay: duration / 1000 / 1.5,
+      x: 75,
+      delay: duration / 1000 / 1.2,
+
       ease: Power1.easeOut,
     });
-    t1.from('#ham-middle', duration / 1000 / 20, {
-      opacity: 0,
-      ease: Power1.easeOut,
-    });
-    t1.from('#ham-bottom', duration / 1000 / 5, {
+
+    t1.from('#ham-middle', duration / 1000 / 8, {
       opacity: 0,
       x: 20,
+      ease: Power1.easeOut,
+    });
+    t1.from('#ham-bottom', duration / 1000 / 6, {
+      opacity: 0,
+      x: -75,
       ease: Power1.easeOut,
     });
   };

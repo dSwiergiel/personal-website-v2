@@ -34,7 +34,7 @@ function App() {
         alt='landing backgound'
       >
         <Nav duration={loadingTime} target={target}></Nav>
-        <div className='pb-4 content'>
+        <div className='pb-4 container content'>
           <Landing id='landing'></Landing>
         </div>
       </Parallax>
