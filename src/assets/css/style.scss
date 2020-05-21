@@ -131,3 +131,29 @@ a:focus {
 .sticky + .content {
   padding-top: calc(80px + 12 * ((100vw) / 680));
 }
+
+//
+//
+//
+//
+//
+
+//
+//
+
+//
+//
+//
+//
+//
+//
+
+//
+//
+
+.reading-progress-bar {
+  position: sticky;
+  height: 5px;
+  top: 0;
+  background-color: #ff0000;
+}
