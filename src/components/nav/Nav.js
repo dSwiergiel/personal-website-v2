@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import NavMenu from './NavMenu';
 import NavMenuMobile from './NavMenuMobile';
+import ReadingProgress from './ReadingProgressBar';
 import useWindowDimensions from '../../hooks/WindowDimensions';
 import { TimelineMax, TweenMax, Power0, Power1 } from 'gsap';
 import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap';
@@ -8,7 +9,7 @@ import * as ScrollMagic from 'scrollmagic';
 import './nav.scss';
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
-const Nav = ({ duration }) => {
+const Nav = ({ duration, target }) => {
   const { width } = useWindowDimensions();
   let nav = useRef(null);
   let name = useRef(null);
@@ -17,38 +18,9 @@ const Nav = ({ duration }) => {
   useEffect(() => {
     animateNavOnscrol();
     animateOnLoad();
-    document.addEventListener('touchmove', animateProgressBar, false);
-    document.addEventListener('scroll', animateProgressBar, false);
-    // document.addEventListener(
-    //   'touchmove',
-    //   function (e) {
-    //     e.preventDefault();
-    //     // animateProgressBar();
-    //   },
-    //   true
-    // );
-    // window.addEventListener('scroll', function () {
-    //   animateProgressBar();
-    // });
 
-    // // This is the magic, this gives me "live" scroll events
-    // window.addEventListener('gesturechange', function () {
-    //   animateProgressBar();
-    // });
-    // window.addEventListener(
-    //   'scroll',
-    //   function () {
-    //     animateProgressBar();
-    //   },
-    //   true
-    // );
     //eslint-disable-next-line
   }, []);
-
-  // on scroll animate progress bar
-  // window.onscroll = function () {
-  //   animateProgressBar();
-  // };
 
   const animateNavOnscrol = () => {
     let t1 = new TimelineMax();
@@ -77,15 +49,6 @@ const Nav = ({ duration }) => {
     });
   };
 
-  function animateProgressBar() {
-    let winScroll = window.pageYOffset;
-    let height =
-      document.documentElement.scrollHeight -
-      document.documentElement.clientHeight;
-    let scrolled = (winScroll / height) * 100;
-
-    document.getElementById('progressBar').style.width = scrolled + '%';
-  }
   return (
     <div
       id='nav'
@@ -94,7 +57,8 @@ const Nav = ({ duration }) => {
         nav = el;
       }}
     >
-      <div id='progressBar'></div>
+      <ReadingProgress target={target} />
+
       <div className=' container  header-container py-3 '>
         <h1 className='header row mb-0 '>
           <div

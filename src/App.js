@@ -33,12 +33,11 @@ function App() {
         speed={0.1}
         alt='landing backgound'
       >
-        <Nav duration={loadingTime}></Nav>
+        <Nav duration={loadingTime} target={target}></Nav>
         <div className='pb-4 content'>
           <Landing id='landing'></Landing>
         </div>
       </Parallax>
-      <ReadingProgress target={target} />
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
     </div>

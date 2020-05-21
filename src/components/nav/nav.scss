@@ -28,3 +28,12 @@ $ham-size: 20px;
   transition-delay: 0.01s;
   transition-duration: 0.4s;
 }
+.reading-progress-bar {
+  position: sticky;
+  height: 5px;
+  top: 0;
+  background-color: #8b7c59;
+  transition: ease-out;
+  transition-delay: 0.01s;
+  transition-duration: 0.4s;
+}
