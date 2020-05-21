@@ -17,22 +17,22 @@ const Nav = ({ duration }) => {
   useEffect(() => {
     animateNavOnscrol();
     animateOnLoad();
-    // document.addEventListener(
-    //   'touchmove',
-    //   function (e) {
-    //     e.preventDefault();
-    //     // animateProgressBar();
-    //   },
-    //   true
-    // );
-    // window.addEventListener('scroll', function () {
-    //   animateProgressBar();
-    // });
+    document.addEventListener(
+      'touchmove',
+      function (e) {
+        e.preventDefault();
+        // animateProgressBar();
+      },
+      true
+    );
+    window.addEventListener('scroll', function () {
+      animateProgressBar();
+    });
 
-    // // This is the magic, this gives me "live" scroll events
-    // window.addEventListener('gesturechange', function () {
-    //   animateProgressBar();
-    // });
+    // This is the magic, this gives me "live" scroll events
+    window.addEventListener('gesturechange', function () {
+      animateProgressBar();
+    });
     window.addEventListener(
       'scroll',
       function () {
