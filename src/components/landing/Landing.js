@@ -9,8 +9,8 @@ import './landing.scss';
 
 const Landing = () => {
   return (
-    <div className='container landing-box'>
-      <div className='row px-2'>
+    <div className='container landing-box py-3'>
+      <div className='row '>
         <div className='col-lg-4'>
           <LazyLoadImage
             className='portrait'

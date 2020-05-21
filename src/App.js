@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import LazyLoad from 'react-lazyload';
 
 import Splash from './components/splash/Splash';
-import Header from './components/header/Header';
+import Nav from './components/nav/Nav';
 import Landing from './components/landing/Landing';
 import Parallax from './components/parallax/Parallax';
 import mobileBackground from './assets/images/el-capitan.jpg';
@@ -32,9 +32,9 @@ function App() {
         speed={0.1}
         alt='landing backgound'
       >
-        <div className='container pb-5'>
-          <Header></Header>
-          <Landing></Landing>
+        <Nav duration={loadingTime}></Nav>
+        <div className='pb-4 content'>
+          <Landing id='landing'></Landing>
         </div>
       </Parallax>
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}

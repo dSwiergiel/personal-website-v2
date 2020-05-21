@@ -1,10 +1,25 @@
-// font awesome
-@import './all.min.css';
 // google fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
 
 // bootstrap theme overides go here, before the import
-$primary: #004080;
+$primary: #2b3c58;
+// $primary: #161e2e;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 993px,
+  xxl: 1900px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+);
 
 @import '~bootswatch/dist/lux/variables';
 @import '~bootstrap/scss/bootstrap';
@@ -50,17 +65,18 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f100;
+  background: #5a5a5a;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(136, 136, 136, 0.596);
+  background: rgba(158, 158, 158, 0.719);
+  // background: #8b7c59;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(85, 85, 85, 0.753);
+  background: rgba(153, 153, 153, 0.432);
 }
 /* //Custom Scroll bar*/
 
@@ -101,4 +117,15 @@ a:focus {
   background-size: cover;
   background-position: center center;
   box-shadow: 100vw 100vh rgba(0, 0, 0, 0.3) inset;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+
+.sticky + .content {
+  padding-top: calc(80px + 12 * ((100vw) / 680));
 }

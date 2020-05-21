@@ -1,0 +1,30 @@
+@import '../../assets/css/style.scss';
+$header-color: #ffffffaf;
+$ham-size: 20px;
+
+.header {
+  font-family: 'Lucida Console', Monaco, monospace;
+  color: $header-color;
+}
+
+.ham {
+  fill: $header-color;
+  height: $ham-size;
+}
+
+@media (max-width: 1010px) {
+  .header {
+    font-size: calc(20px + 10 * ((100vw - 320px) / 680));
+  }
+}
+#progressBar {
+  position: fixed;
+  height: 4px;
+  // background: #5850ec;
+  // background: #aaa08d;
+  background: #8b7c59;
+  width: 0%;
+  transition: ease-out;
+  transition-delay: 0.01s;
+  transition-duration: 0.4s;
+}
