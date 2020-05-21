@@ -17,13 +17,20 @@ const Nav = ({ duration }) => {
   useEffect(() => {
     animateNavOnscrol();
     animateOnLoad();
+    window.addEventListener(
+      'scroll',
+      function () {
+        animateProgressBar();
+      },
+      true
+    );
     //eslint-disable-next-line
   }, []);
 
   // on scroll animate progress bar
-  window.ontouchmove = function () {
-    animateProgressBar();
-  };
+  // window.onscroll = function () {
+  //   animateProgressBar();
+  // };
 
   const animateNavOnscrol = () => {
     let t1 = new TimelineMax();
