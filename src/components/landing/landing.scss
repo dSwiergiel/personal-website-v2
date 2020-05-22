@@ -15,7 +15,8 @@
   border: 3px solid $light;
   box-sizing: border-box;
   color: $light;
-  padding: 7px 3px 7px 7px;
+  // padding: 7px 3px 7px 7px;
+  padding: 7px 5px 7px 8px;
   font-size: 20px;
   font-weight: 400;
   transition: all 0.5s;
@@ -26,12 +27,13 @@
 }
 
 .landing-fa-linkedin {
+  white-space: none;
   -webkit-font-smoothing: antialiased;
   background-image: none;
   border: 3px solid $light;
   box-sizing: border-box;
   color: $light;
-  padding: 7px 3px 7px 7px;
+  padding: 7px 5px 7px 8px;
   font-size: 20px;
   font-weight: 400;
   transition: all 0.5s;
