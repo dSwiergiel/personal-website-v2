@@ -39,7 +39,7 @@ const Landing = () => {
             Look around to learn more about me and the projects I've worked on.
           </p>
 
-          <div className='form-row align-items-center mt-3'>
+          <div className=' align-items-center mt-3'>
             <Link
               activeClass='active'
               to='contact'
@@ -64,17 +64,15 @@ const Landing = () => {
               href='https://github.com/dSwiergiel'
               target='_blank'
               rel='noopener noreferrer'
-              className='mt-3 mr-3'
             >
-              <i className='btn btn-primary fab fa-github landing-fa-github '></i>
+              <i className='btn btn-primary fab fa-github landing-fa-github mt-3 mr-3 '></i>
             </a>
             <a
               href='https://www.linkedin.com/in/deven-swiergiel-155123140/'
               target='_blank'
               rel='noopener noreferrer'
-              className='mt-3 mr-3'
             >
-              <i className='btn btn-primary  fab fa-linkedin-in landing-fa-linkedin '></i>
+              <i className='btn btn-primary  fab fa-linkedin-in landing-fa-linkedin mt-3 mr-3'></i>
             </a>
           </div>
         </div>
