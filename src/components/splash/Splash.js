@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { TweenMax, Power0, Power1 } from 'gsap';
+import { TweenLite, Power0, Power1 } from 'gsap';
 
 import './splashscreen.scss';
 import logo from '../../assets/images/react-logo.svg';
@@ -19,19 +19,19 @@ const Splash = ({ duration }) => {
   let logoItem = useRef(null);
 
   const animateLogo = () => {
-    TweenMax.from(logoItem, 1, {
+    TweenLite.from(logoItem, 1, {
       opacity: 0,
       filter: 'drop-shadow(0px 0px 1mm rgba(41, 169, 255, 1))',
       ease: Power1.ease,
     });
     // spin
-    TweenMax.to(logoItem, 3, {
+    TweenLite.to(logoItem, 3, {
       rotation: 360,
       repeat: -1,
       ease: Power0.easeNone,
     });
     // hover, grow, and glow
-    TweenMax.to(logoItem, duration / 1000 - (duration / 1000) * 0.5, {
+    TweenLite.to(logoItem, duration / 1000 - (duration / 1000) * 0.5, {
       opacity: 1,
       y: -50,
       ease: Power1.easeInOut,
@@ -40,19 +40,19 @@ const Splash = ({ duration }) => {
     });
 
     // fade out splash contents
-    TweenMax.to(splashContents, duration / 1000 - (duration / 1000) * 0.9, {
+    TweenLite.to(splashContents, duration / 1000 - (duration / 1000) * 0.9, {
       opacity: 0,
       delay: duration / 1000 - (duration / 1000) * 0.55,
       ease: Power1.easeInOut,
     });
     // fade out splash background
-    TweenMax.to(splashContainer, duration / 1000 - (duration / 1000) * 0.7, {
+    TweenLite.to(splashContainer, duration / 1000 - (duration / 1000) * 0.7, {
       opacity: 0,
       delay: duration / 1000 - (duration / 1000) * 0.5,
       ease: Power1.easeInOut,
     });
     setTimeout(() => {
-      TweenMax.killTweensOf(logoItem);
+      TweenLite.killTweensOf(logoItem);
     }, duration + 1000);
     setTimeout(() => {
       // enable scrolling

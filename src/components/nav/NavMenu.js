@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { TimelineMax, Power1 } from 'gsap';
+import { TimelineLite, Power1 } from 'gsap';
 import { Link } from 'react-scroll';
 const NavMenu = ({ duration }) => {
   let about = useRef(null);
@@ -13,7 +13,7 @@ const NavMenu = ({ duration }) => {
   }, []);
 
   const animateOnload = () => {
-    let t1 = new TimelineMax();
+    let t1 = new TimelineLite();
 
     t1.from(about, duration / 1000 / 20, {
       opacity: 0,
