@@ -5,11 +5,31 @@ $ham-size: 20px;
 
 .header {
   font-family: 'Lucida Console', Monaco, monospace;
+  z-index: -1;
 }
 
 .ham {
   fill: $light;
   height: $ham-size;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+hr {
+  border-top-color: $warning;
+}
+
+.mobile-link {
+  z-index: -1;
+}
+
+.nav-menu-mobile {
+  background-color: rgba(43, 42, 42, 0.8);
+  position: absolute;
+  right: 5px;
+  top: -22px;
+  width: 255px;
 }
 
 @media (max-width: 1010px) {

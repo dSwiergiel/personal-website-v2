@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="0 0 50 40" fill="{fill}" xmlns="http://www.w3.org/2000/svg">
-  <rect id="ham-top" width="30" height="6" rx="4" ry="4"/>
-  <rect id="ham-middle" y="17" width="50" height="6" rx="4" ry="4"/>
-  <rect id="ham-bottom" width="30" height="6" rx="4" ry="4" x="20" y="34"/>
-</svg>

@@ -2,58 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { TimelineLite, Power1 } from 'gsap/all';
 
 const Hamburger = ({ fill, height = '30px', classes, duration = '3000' }) => {
-  const [hamAnimation, setHamAnimation] = useState(
-    new TimelineLite({ paused: true })
-  );
-
   useEffect(() => {
     animateOnload();
-    setHamAnimation(
-      new TimelineLite()
-        .to(
-          '#ham-top',
-          0.2,
-          {
-            x: 50,
-            opacity: 0,
-            ease: Power1.easeInOut,
-          },
-          'menu'
-        )
-        .to(
-          '#ham-middle',
-          0.3,
-          {
-            transformOrigin: '50% 50%',
-            rotate: 45,
-            ease: Power1.easeInOut,
-          },
-          'menu'
-        )
-        .to(
-          '#ham-middle2',
-          0.3,
-          {
-            transformOrigin: '50% 50%',
-            rotate: -45,
-            opacity: 1,
-            ease: Power1.easeInOut,
-          },
-          'menu'
-        )
-        .to(
-          '#ham-bottom',
-          0.2,
-          {
-            x: -50,
-            opacity: 0,
-
-            ease: Power1.easeInOut,
-          },
-          'menu'
-        )
-        .reverse()
-    );
 
     //eslint-disable-next-line
   }, []);
@@ -80,13 +30,8 @@ const Hamburger = ({ fill, height = '30px', classes, duration = '3000' }) => {
     });
   };
 
-  const animateHam = () => {
-    hamAnimation.reversed() ? hamAnimation.play() : hamAnimation.reverse();
-  };
-
   return (
     <svg
-      onClick={animateHam}
       viewBox='0 0 50 40'
       fill={fill}
       height={height}
