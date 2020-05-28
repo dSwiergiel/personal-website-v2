@@ -1,11 +1,8 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { TimelineLite, Power1 } from 'gsap/all';
 
 const Hamburger = ({ fill, height = '30px', classes, duration = '3000' }) => {
   const [hamAnimation, setHamAnimation] = useState(
-    new TimelineLite({ paused: true })
-  );
-  const [menuAnimation, setMenuAnimation] = useState(
     new TimelineLite({ paused: true })
   );
 
@@ -83,12 +80,13 @@ const Hamburger = ({ fill, height = '30px', classes, duration = '3000' }) => {
     });
   };
 
-  const animateMenu = () => {
+  const animateHam = () => {
     hamAnimation.reversed() ? hamAnimation.play() : hamAnimation.reverse();
   };
+
   return (
     <svg
-      onClick={animateMenu}
+      onClick={animateHam}
       viewBox='0 0 50 40'
       fill={fill}
       height={height}
