@@ -16,6 +16,7 @@ const Nav = ({ duration }) => {
   const { width } = useWindowDimensions();
   let nav = useRef(null);
   let name = useRef(null);
+  let header = useRef(null);
   const controller = new ScrollMagic.Controller();
 
   useEffect(() => {
@@ -62,7 +63,7 @@ const Nav = ({ duration }) => {
     >
       <ScrollProgressBar />
       <div className=' container  header-container py-3 '>
-        <div className=' row mb-0 '>
+        <div className=' row mb-0 ' ref={header}>
           <Link
             activeClass='active'
             to='landing'
@@ -88,7 +89,10 @@ const Nav = ({ duration }) => {
             </div>
           ) : (
             <div className='col my-auto d-inline-flex justify-content-end'>
-              <NavMenuMobile duration={duration}></NavMenuMobile>
+              <NavMenuMobile
+                duration={duration}
+                header={header}
+              ></NavMenuMobile>
             </div>
           )}
         </div>
