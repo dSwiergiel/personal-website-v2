@@ -72,7 +72,7 @@ const NavMobile = ({ duration, header }) => {
       new TimelineLite()
         .from(
           menuOptionsContainer,
-          0.4,
+          0.6,
           {
             backgroundColor: 'rgba(0,0,0,0)',
             display: 'none',
@@ -82,6 +82,7 @@ const NavMobile = ({ duration, header }) => {
         )
         .from(
           menuOptionsContainer,
+          0.4,
           {
             height: 0,
             ease: Power1.easeInOut,
