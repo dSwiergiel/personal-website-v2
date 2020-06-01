@@ -176,7 +176,8 @@ const NavMobile = ({ duration, header }) => {
               spy={true}
               smooth={true}
               offset={0}
-              duration={500}
+              duration={1000}
+              onClick={animateHam}
             >
               <h5 className=' text-light link'>About</h5>
             </Link>
@@ -194,7 +195,8 @@ const NavMobile = ({ duration, header }) => {
               spy={true}
               smooth={true}
               offset={0}
-              duration={500}
+              duration={1000}
+              onClick={animateHam}
             >
               <h5 className=' text-light link'>Education</h5>
             </Link>
@@ -212,7 +214,8 @@ const NavMobile = ({ duration, header }) => {
               spy={true}
               smooth={true}
               offset={0}
-              duration={500}
+              duration={1000}
+              onClick={animateHam}
             >
               <h5 className=' text-light link'>Experience</h5>
             </Link>
@@ -230,7 +233,8 @@ const NavMobile = ({ duration, header }) => {
               spy={true}
               smooth={true}
               offset={0}
-              duration={500}
+              duration={1000}
+              onClick={animateHam}
             >
               <h5 className='text-light link'>Projects</h5>
             </Link>
@@ -248,7 +252,8 @@ const NavMobile = ({ duration, header }) => {
               spy={true}
               smooth={true}
               offset={0}
-              duration={500}
+              duration={1000}
+              onClick={animateHam}
             >
               <h5 className='mb-0 text-light link'>Contact</h5>
             </Link>

@@ -55,7 +55,7 @@ const NavMenu = ({ duration }) => {
           spy={true}
           smooth={true}
           offset={0}
-          duration={500}
+          duration={1000}
         >
           <h5
             className='mb-0 text-light link'
@@ -74,7 +74,7 @@ const NavMenu = ({ duration }) => {
           spy={true}
           smooth={true}
           offset={0}
-          duration={500}
+          duration={1000}
         >
           <h5
             className='mb-0 text-light link'
@@ -93,7 +93,7 @@ const NavMenu = ({ duration }) => {
           spy={true}
           smooth={true}
           offset={0}
-          duration={500}
+          duration={1000}
         >
           <h5
             className='mb-0 text-light link'
@@ -112,7 +112,7 @@ const NavMenu = ({ duration }) => {
           spy={true}
           smooth={true}
           offset={0}
-          duration={500}
+          duration={1000}
         >
           <h5
             className='mb-0 text-light link'
@@ -131,7 +131,7 @@ const NavMenu = ({ duration }) => {
           spy={true}
           smooth={true}
           offset={0}
-          duration={500}
+          duration={1000}
         >
           <h5
             className='mb-0 text-light link'

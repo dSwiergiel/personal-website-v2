@@ -70,7 +70,7 @@ const Nav = ({ duration }) => {
             spy={true}
             smooth={true}
             offset={0}
-            duration={500}
+            duration={1000}
           >
             <h1
               className='col-3 header text-light mb-0 link'
