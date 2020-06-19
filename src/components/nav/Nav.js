@@ -83,7 +83,7 @@ const Nav = ({ duration }) => {
               Swiergiel
             </h1>
           </Link>
-          {width > 1010 ? (
+          {width > 1035 ? (
             <div className='col my-auto'>
               <NavMenu duration={duration}></NavMenu>
             </div>

@@ -29,7 +29,13 @@ hr {
   top: -21px;
 }
 .mobile-options-container {
-  background-color: rgba(43, 42, 42, 0.9);
+  // background-color: rgba(43, 42, 42, 0.9);
+  // background-color: #252f3f;
+  background-color: rgb(43, 42, 42);
+
+  // position: fixed;
+  // top: 0;
+  // right: 0;
 }
 
 @media (max-width: 1010px) {
