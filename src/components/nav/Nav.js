@@ -72,8 +72,8 @@ const Nav = ({ duration }) => {
             offset={0}
             duration={1000}
           >
-            <h1
-              className='col-3 header text-light mb-0 link'
+            <h3
+              className='col-3 header text-light mb-0 link '
               ref={(el) => {
                 name = el;
               }}
@@ -81,7 +81,7 @@ const Nav = ({ duration }) => {
               Deven
               <br />
               Swiergiel
-            </h1>
+            </h3>
           </Link>
           {width > 1035 ? (
             <div className='col my-auto'>

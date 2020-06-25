@@ -102,11 +102,11 @@ a:focus {
   z-index: 100;
 }
 .content {
-  padding-top: calc(80px + 13 * ((100vw) / 680)) !important;
+  padding-top: calc(90px + 2 * ((100vw) / 680)) !important;
 }
 
 .sticky + .content {
-  padding-top: calc(80px + 13 * ((100vw) / 680));
+  padding-top: calc(90px + 2 * ((100vw) / 680));
 }
 
 .link {
