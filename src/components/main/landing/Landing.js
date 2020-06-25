@@ -23,21 +23,27 @@ const Landing = () => {
         </div>
         <div className='col-lg-8'>
           <p className='text-light'>
-            My name is Deven Swiergiel and I like to make stuff. Currently
-            working for the government as a Full-Stack Software Developer with
-            emphasis on the front end. I have experience working on a team as
-            well as by myself developing and deploying enterprise software for
-            New York.
+            My name is Deven Swiergiel and I like to make stuff. I'm a
+            Full-Stack Developer with an emphasis on the frontend, building
+            modern enterprise web applications for the government.
           </p>
           <p className='text-light'>
+            Currently working as Frontend Lead building a multi-persona
+            screening tool as part of New York's COVID-19 efforts to ensure a
+            safe return to the office. Over 10,000 active daily users and
+            anticipating over 100,000 as more workers return to the office.
+          </p>
+          <p className='text-light mb-0'>
+            Previously worked alongside Google to rebuild New York's legacy
+            Unemployment Insurance app to support the million's of New Yorkers
+            sadly affected by COVID-19.
+          </p>
+          {/* <p className='text-light'>
             This website was designed and developed in React as a V2. The
             previous version was made with no frameworks while I was first
             learning web development, and while it may have looked good on the
             outside, it was an absolute dumpster fire on the inside!
-          </p>
-          <p className='text-light mb-0'>
-            Look around to learn more about me and the projects I've worked on.
-          </p>
+          </p> */}
 
           <div className=' align-items-center mt-3'>
             <Link

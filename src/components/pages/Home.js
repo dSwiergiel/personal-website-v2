@@ -23,12 +23,13 @@ function Home() {
       {/* Splash Screen */}
       {loading && <Splash duration={loadingTime}></Splash>}
       {/* <LazyLoad once={true}> */}
+      <Nav duration={loadingTime}></Nav>
       <Parallax
         background={landingBackground}
         speed={0.1}
         alt='landing backgound'
       >
-        <Nav duration={loadingTime}></Nav>
+        {/* <Nav duration={loadingTime}></Nav> */}
         <div className=' pb-5 container content' name='landing'>
           <Landing></Landing>
         </div>

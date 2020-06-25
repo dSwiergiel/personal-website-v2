@@ -1,10 +1,9 @@
 // google fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
 
+@import '~bootswatch/dist/lux/variables';
 // bootstrap variable overrides
 @import './variables.scss';
-
-@import '~bootswatch/dist/lux/variables';
 @import '~bootstrap/scss/bootstrap';
 @import '~bootswatch/dist/lux/bootswatch';
 
@@ -14,30 +13,24 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 100;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: $headings-letter-spacing;
 }
 button,
 a {
-  text-transform: none;
-  letter-spacing: 3px;
+  letter-spacing: $link-letter-spacing;
 }
 
 body {
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
-  height: 100%; /*A value other than height:auto needs to be set*/
+  height: 100%;
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
   padding: 0px;
 }
 
 p {
-  font-size: 20px;
-  letter-spacing: 2px;
-  line-height: 1.8em;
+  letter-spacing: $letter-spacing;
 }
 
 /* Custom Scroll bar*/
@@ -64,8 +57,8 @@ p {
 /* //Custom Scroll bar*/
 
 .slide-up-button {
-  font-weight: 400;
-  letter-spacing: 3px;
+  font-weight: $font-weight-normal;
+  letter-spacing: $link-letter-spacing;
   text-transform: uppercase;
   padding: 10px 20px;
   border: none;
@@ -108,6 +101,9 @@ a:focus {
   width: 100%;
   z-index: 100;
 }
+.content {
+  padding-top: calc(80px + 13 * ((100vw) / 680)) !important;
+}
 
 .sticky + .content {
   padding-top: calc(80px + 13 * ((100vw) / 680));
@@ -116,4 +112,12 @@ a:focus {
 .link {
   text-decoration: none;
   cursor: pointer !important;
+}
+.real-link {
+  color: $warning !important;
+  font-weight: bold;
+  cursor: pointer !important;
+}
+.real-link:hover {
+  text-decoration: underline !important;
 }
