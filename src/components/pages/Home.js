@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 // import LazyLoad from 'react-lazyload';
+import Parallax from '../parallax/Parallax';
 
 import Splash from '../splash/Splash';
 import Nav from '../nav/Nav';
-import Landing from '../landing/Landing';
-import Parallax from '../parallax/Parallax';
-import mobileBackground from '../../assets/images/el-capitan.jpg';
+import Landing from '../main/landing/Landing';
+import About from '../main/about/About';
+
+import landingBackground from '../../assets/images/el-capitan.jpg';
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -22,20 +24,19 @@ function Home() {
       {loading && <Splash duration={loadingTime}></Splash>}
       {/* <LazyLoad once={true}> */}
       <Parallax
-        background={mobileBackground}
+        background={landingBackground}
         speed={0.1}
         alt='landing backgound'
       >
         <Nav duration={loadingTime}></Nav>
-        <div className='mb-5 pb-5 container content' name='landing'>
+        <div className=' pb-5 container content' name='landing'>
           <Landing></Landing>
         </div>
       </Parallax>
       {/* </LazyLoad> */}
-      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
-      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
-      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
-      <div name='about'></div>
+      <div name='about'>
+        <About></About>
+      </div>
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div name='education'></div>

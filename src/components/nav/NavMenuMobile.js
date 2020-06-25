@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef, Fragment } from 'react';
 import { TimelineLite, TweenLite, Power1 } from 'gsap/all';
-//eslint-disable-next-line
 import { Link, animateScroll as scroll } from 'react-scroll';
 import Hamburger from './Hamburger';
 
@@ -175,7 +174,7 @@ const NavMobile = ({ duration, header }) => {
               to='about'
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-100}
               duration={1000}
               onClick={animateHam}
             >
@@ -194,7 +193,7 @@ const NavMobile = ({ duration, header }) => {
               to='education'
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-100}
               duration={1000}
               onClick={animateHam}
             >
@@ -213,7 +212,7 @@ const NavMobile = ({ duration, header }) => {
               to='experience'
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-100}
               duration={1000}
               onClick={animateHam}
             >
@@ -232,7 +231,7 @@ const NavMobile = ({ duration, header }) => {
               to='projects'
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-100}
               duration={1000}
               onClick={animateHam}
             >
@@ -251,7 +250,7 @@ const NavMobile = ({ duration, header }) => {
               to='contact'
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-100}
               duration={1000}
               onClick={animateHam}
             >

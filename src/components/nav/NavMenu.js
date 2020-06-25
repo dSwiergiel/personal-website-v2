@@ -54,7 +54,7 @@ const NavMenu = ({ duration }) => {
           to='about'
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-100}
           duration={1000}
         >
           <h5
@@ -73,7 +73,7 @@ const NavMenu = ({ duration }) => {
           to='education'
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-100}
           duration={1000}
         >
           <h5
@@ -92,7 +92,7 @@ const NavMenu = ({ duration }) => {
           to='experience'
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-100}
           duration={1000}
         >
           <h5
@@ -111,7 +111,7 @@ const NavMenu = ({ duration }) => {
           to='projects'
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-100}
           duration={1000}
         >
           <h5
@@ -130,7 +130,7 @@ const NavMenu = ({ duration }) => {
           to='contact'
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-100}
           duration={1000}
         >
           <h5
