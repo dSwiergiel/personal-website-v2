@@ -62,7 +62,7 @@ const Nav = ({ duration }) => {
       }}
     >
       <ScrollProgressBar />
-      <div className=' container  header-container py-3 '>
+      <div className=' container  header-container py-2 '>
         <div className=' row mb-0 ' ref={header}>
           <Link
             activeClass='active'

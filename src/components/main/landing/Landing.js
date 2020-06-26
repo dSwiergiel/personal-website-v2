@@ -52,7 +52,7 @@ const Landing = () => {
               spy={true}
               smooth={true}
               offset={0}
-              duration={500}
+              duration={1000}
             >
               <button className='btn btn-primary slide-up-button mt-3 mr-3'>
                 Contact Me

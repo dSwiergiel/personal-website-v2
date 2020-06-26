@@ -6,9 +6,9 @@ import './about.scss';
 const About = () => {
   let skill1 = useRef(null);
   return (
-    <div className='container py-5 px-4'>
+    <div className='container py-4 px-4'>
       <div className='row'>
-        <div className='col-md-6'>
+        <div className='col-lg-6'>
           <h1 className='mb-4'>About Me</h1>
           <p>
             You've heard the cliche, the one where from an early age they've
@@ -41,21 +41,22 @@ const About = () => {
             to see some of them!
           </p>
         </div>
-        <div className='col-md-6'>
+        <div className='col-lg-6'>
           <h1 className='mb-4'>Tech</h1>
-          <ProgressBar name={'Angular 2+'} percent={70}></ProgressBar>
+          <ProgressBar name={'JavaScript & TypeScript'} percent={92}></ProgressBar>
           <ProgressBar
             name={'React w/hooks & Redux'}
-            percent={95}
+            percent={90}
           ></ProgressBar>
-          <ProgressBar name={'Node.js'} percent={70}></ProgressBar>
-          <ProgressBar name={'MongoDB'} percent={94}></ProgressBar>
-          <ProgressBar name={'Bootstrap'} percent={86}></ProgressBar>
-          <ProgressBar name={'jQuery'} percent={24}></ProgressBar>
-          <ProgressBar name={'JavaScript'} percent={90}></ProgressBar>
-          <ProgressBar name={'TypeScript'} percent={94}></ProgressBar>
-          <ProgressBar name={'ASP.NET MVC Core'} percent={45}></ProgressBar>
-          <ProgressBar name={'SQL'} percent={60}></ProgressBar>
+          <ProgressBar name={'Bootstrap'} percent={89}></ProgressBar>
+          <ProgressBar name={'Angular 2+'} percent={82}></ProgressBar>
+          <ProgressBar name={'Node.js'} percent={76}></ProgressBar>
+
+          <ProgressBar name={'MongoDB'} percent={70}></ProgressBar>
+          <ProgressBar name={'C#'} percent={67}></ProgressBar>
+          <ProgressBar name={'ASP.NET MVC Core'} percent={55}></ProgressBar>
+          <ProgressBar name={'SQL'} percent={44}></ProgressBar>
+          <ProgressBar name={'jQuery'} percent={40}></ProgressBar>
           <div className='d-flex justify-content-between '>
             <h5 className='mb-0 font-weight-bold text-secondary less-letter-spacing'>
               USED IT

@@ -54,7 +54,7 @@ const NavMenu = ({ duration }) => {
           to='about'
           spy={true}
           smooth={true}
-          offset={-100}
+          offset={-60}
           duration={1000}
         >
           <h5
