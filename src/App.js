@@ -1,45 +1,24 @@
-import React, { useState, useEffect } from 'react';
-import LazyLoad from 'react-lazyload';
+import React, { lazy, Suspense } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import PreSplash from './components/splash/PreSplash';
 
-import Splash from './components/splash/Splash';
-import Header from './components/header/Header';
-import Parallax from './components/parallax/Parallax';
-import Landing from './components/landing/Landing';
-
-// import background from './assets/images/landing-background.jpg';
-import mobileBackground from './assets/images/el-capitan.jpg';
-// import mobileBackground from './assets/images/yosemite-5k.jpg';
-
+const Home = lazy(() => import('./components/pages/Home'));
+// import Home from './components/pages/Home';
 function App() {
-  const [loading, setLoading] = useState(true);
-  const loadingTime = 3000;
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, loadingTime);
-    //eslint-disable-next-line
-  }, []);
   return (
-    <div>
-      {/* Splash Screen */}
-      {loading && <Splash duration={loadingTime}></Splash>}
-      {/* <LazyLoad once={true}> */}
-      <Parallax
-        background={mobileBackground}
-        speed={0.1}
-        alt='landing backgound'
-      >
-        <div className='container pb-5'>
-          <Header></Header>
-          <Landing></Landing>
-        </div>
-      </Parallax>
-      {/* </LazyLoad> */}
-      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
-      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
-      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
-    </div>
+    // <Provider store={store}>
+    <Router>
+      <Suspense fallback={<PreSplash></PreSplash>}>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          {/* <Route exact path='/markets' component={Markets} />
+        <Route exact path='/markets/:zip/:radius' component={Markets} />
+        <Route exact path='/market/:lng/:lat' component={Market} /> */}
+          {/* <Route component={NotFound} /> */}
+        </Switch>
+      </Suspense>
+    </Router>
+    //</Provider>
   );
 }
 

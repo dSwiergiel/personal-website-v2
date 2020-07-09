@@ -1,19 +1,22 @@
+// bootstrap variable overrides
+@import '../../../assets/css/variables.scss';
+
 .landing-box {
   background-color: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
-  padding: 2em 1em;
 }
 .portrait {
   width: 100%;
-  border: 5px solid rgb(255, 255, 255);
+  border: 5px solid $light;
 }
 .landing-fa-github {
   -webkit-font-smoothing: antialiased;
   background-image: none;
-  border: 3px solid #fff;
+  border: 3px solid $light;
   box-sizing: border-box;
-  color: #fff;
-  padding: 7px 3px 7px 7px;
+  color: $light;
+  // padding: 7px 3px 7px 7px;
+  padding: 7px 5px 7px 8px;
   font-size: 20px;
   font-weight: 400;
   transition: all 0.5s;
@@ -24,17 +27,19 @@
 }
 
 .landing-fa-linkedin {
+  white-space: none;
   -webkit-font-smoothing: antialiased;
   background-image: none;
-  border: 3px solid #fff;
+  border: 3px solid $light;
   box-sizing: border-box;
-  color: #fff;
-  padding: 7px 3px 7px 7px;
+  color: $light;
+  padding: 7px 5px 7px 8px;
   font-size: 20px;
   font-weight: 400;
   transition: all 0.5s;
 }
 .landing-fa-linkedin:hover {
+  color: white;
   background-color: #0073b0;
   border-color: #0073b0;
 }

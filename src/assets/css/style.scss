@@ -1,9 +1,9 @@
-// font awesome
-@import './all.min.css';
 // google fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
 
 @import '~bootswatch/dist/lux/variables';
+// bootstrap variable overrides
+@import './variables.scss';
 @import '~bootstrap/scss/bootstrap';
 @import '~bootswatch/dist/lux/bootswatch';
 
@@ -13,32 +13,26 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: none;
-  font-weight: 100;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: $headings-letter-spacing;
 }
 button,
 a {
-  text-transform: none;
-  letter-spacing: 3px;
+  letter-spacing: $link-letter-spacing;
 }
+
 body {
   overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
   font-family: 'Roboto Condensed', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0px;
 }
 
-.light-text {
-  color: #e6e6e6;
-  font-size: 20px;
-  letter-spacing: 2px;
-  line-height: 1.8em;
+p {
+  letter-spacing: $letter-spacing;
 }
+
 /* Custom Scroll bar*/
 /* width */
 ::-webkit-scrollbar {
@@ -47,35 +41,36 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f100;
+  background: #5a5a5a;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(136, 136, 136, 0.596);
+  background: rgba(158, 158, 158, 0.719);
+  // background: #8b7c59;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(85, 85, 85, 0.753);
+  background: rgba(153, 153, 153, 0.432);
 }
 /* //Custom Scroll bar*/
 
 .slide-up-button {
-  font-weight: 400;
-  letter-spacing: 3px;
+  font-weight: $font-weight-normal;
+  letter-spacing: $link-letter-spacing;
   text-transform: uppercase;
   padding: 10px 20px;
   border: none;
-  color: #fff !important;
+  color: $light !important;
   background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, #004080 50%, #fff 50%);
+  background-image: linear-gradient(to bottom, $primary 50%, $light 50%);
   transition: 0.4s;
 }
 
 .slide-up-button:hover {
   text-decoration: none;
-  color: #333 !important;
+  color: $dark !important;
   background-position: 0 -100%;
 }
 button:focus,
@@ -90,3 +85,39 @@ a:focus {
   box-shadow: 100vw 100vh rgba(0, 0, 0, 0.3) inset;
   z-index: 0;
 }
+
+.landing-background {
+  background-image: url('../../assets/images/el-capitan.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 100vw 100vh rgba(0, 0, 0, 0.3) inset;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.content {
+  padding-top: calc(80px + 2 * ((100vw) / 680)) !important;
+}
+
+.sticky + .content {
+  padding-top: calc(90px + 2 * ((100vw) / 680));
+}
+.link {
+  text-decoration: none;
+  cursor: pointer !important;
+}
+.real-link {
+  color: $warning !important;
+  font-weight: bold;
+  cursor: pointer !important;
+}
+.real-link:hover {
+  text-decoration: underline !important;
+}
+// test
