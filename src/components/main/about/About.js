@@ -1,10 +1,9 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import ProgressBar from './ProgressBar';
 
 import './about.scss';
 const About = () => {
-  let skill1 = useRef(null);
   return (
     <div className='container py-4 px-4'>
       <div className='row'>
@@ -43,7 +42,10 @@ const About = () => {
         </div>
         <div className='col-lg-6'>
           <h1 className='mb-4'>Tech</h1>
-          <ProgressBar name={'JavaScript & TypeScript'} percent={92}></ProgressBar>
+          <ProgressBar
+            name={'JavaScript & TypeScript'}
+            percent={92}
+          ></ProgressBar>
           <ProgressBar
             name={'React w/hooks & Redux'}
             percent={90}
