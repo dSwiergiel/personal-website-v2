@@ -19,31 +19,31 @@ const NavMenu = ({ duration }) => {
       opacity: 0,
       delay: duration / 1000 / 1.5,
       ease: Power1.easeOut,
-    });
-    t1.from(education, duration / 1000 / 20, {
-      opacity: 0,
-      x: -10,
-      y: -10,
-      ease: Power1.easeOut,
-    });
-    t1.from(experience, duration / 1000 / 20, {
-      opacity: 0,
-      x: -10,
-      y: -20,
-      ease: Power1.easeOut,
-    });
-    t1.from(projects, duration / 1000 / 20, {
-      opacity: 0,
-      x: -10,
-      y: -30,
-      ease: Power1.easeOut,
-    });
-    t1.from(contact, duration / 1000 / 20, {
-      opacity: 0,
-      x: -10,
-      y: -30,
-      ease: Power1.easeOut,
-    });
+    })
+      .from(education, duration / 1000 / 20, {
+        opacity: 0,
+        x: -10,
+        y: -10,
+        ease: Power1.easeOut,
+      })
+      .from(experience, duration / 1000 / 20, {
+        opacity: 0,
+        x: -10,
+        y: -20,
+        ease: Power1.easeOut,
+      })
+      .from(projects, duration / 1000 / 20, {
+        opacity: 0,
+        x: -10,
+        y: -30,
+        ease: Power1.easeOut,
+      })
+      .from(contact, duration / 1000 / 20, {
+        opacity: 0,
+        x: -10,
+        y: -30,
+        ease: Power1.easeOut,
+      });
   };
 
   return (

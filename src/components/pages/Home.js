@@ -6,6 +6,7 @@ import Splash from '../splash/Splash';
 import Nav from '../nav/Nav';
 import Landing from '../main/landing/Landing';
 import About from '../main/about/About';
+import UnderConstruction from '../construction/UnderConstruction';
 
 import landingBackground from '../../assets/images/el-capitan.jpg';
 
@@ -38,17 +39,11 @@ function Home() {
       <div name='about'>
         <About></About>
       </div>
-      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
-      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
-      <div name='education'></div>
-      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
-      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
+      <div name='education'>
+        <UnderConstruction></UnderConstruction>
+      </div>
       <div name='experience'></div>
-      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
-      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div name='projects'></div>
-      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
-      <div style={{ height: '200px' }} /> <div style={{ height: '200px' }} />{' '}
       <div name='contact'></div>
     </div>
   );
