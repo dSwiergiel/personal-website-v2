@@ -51,7 +51,7 @@ const UnderConstruction = () => {
         feature a projects section where some of my best work will be shown, as
         well as education, experience, and contact sections.
       </p>
-      <p>Thanks for your patience</p>
+      <p>Thanks for your patience!</p>
     </div>
   );
 };

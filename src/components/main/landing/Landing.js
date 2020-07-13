@@ -35,8 +35,8 @@ const Landing = () => {
           </p>
           <p className='text-light mb-0'>
             Previously worked alongside Google to rebuild New York's legacy
-            Unemployment Insurance app to support the million's of New Yorkers
-            sadly affected by COVID-19.
+            Unemployment Insurance system to support the million's of New
+            Yorkers sadly affected by COVID-19.
           </p>
           {/* <p className='text-light'>
             This website was designed and developed in React as a V2. The
