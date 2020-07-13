@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, Fragment } from 'react';
 import { TimelineMax, TweenMax, Power0, Back } from 'gsap';
 import * as ScrollMagic from 'scrollmagic';
-const ProgressBar = ({ percent, name }) => {
+const ProgressBar = ({ percent, offset, name }) => {
   let bar = useRef(null);
   const controller = new ScrollMagic.Controller();
 
@@ -30,7 +30,7 @@ const ProgressBar = ({ percent, name }) => {
       triggerElement: bar,
       triggerHook: 'onEnter',
     })
-      //   .offset(175)
+      .offset(offset)
       .setTween(t1)
       .addTo(controller);
   };

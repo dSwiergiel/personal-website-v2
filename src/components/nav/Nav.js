@@ -45,7 +45,7 @@ const Nav = ({ duration }) => {
   };
 
   const animateOnLoad = () => {
-    TweenMax.from(name, duration / 1000 / 3, {
+    TweenMax.from(name, duration / 1000 / 2.8, {
       opacity: 0,
       x: -200,
       delay: duration / 1000 - (duration / 1000) * 0.5,

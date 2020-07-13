@@ -15,12 +15,12 @@ const NavMenu = ({ duration }) => {
   const animateOnload = () => {
     let t1 = new TimelineLite();
 
-    t1.from(about, duration / 1000 / 20, {
+    t1.from(about, duration / 1000 / 18, {
       opacity: 0,
       delay: duration / 1000 / 1.5,
       ease: Power1.easeOut,
     })
-      .from(education, duration / 1000 / 20, {
+      .from(education, duration / 1000 / 19, {
         opacity: 0,
         x: -10,
         y: -10,
