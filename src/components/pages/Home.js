@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-  isIE,
-} from 'react-device-detect';
+import { BrowserView, MobileView } from 'react-device-detect';
 import Parallax from '../parallax/Parallax';
 
 import Splash from '../splash/Splash';
@@ -25,23 +19,23 @@ function Home() {
     }, loadingTime);
     //eslint-disable-next-line
   }, []);
-  if (isIE)
-    return <div> IE is not supported. Download Chrome/Opera/Firefox </div>;
+
   return (
     <div>
       {/* Splash Screen */}
       {loading && <Splash duration={loadingTime}></Splash>}
-
-      {/* <BrowserView> */}
-      <div className='landing-background'>
-        <Nav duration={loadingTime}></Nav>
-
-        <div className=' pb-5 container content ' name='landing'>
-          <Landing></Landing>
+      <BrowserView>
+        <div className='landing-background'>
+          <Nav duration={loadingTime}></Nav>
+          <div className=' pb-5 container content ' name='landing'>
+            <Landing></Landing>
+          </div>
         </div>
-      </div>
-      {/* </BrowserView> */}
-      {/* <MobileView>
+      </BrowserView>
+      {/* background fixed on mobile devices is disabled due to
+       high repaint cost so a parallax plugin is used for mobile
+       */}
+      <MobileView>
         <Nav duration={loadingTime}></Nav>
         <Parallax
           background={landingBackground}
@@ -51,7 +45,7 @@ function Home() {
             <Landing></Landing>
           </div>
         </Parallax>
-      </MobileView> */}
+      </MobileView>
 
       <div name='about'>
         <About></About>
