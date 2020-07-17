@@ -32,16 +32,16 @@ function Home() {
       {/* Splash Screen */}
       {loading && <Splash duration={loadingTime}></Splash>}
 
-      <BrowserView>
-        <div className='landing-background'>
-          <Nav duration={loadingTime}></Nav>
+      {/* <BrowserView> */}
+      <div className='landing-background'>
+        <Nav duration={loadingTime}></Nav>
 
-          <div className=' pb-5 container content ' name='landing'>
-            <Landing></Landing>
-          </div>
+        <div className=' pb-5 container content ' name='landing'>
+          <Landing></Landing>
         </div>
-      </BrowserView>
-      <MobileView>
+      </div>
+      {/* </BrowserView> */}
+      {/* <MobileView>
         <Nav duration={loadingTime}></Nav>
         <Parallax
           background={landingBackground}
@@ -51,7 +51,7 @@ function Home() {
             <Landing></Landing>
           </div>
         </Parallax>
-      </MobileView>
+      </MobileView> */}
 
       <div name='about'>
         <About></About>
