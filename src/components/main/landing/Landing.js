@@ -12,14 +12,13 @@ const Landing = () => {
   return (
     <div className='container landing-box py-3'>
       <div className='row '>
-        <div className='col-lg-4'>
+        <div className='col-lg-4 mb-lg-0 mb-3'>
           <LazyLoadImage
             className='portrait'
             width='100%'
             src={portrait}
             alt={'Deven Swiergiel'}
-            effect='opacity'
-          ></LazyLoadImage>
+            effect='opacity'></LazyLoadImage>
         </div>
         <div className='col-lg-8'>
           <p className='text-light'>
@@ -30,13 +29,13 @@ const Landing = () => {
           <p className='text-light'>
             Currently working as Frontend Lead building a multi-persona
             screening tool as part of New York's COVID-19 efforts to ensure a
-            safe return to the office. Over 10,000 active daily users and
+            safe return to the office. Over 16,000 active daily users and
             anticipating over 100,000 as more workers return to the office.
           </p>
           <p className='text-light mb-0'>
             Previously worked alongside Google to rebuild New York's legacy
-            Unemployment Insurance system to support the millions of New
-            Yorkers sadly affected by COVID-19.
+            Unemployment Insurance system to support the millions of New Yorkers
+            sadly affected by COVID-19.
           </p>
           {/* <p className='text-light'>
             This website was designed and developed in React as a V2. The
@@ -52,8 +51,7 @@ const Landing = () => {
               spy={true}
               smooth={true}
               offset={0}
-              duration={1000}
-            >
+              duration={1000}>
               <button className='btn btn-primary slide-up-button mt-3 mr-3'>
                 Contact Me
               </button>
@@ -62,22 +60,19 @@ const Landing = () => {
               href={resume}
               target='_blank'
               rel='noopener noreferrer'
-              className='btn btn-primary slide-up-button mt-3 mr-3'
-            >
+              className='btn btn-primary slide-up-button mt-3 mr-3'>
               Resume
             </a>
             <a
               href='https://github.com/dSwiergiel'
               target='_blank'
-              rel='noopener noreferrer'
-            >
+              rel='noopener noreferrer'>
               <i className='btn btn-primary fab fa-github landing-fa-github mt-3 mr-3 '></i>
             </a>
             <a
               href='https://www.linkedin.com/in/deven-swiergiel-155123140/'
               target='_blank'
-              rel='noopener noreferrer'
-            >
+              rel='noopener noreferrer'>
               <i className='btn btn-primary  fab fa-linkedin-in landing-fa-linkedin mt-3 mr-3'></i>
             </a>
           </div>
