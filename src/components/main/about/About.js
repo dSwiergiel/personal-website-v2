@@ -45,26 +45,26 @@ const About = () => {
           <ProgressBar
             name={'JavaScript & TypeScript'}
             percent={92}
-            offset={225}
+            offset={0}
           ></ProgressBar>
           <ProgressBar
             name={'React w/hooks & Redux'}
             percent={90}
-            offset={175}
+            offset={0}
           ></ProgressBar>
           <ProgressBar
             name={'Bootstrap'}
             percent={89}
-            offset={150}
+            offset={0}
           ></ProgressBar>
           <ProgressBar
             name={'Angular 2+'}
             percent={82}
-            offset={100}
+            offset={0}
           ></ProgressBar>
-          <ProgressBar name={'Node.js'} percent={76} offset={50}></ProgressBar>
+          <ProgressBar name={'Node.js'} percent={76} offset={0}></ProgressBar>
 
-          <ProgressBar name={'MongoDB'} percent={70} offset={25}></ProgressBar>
+          <ProgressBar name={'MongoDB'} percent={70} offset={0}></ProgressBar>
           <ProgressBar name={'C#'} percent={67} offset={0}></ProgressBar>
           <ProgressBar
             name={'ASP.NET MVC Core'}

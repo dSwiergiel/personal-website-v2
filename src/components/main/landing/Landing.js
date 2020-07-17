@@ -35,7 +35,7 @@ const Landing = () => {
           </p>
           <p className='text-light mb-0'>
             Previously worked alongside Google to rebuild New York's legacy
-            Unemployment Insurance system to support the million's of New
+            Unemployment Insurance system to support the millions of New
             Yorkers sadly affected by COVID-19.
           </p>
           {/* <p className='text-light'>
