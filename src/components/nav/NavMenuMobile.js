@@ -7,8 +7,8 @@ const NavMobile = ({ duration, header }) => {
   let menu = useRef(null);
   let menuOptionsContainer = useRef(null);
   let about = useRef(null);
+  let stack = useRef(null);
   let education = useRef(null);
-  let experience = useRef(null);
   let projects = useRef(null);
   let contact = useRef(null);
   const [hamAnimation, setHamAnimation] = useState(
@@ -101,12 +101,12 @@ const NavMobile = ({ duration, header }) => {
           opacity: 0,
           ease: Power1.easeInOut,
         })
-        .from(education, 0.1, {
+        .from(stack, 0.1, {
           x: 50,
           opacity: 0,
           ease: Power1.easeInOut,
         })
-        .from(experience, 0.1, {
+        .from(education, 0.1, {
           x: 50,
           opacity: 0,
           ease: Power1.easeInOut,
@@ -145,14 +145,12 @@ const NavMobile = ({ duration, header }) => {
         className='nav-menu-mobile  '
         ref={(el) => {
           menu = el;
-        }}
-      >
+        }}>
         <span onClick={animateHam} className='d-flex justify-content-end link'>
           <Hamburger
             height='35px'
             classes='ham'
-            duration={duration}
-          ></Hamburger>
+            duration={duration}></Hamburger>
         </span>
         <div
           className='px-3 py-3 text-center mobile-options-container'
@@ -161,80 +159,72 @@ const NavMobile = ({ duration, header }) => {
           }}
           style={{
             width: `${header.current ? header.current.offsetWidth - 30 : 0}px`,
-          }}
-        >
+          }}>
           <div
             className=' mx-4 '
             ref={(el) => {
               about = el;
-            }}
-          >
+            }}>
             <Link
               activeClass='active'
               to='about'
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-85}
               duration={1000}
-              onClick={animateHam}
-            >
+              onClick={animateHam}>
               <h5 className=' text-light link'>About</h5>
             </Link>
             <hr></hr>
+            <div
+              className='  mx-4 '
+              ref={(el) => {
+                stack = el;
+              }}>
+              <Link
+                activeClass='active'
+                to='stack'
+                spy={true}
+                smooth={true}
+                offset={-85}
+                duration={1000}
+                onClick={animateHam}>
+                <h5 className=' text-light link'>Stack</h5>
+              </Link>
+              <hr></hr>
+            </div>
           </div>
           <div
             className='  mx-4 '
             ref={(el) => {
               education = el;
-            }}
-          >
+            }}>
             <Link
               activeClass='active'
               to='education'
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-85}
               duration={1000}
-              onClick={animateHam}
-            >
+              onClick={animateHam}>
               <h5 className=' text-light link'>Education</h5>
             </Link>
             <hr></hr>
           </div>
-          <div
-            className='  mx-4 '
-            ref={(el) => {
-              experience = el;
-            }}
-          >
-            <Link
-              activeClass='active'
-              to='experience'
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={1000}
-              onClick={animateHam}
-            >
-              <h5 className=' text-light link'>Experience</h5>
-            </Link>
-            <hr></hr>
-          </div>
+
           <div
             className=' mx-4'
             ref={(el) => {
               projects = el;
-            }}
-          >
+            }}>
             <Link
               activeClass='active'
               to='projects'
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-85}
               duration={1000}
-              onClick={animateHam}
-            >
+              onClick={animateHam}>
               <h5 className='text-light link'>Projects</h5>
             </Link>
             <hr></hr>
@@ -243,17 +233,15 @@ const NavMobile = ({ duration, header }) => {
             className='  mx-4 '
             ref={(el) => {
               contact = el;
-            }}
-          >
+            }}>
             <Link
               activeClass='active'
               to='contact'
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-85}
               duration={1000}
-              onClick={animateHam}
-            >
+              onClick={animateHam}>
               <h5 className='mb-0 text-light link'>Contact</h5>
             </Link>
           </div>

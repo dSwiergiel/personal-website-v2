@@ -3,8 +3,8 @@ import { TimelineLite, Power1 } from 'gsap';
 import { Link } from 'react-scroll';
 const NavMenu = ({ duration }) => {
   let about = useRef(null);
+  let stack = useRef(null);
   let education = useRef(null);
-  let experience = useRef(null);
   let projects = useRef(null);
   let contact = useRef(null);
   useEffect(() => {
@@ -20,13 +20,13 @@ const NavMenu = ({ duration }) => {
       delay: duration / 1000 / 1.5,
       ease: Power1.easeOut,
     })
-      .from(education, duration / 1000 / 19, {
+      .from(stack, duration / 1000 / 19, {
         opacity: 0,
         x: -10,
         y: -10,
         ease: Power1.easeOut,
       })
-      .from(experience, duration / 1000 / 20, {
+      .from(education, duration / 1000 / 20, {
         opacity: 0,
         x: -10,
         y: -20,
@@ -68,6 +68,23 @@ const NavMenu = ({ duration }) => {
       <div className=' px-2 '>
         <Link
           activeClass='active'
+          to='stack'
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={1000}>
+          <h5
+            className='mb-0 text-light link'
+            ref={(el) => {
+              stack = el;
+            }}>
+            Stack
+          </h5>
+        </Link>
+      </div>
+      <div className=' px-2 '>
+        <Link
+          activeClass='active'
           to='education'
           spy={true}
           smooth={true}
@@ -79,23 +96,6 @@ const NavMenu = ({ duration }) => {
               education = el;
             }}>
             Education
-          </h5>
-        </Link>
-      </div>
-      <div className=' px-2 '>
-        <Link
-          activeClass='active'
-          to='experience'
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={1000}>
-          <h5
-            className='mb-0 text-light link'
-            ref={(el) => {
-              experience = el;
-            }}>
-            Experience
           </h5>
         </Link>
       </div>

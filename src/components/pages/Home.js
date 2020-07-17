@@ -6,6 +6,7 @@ import Splash from '../splash/Splash';
 import Nav from '../nav/Nav';
 import Landing from '../main/landing/Landing';
 import About from '../main/about/About';
+import Stack from '../main/stack/Stack';
 import UnderConstruction from '../construction/UnderConstruction';
 
 import landingBackground from '../../assets/images/el-capitan.jpg';
@@ -46,14 +47,19 @@ function Home() {
           </div>
         </Parallax>
       </MobileView>
-
-      <div name='about'>
-        <About></About>
+      <div className='container py-4 px-4'>
+        <div className='row'>
+          <div name='about' className='col-lg-6'>
+            <About></About>
+          </div>
+          <div name='stack' className='col-lg-6'>
+            <Stack></Stack>
+          </div>
+        </div>
       </div>
       <div name='education'>
         <UnderConstruction></UnderConstruction>
       </div>
-      <div name='experience'></div>
       <div name='projects'></div>
       <div name='contact'></div>
     </div>
