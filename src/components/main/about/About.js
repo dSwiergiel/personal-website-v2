@@ -33,35 +33,27 @@ const About = () => {
               spy={true}
               smooth={true}
               offset={-100}
-              duration={1000}
-            >
+              duration={1000}>
               project section
             </Link>{' '}
             to see some of them!
           </p>
         </div>
         <div className='col-lg-6'>
-          <h1 className='mb-4'>Tech</h1>
+          <h1 className='mb-4'>My Stack</h1>
           <ProgressBar
             name={'JavaScript & TypeScript'}
             percent={92}
-            offset={0}
-          ></ProgressBar>
+            offset={0}></ProgressBar>
           <ProgressBar
             name={'React w/hooks & Redux'}
             percent={90}
-            offset={0}
-          ></ProgressBar>
-          <ProgressBar
-            name={'Bootstrap'}
-            percent={89}
-            offset={0}
-          ></ProgressBar>
+            offset={0}></ProgressBar>
+          <ProgressBar name={'Bootstrap'} percent={89} offset={0}></ProgressBar>
           <ProgressBar
             name={'Angular 2+'}
             percent={82}
-            offset={0}
-          ></ProgressBar>
+            offset={0}></ProgressBar>
           <ProgressBar name={'Node.js'} percent={76} offset={0}></ProgressBar>
 
           <ProgressBar name={'MongoDB'} percent={70} offset={0}></ProgressBar>
@@ -69,10 +61,9 @@ const About = () => {
           <ProgressBar
             name={'ASP.NET MVC Core'}
             percent={55}
-            offset={0}
-          ></ProgressBar>
+            offset={0}></ProgressBar>
           <ProgressBar name={'SQL'} percent={44} offset={0}></ProgressBar>
-          <ProgressBar name={'jQuery'} percent={40} offset={0}></ProgressBar>
+          <ProgressBar name={'Java'} percent={35} offset={0}></ProgressBar>
           <div className='d-flex justify-content-between '>
             <h5 className='mb-0 font-weight-bold text-secondary less-letter-spacing'>
               USED IT
