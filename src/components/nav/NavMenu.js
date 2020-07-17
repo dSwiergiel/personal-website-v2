@@ -54,15 +54,13 @@ const NavMenu = ({ duration }) => {
           to='about'
           spy={true}
           smooth={true}
-          offset={-60}
-          duration={1000}
-        >
+          offset={-100}
+          duration={1000}>
           <h5
             className='mb-0 text-light link'
             ref={(el) => {
               about = el;
-            }}
-          >
+            }}>
             About
           </h5>
         </Link>
@@ -74,14 +72,12 @@ const NavMenu = ({ duration }) => {
           spy={true}
           smooth={true}
           offset={-100}
-          duration={1000}
-        >
+          duration={1000}>
           <h5
             className='mb-0 text-light link'
             ref={(el) => {
               education = el;
-            }}
-          >
+            }}>
             Education
           </h5>
         </Link>
@@ -93,14 +89,12 @@ const NavMenu = ({ duration }) => {
           spy={true}
           smooth={true}
           offset={-100}
-          duration={1000}
-        >
+          duration={1000}>
           <h5
             className='mb-0 text-light link'
             ref={(el) => {
               experience = el;
-            }}
-          >
+            }}>
             Experience
           </h5>
         </Link>
@@ -112,14 +106,12 @@ const NavMenu = ({ duration }) => {
           spy={true}
           smooth={true}
           offset={-100}
-          duration={1000}
-        >
+          duration={1000}>
           <h5
             className='mb-0 text-light link'
             ref={(el) => {
               projects = el;
-            }}
-          >
+            }}>
             Projects
           </h5>
         </Link>
@@ -131,14 +123,12 @@ const NavMenu = ({ duration }) => {
           spy={true}
           smooth={true}
           offset={-100}
-          duration={1000}
-        >
+          duration={1000}>
           <h5
             className='mb-0 text-light link'
             ref={(el) => {
               contact = el;
-            }}
-          >
+            }}>
             Contact
           </h5>
         </Link>
