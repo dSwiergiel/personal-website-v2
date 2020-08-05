@@ -61,9 +61,9 @@ function Home() {
         </div>
       </div>
       <div name='projects'>
-        <LazyRender>
+        {/* <LazyRender>
           <Projects></Projects>
-        </LazyRender>
+        </LazyRender> */}
       </div>
 
       <div name='education'>
