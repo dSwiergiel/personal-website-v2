@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, Fragment } from 'react';
+import useWindowDimensions from '../../../hooks/WindowDimensions';
 import { TimelineMax, TweenMax, Power0, Back } from 'gsap';
 import * as ScrollMagic from 'scrollmagic';
 const ProgressBar = ({ percent, offset, name }) => {
   let bar = useRef(null);
+  const { width } = useWindowDimensions();
   const controller = new ScrollMagic.Controller();
 
   useEffect(() => {
@@ -46,8 +48,7 @@ const ProgressBar = ({ percent, offset, name }) => {
     width: '0%',
   };
   return (
-    <div className='mb-3'>
-      <small className='mb-2 d-block'>{name}</small>
+    <div className={`${width > 991 ? 'mb-4' : 'mb-3'}`}>
       <div style={barContainerStyle}>
         <div
           ref={(el) => {
@@ -56,6 +57,7 @@ const ProgressBar = ({ percent, offset, name }) => {
           style={barStyle}
         />
       </div>
+      <small className='mb-2 d-block'>{name}</small>
     </div>
   );
 };
