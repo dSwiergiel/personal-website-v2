@@ -1,10 +1,9 @@
 import React, { useEffect, useState, useRef, Fragment } from 'react';
-import { TimelineLite, TweenLite, Power1 } from 'gsap/all';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { TimelineLite, Power1 } from 'gsap/all';
+import { Link } from 'react-scroll';
 import Hamburger from './Hamburger';
 
 const NavMobile = ({ duration, header }) => {
-  let menu = useRef(null);
   let menuOptionsContainer = useRef(null);
   let about = useRef(null);
   let stack = useRef(null);
@@ -142,12 +141,7 @@ const NavMobile = ({ duration, header }) => {
   };
   return (
     <Fragment>
-      <div
-        className='nav-menu-mobile  '
-        ref={(el) => {
-          menu = el;
-        }}
-      >
+      <div className='nav-menu-mobile  '>
         <span onClick={animateHam} className='d-flex justify-content-end link'>
           <Hamburger
             height='35px'

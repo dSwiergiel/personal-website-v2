@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, Fragment } from 'react';
+import React, { useEffect, useRef } from 'react';
 import useWindowDimensions from '../../../hooks/WindowDimensions';
-import { TimelineMax, TweenMax, Power0, Back } from 'gsap';
+import { TimelineMax, Back } from 'gsap';
 import * as ScrollMagic from 'scrollmagic';
 const ProgressBar = ({ percent, offset, name }) => {
   let bar = useRef(null);

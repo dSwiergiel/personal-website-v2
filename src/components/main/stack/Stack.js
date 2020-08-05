@@ -4,7 +4,7 @@ import ProgressBar from './ProgressBar';
 const Stack = () => {
   return (
     <div>
-      <h1 className='mb-4'>My Stack</h1>
+      <h1 className='mb-4'>The Stack</h1>
       <div className='mb-3 d-flex justify-content-between'>
         <h5 className='mb-0 font-weight-bold text-secondary less-letter-spacing'>
           USED IT

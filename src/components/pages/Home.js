@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserView, MobileView } from 'react-device-detect';
-import Parallax from '../parallax/Parallax';
+import Parallax from '../wrapers/parallax/Parallax';
 
 import Splash from '../splash/Splash';
 import Nav from '../nav/Nav';
@@ -10,6 +10,8 @@ import Stack from '../main/stack/Stack';
 import UnderConstruction from '../main/construction/UnderConstruction';
 
 import landingBackground from '../../assets/images/el-capitan.jpg';
+import Projects from '../main/projects/Projects';
+import LazyRender from '../wrapers/lazy-render/LazyRender';
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -58,10 +60,17 @@ function Home() {
           </div>
         </div>
       </div>
-      <div name='education'>
-        <UnderConstruction></UnderConstruction>
+      <div name='projects'>
+        <LazyRender>
+          <Projects></Projects>
+        </LazyRender>
       </div>
-      <div name='projects'></div>
+
+      <div name='education'>
+        <LazyRender>
+          <UnderConstruction></UnderConstruction>
+        </LazyRender>
+      </div>
       <div name='contact'></div>
     </div>
   );

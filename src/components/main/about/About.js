@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 import './about.scss';
 const About = () => {
   return (
     <div>
-      <h1 className='mb-4'>About Me</h1>
+      <h1 className='mb-4'>The Bio</h1>
       <p>
         You've heard the cliche, the one where from an early age they've been
         interested in knowing how things work, even taking things apart to find
@@ -28,7 +28,8 @@ const About = () => {
           spy={true}
           smooth={true}
           offset={-100}
-          duration={1000}>
+          duration={1000}
+        >
           project section
         </Link>{' '}
         to see some of them!
