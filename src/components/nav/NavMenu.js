@@ -26,13 +26,13 @@ const NavMenu = ({ duration }) => {
         y: -10,
         ease: Power1.easeOut,
       })
-      .from(education, duration / 1000 / 20, {
+      .from(projects, duration / 1000 / 20, {
         opacity: 0,
         x: -10,
         y: -20,
         ease: Power1.easeOut,
       })
-      .from(projects, duration / 1000 / 20, {
+      .from(education, duration / 1000 / 20, {
         opacity: 0,
         x: -10,
         y: -30,
@@ -55,12 +55,14 @@ const NavMenu = ({ duration }) => {
           spy={true}
           smooth={true}
           offset={-100}
-          duration={1000}>
+          duration={1000}
+        >
           <h5
             className='mb-0 text-light link'
             ref={(el) => {
               about = el;
-            }}>
+            }}
+          >
             About
           </h5>
         </Link>
@@ -72,13 +74,35 @@ const NavMenu = ({ duration }) => {
           spy={true}
           smooth={true}
           offset={-100}
-          duration={1000}>
+          duration={1000}
+        >
           <h5
             className='mb-0 text-light link'
             ref={(el) => {
               stack = el;
-            }}>
+            }}
+          >
             Stack
+          </h5>
+        </Link>
+      </div>
+
+      <div className=' px-2 '>
+        <Link
+          activeClass='active'
+          to='projects'
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={1000}
+        >
+          <h5
+            className='mb-0 text-light link'
+            ref={(el) => {
+              projects = el;
+            }}
+          >
+            Projects
           </h5>
         </Link>
       </div>
@@ -89,30 +113,15 @@ const NavMenu = ({ duration }) => {
           spy={true}
           smooth={true}
           offset={-100}
-          duration={1000}>
+          duration={1000}
+        >
           <h5
             className='mb-0 text-light link'
             ref={(el) => {
               education = el;
-            }}>
+            }}
+          >
             Education
-          </h5>
-        </Link>
-      </div>
-      <div className=' px-2 '>
-        <Link
-          activeClass='active'
-          to='projects'
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={1000}>
-          <h5
-            className='mb-0 text-light link'
-            ref={(el) => {
-              projects = el;
-            }}>
-            Projects
           </h5>
         </Link>
       </div>
@@ -123,12 +132,14 @@ const NavMenu = ({ duration }) => {
           spy={true}
           smooth={true}
           offset={-100}
-          duration={1000}>
+          duration={1000}
+        >
           <h5
             className='mb-0 text-light link'
             ref={(el) => {
               contact = el;
-            }}>
+            }}
+          >
             Contact
           </h5>
         </Link>

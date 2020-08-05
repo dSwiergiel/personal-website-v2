@@ -7,7 +7,7 @@ import Nav from '../nav/Nav';
 import Landing from '../main/landing/Landing';
 import About from '../main/about/About';
 import Stack from '../main/stack/Stack';
-import UnderConstruction from '../construction/UnderConstruction';
+import UnderConstruction from '../main/construction/UnderConstruction';
 
 import landingBackground from '../../assets/images/el-capitan.jpg';
 
@@ -41,7 +41,8 @@ function Home() {
         <Parallax
           background={landingBackground}
           speed={0.1}
-          alt='landing backgound'>
+          alt='landing backgound'
+        >
           <div className=' pb-5 container content' name='landing'>
             <Landing></Landing>
           </div>

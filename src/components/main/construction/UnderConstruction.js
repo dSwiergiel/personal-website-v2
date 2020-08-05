@@ -42,7 +42,8 @@ const UnderConstruction = () => {
       className='text-center mb-5 container'
       ref={(el) => {
         content = el;
-      }}>
+      }}
+    >
       <h1 className='mb-4'>Under Construction</h1>
       <i className='fas fa-tools under-construction-logo mb-4'></i>
       <p>
