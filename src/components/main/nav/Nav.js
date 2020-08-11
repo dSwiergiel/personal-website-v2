@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import { TimelineMax, TweenMax, Power0, Power1 } from 'gsap';
 import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap';
 import * as ScrollMagic from 'scrollmagic';
-import useWindowDimensions from '../../hooks/WindowDimensions';
+import useWindowDimensions from '../../../hooks/WindowDimensions';
 import NavMenu from './NavMenu';
 import NavMenuMobile from './NavMenuMobile';
 import ScrollProgressBar from './ScrollProgressBar';

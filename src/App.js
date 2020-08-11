@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import PreSplash from './components/splash/PreSplash';
+import PreSplash from './components/main/splash/PreSplash';
 
 const Home = lazy(() => import('./components/pages/Home'));
 // import Home from './components/pages/Home';

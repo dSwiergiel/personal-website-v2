@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserView, MobileView } from 'react-device-detect';
 import Parallax from '../wrapers/parallax/Parallax';
-
-import Splash from '../splash/Splash';
-import Nav from '../nav/Nav';
+import Splash from '../main/splash/Splash';
+import Nav from '../main/nav/Nav';
 import Landing from '../main/landing/Landing';
 import About from '../main/about/About';
 import Stack from '../main/stack/Stack';
@@ -61,11 +60,10 @@ function Home() {
         </div>
       </div>
       <div name='projects'>
-        {/* <LazyRender>
+        <LazyRender>
           <Projects></Projects>
-        </LazyRender> */}
+        </LazyRender>
       </div>
-
       <div name='education'>
         <LazyRender>
           <UnderConstruction></UnderConstruction>
