@@ -9,7 +9,7 @@ $ham-size: 20px;
 }
 
 .ham {
-  fill: $light;
+  fill: $secondary;
   height: $ham-size;
   position: absolute;
   right: 10px;
@@ -38,11 +38,6 @@ hr {
   // right: 0;
 }
 
-@media (max-width: 1010px) {
-  .header {
-    font-size: calc(20px + 10 * ((100vw - 320px) / 680));
-  }
-}
 .link:hover {
   color: $white !important;
   // transform: translate(0px, -5px);

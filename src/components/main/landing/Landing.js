@@ -18,7 +18,8 @@ const Landing = () => {
             width='100%'
             src={portrait}
             alt={'Deven Swiergiel'}
-            effect='opacity'></LazyLoadImage>
+            effect='opacity'
+          ></LazyLoadImage>
         </div>
         <div className='col-lg-8'>
           <p className='text-light'>
@@ -51,7 +52,8 @@ const Landing = () => {
               spy={true}
               smooth={true}
               offset={0}
-              duration={1000}>
+              duration={1000}
+            >
               <button className='btn btn-primary slide-up-button mt-3 mr-3'>
                 Contact Me
               </button>
@@ -60,19 +62,22 @@ const Landing = () => {
               href={resume}
               target='_blank'
               rel='noopener noreferrer'
-              className='btn btn-primary slide-up-button mt-3 mr-3'>
+              className='btn btn-primary slide-up-button mt-3 mr-3'
+            >
               Resume
             </a>
             <a
               href='https://github.com/dSwiergiel'
               target='_blank'
-              rel='noopener noreferrer'>
+              rel='noopener noreferrer'
+            >
               <i className='btn btn-primary fab fa-github landing-fa-github mt-3 mr-3 '></i>
             </a>
             <a
               href='https://www.linkedin.com/in/deven-swiergiel-155123140/'
               target='_blank'
-              rel='noopener noreferrer'>
+              rel='noopener noreferrer'
+            >
               <i className='btn btn-primary  fab fa-linkedin-in landing-fa-linkedin mt-3 mr-3'></i>
             </a>
           </div>
