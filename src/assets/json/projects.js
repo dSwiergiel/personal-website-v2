@@ -12,23 +12,25 @@ export const projects = [
     images: [
       {
         header: 'blah1',
-        description: 'sdfffsa. asdfasdfasdg.',
-        path: '../images/projects/this-site/react-logo.svg',
+        description:
+          'sdffsdf fffffff asdf   adfasdfasdf asd fasd fasd fsdfsdfasdf asdfff gsfghsdg hfghdfhfasdg.',
+        filename: 'el-capitan.jpg',
       },
       {
         header: 'blah2',
-        description: 'sdfffsa. dfsgh.',
-        path: '../images/projects/this-site/react-logo.svg',
+        description: 'asdf   adfasdfasdf asd fasd fasd fsdfsdfa',
+        filename: 'react-logo.svg',
       },
       {
         header: 'blah3',
         description: 'sdfffsa.',
-        path: '../images/projects/this-site/react-logo.svg',
+        filename: 'react-logo.svg',
       },
       {
         header: 'blah4',
-        description: 'sdfffsa. d.',
-        path: '../images/projects/this-site/react-logo.svg',
+        description:
+          'sasdf   adfasdfasdf asd fasd fasd fsdfsdfa asdf   adfasdfasdf asd fasd fasd fsdfsdfaasdf   adfasdfasdf asd fasd fasd fsdfsdfa',
+        filename: 'react-logo.svg',
       },
     ],
   },
@@ -46,22 +48,22 @@ export const projects = [
       {
         header: 'blah1',
         description: 'sdfffsa. asdfasdfasdg.',
-        path: '../images/projects/this-site/react-logo.svg',
+        filename: 'react-logo.svg',
       },
       {
         header: 'blah2',
         description: 'sdfffsa. dfsgh.',
-        path: '../images/projects/this-site/react-logo.svg',
+        filename: 'react-logo.svg',
       },
       {
         header: 'blah3',
         description: 'sdfffsa.',
-        path: '../images/projects/this-site/react-logo.svg',
+        filename: 'react-logo.svg',
       },
       {
         header: 'blah4',
         description: 'sdfffsa. d.',
-        path: '../images/projects/this-site/react-logo.svg',
+        filename: 'react-logo.svg',
       },
     ],
   },
