@@ -6,9 +6,9 @@ import './projects.scss';
 const Project = ({ project }) => {
   const { width } = useWindowDimensions();
   return (
-    <div className='card shadow bg-dark mt-4'>
+    <div className='card card-shadow card-zoom bg-dark mt-4'>
       <div className='card-body row'>
-        <div className={`col-lg-5 ${width > 991 && 'zoom'}`}>
+        <div className={`col-lg-4 ${width > 991 && 'carousel-zoom'}`}>
           <Carousel>
             {project.images.map((image, index) => (
               <Carousel.Item key={index}>
@@ -28,14 +28,16 @@ const Project = ({ project }) => {
             ))}
           </Carousel>
         </div>
-        <div className='col-lg-7'>
-          <h4 className='less-letter-spacing capital-case text-lighter'>
+        <div className='col-lg-8 mt-2 mt-lg-0'>
+          <h3 className='less-letter-spacing capital-case text-lighter'>
             {project.header}
-          </h4>
+          </h3>
           <h6 className='card-subtitle mb-2 text-muted less-letter-spacing capital-case'>
             {project.date}
           </h6>
-          <p className='card-text text-lighter'>{project.description}</p>
+          <small>
+            <p className='card-text text-lighter mb-2'>{project.description}</p>
+          </small>
 
           {project.url != '' && (
             <a
@@ -47,14 +49,16 @@ const Project = ({ project }) => {
               Demo
             </a>
           )}
-          <a
-            href={project.repoUrl}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='btn slide-up-button'
-          >
-            GitHub Repo
-          </a>
+          {project.repoUrl != '' && (
+            <a
+              href={project.repoUrl}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='btn slide-up-button'
+            >
+              GitHub Repo
+            </a>
+          )}
         </div>
       </div>
     </div>

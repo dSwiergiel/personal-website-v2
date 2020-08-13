@@ -27,9 +27,9 @@ function Home() {
       {/* Splash Screen */}
       {loading && <Splash duration={loadingTime}></Splash>}
       <BrowserView>
-        <div className='landing-background'>
+        <div className='landing-background '>
           <Nav duration={loadingTime}></Nav>
-          <div className=' pb-5 container content ' name='landing'>
+          <div className=' pb-5 container content' name='landing'>
             <Landing></Landing>
           </div>
         </div>
@@ -59,7 +59,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className='bg-warning' name='projects'>
+      <div className='bg-warning diagonal-container' name='projects'>
         <LazyRender>
           <Projects></Projects>
         </LazyRender>

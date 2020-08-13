@@ -8,6 +8,7 @@
   // background-color: rgb(235, 235, 235);
   color: $light;
   height: 65px;
+  // height: 85px;
   font-size: medium;
   left: 0;
   top: 0;
@@ -26,11 +27,24 @@
   list-style: none;
 }
 
-.zoom {
+.card-zoom {
   transition: transform 0.2s; /* Animation */
-  z-index: 16;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+
+  // z-index: 9999 !important;
 }
 
-.zoom:hover {
-  transform: scale(1.5) translate(5vw, 0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+.card-zoom:hover {
+  // transform: scale(1.5) translate(5vw, 0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.03);
 }
+// .carousel-zoom {
+//   transition: transform 0.2s; /* Animation */
+//   z-index: 9999 !important;
+// }
+
+// .carousel-zoom:hover {
+//   // transform: scale(1.5) translate(5vw, 0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+//   transform: scale(1.5) translate(10vw, 0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+// }

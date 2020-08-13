@@ -13,7 +13,7 @@ export const projects = [
       {
         header: 'blah1',
         description:
-          'sdffsdf fffffff asdf   adfasdfasdf asd fasd fasd fsdfsdfasdf asdfff gsfghsdg hfghdfhfasdg.',
+          'This is a test of readability. Can you read this? Maybe? Not sure if you can',
         filename: 'el-capitan.jpg',
       },
       {
@@ -29,7 +29,7 @@ export const projects = [
       {
         header: 'blah4',
         description:
-          'sasdf   adfasdfasdf asd fasd fasd fsdfsdfa asdf   adfasdfasdf asd fasd fasd fsdfsdfaasdf   adfasdfasdf asd fasd fasd fsdfsdfa',
+          'sasdf   adfasdfasdf asd fasd fasd fsdfsdfa asdf    adfasdfasdf asd fasd fasd fsdfsdfa',
         filename: 'el-capitan.jpg',
       },
     ],
