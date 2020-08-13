@@ -32,7 +32,16 @@ body {
 p {
   letter-spacing: $letter-spacing;
 }
+.less-letter-spacing {
+  letter-spacing: 4px;
+}
+.text-lighter {
+  color: $grayish !important;
+}
 
+.capital-case {
+  text-transform: capitalize;
+}
 /* Custom Scroll bar*/
 /* width */
 ::-webkit-scrollbar {

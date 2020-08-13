@@ -59,7 +59,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className='bg-secondary' name='projects'>
+      <div className='bg-warning' name='projects'>
         <LazyRender>
           <Projects></Projects>
         </LazyRender>

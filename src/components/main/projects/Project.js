@@ -1,13 +1,14 @@
 import React, { Fragment } from 'react';
-import { projects } from '../../../assets/json/projects';
+import useWindowDimensions from '../../../hooks/WindowDimensions';
 import Carousel from 'react-bootstrap/Carousel';
 import './projects.scss';
 // import image from '../../../assets/images/projects/this-website/el-capitan.jpg';
 const Project = ({ project }) => {
+  const { width } = useWindowDimensions();
   return (
-    <div className='card shadow mt-4'>
+    <div className='card shadow bg-dark mt-4'>
       <div className='card-body row'>
-        <div className='col-lg-4'>
+        <div className={`col-lg-5 ${width > 991 && 'zoom'}`}>
           <Carousel>
             {project.images.map((image, index) => (
               <Carousel.Item key={index}>
@@ -16,25 +17,43 @@ const Project = ({ project }) => {
                   src={require(`../../../assets/images/projects/this-website/${image.filename}`)}
                   alt='First slide'
                 />
-                <Carousel.Caption bsPrefix={'carousel-caption'}>
-                  <small>{image.description}</small>
+                <Carousel.Caption
+                  bsPrefix={`carousel-caption pt-1 px-4 ${
+                    width > 991 ? 'd-flex align-items-center' : 'd-none'
+                  }`}
+                >
+                  <small className='mx-auto'>{image.description}</small>
                 </Carousel.Caption>
               </Carousel.Item>
             ))}
           </Carousel>
         </div>
-        <div className='col-lg-8'>
-          <h5 className='card-title'>Card title</h5>
-          <h6 className='card-subtitle mb-2 text-muted'>Card subtitle</h6>
-          <p className='card-text'>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href='#' className='card-link'>
-            Card link
-          </a>
-          <a href='#' className='card-link'>
-            Another link
+        <div className='col-lg-7'>
+          <h4 className='less-letter-spacing capital-case text-lighter'>
+            {project.header}
+          </h4>
+          <h6 className='card-subtitle mb-2 text-muted less-letter-spacing capital-case'>
+            {project.date}
+          </h6>
+          <p className='card-text text-lighter'>{project.description}</p>
+
+          {project.url != '' && (
+            <a
+              href={project.url}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='btn slide-up-button mr-2'
+            >
+              Demo
+            </a>
+          )}
+          <a
+            href={project.repoUrl}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='btn slide-up-button'
+          >
+            GitHub Repo
           </a>
         </div>
       </div>
