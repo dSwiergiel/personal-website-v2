@@ -1,38 +1,51 @@
-import React, { Fragment } from 'react';
+import React, { useState } from 'react';
 import useWindowDimensions from '../../../hooks/WindowDimensions';
 import Carousel from 'react-bootstrap/Carousel';
+import 'react-responsive-modal/styles.css';
+import { Modal } from 'react-responsive-modal';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 import './projects.scss';
 // import image from '../../../assets/images/projects/this-website/el-capitan.jpg';
 const Project = ({ project }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const { width } = useWindowDimensions();
+
+  const onOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const onCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className='card card-shadow card-zoom bg-dark mt-4'>
       <div className='card-body row'>
-        <div className={`col-lg-4 ${width > 991 && 'carousel-zoom'}`}>
+        <div className={`col-lg-4 carousel-container`}>
           <Carousel>
             {project.images.map((image, index) => (
               <Carousel.Item key={index}>
                 <LazyLoadImage
-                  className='d-block w-100'
+                  className='d-block w-100 carousel-image-tint'
                   width='100%'
                   src={require(`../../../assets/images/projects/this-website/${image.filename}`)}
                   alt={''}
                   effect='opacity'
                 ></LazyLoadImage>
-                {/* <img
-                  className='d-block w-100'
-                  src={require(`../../../assets/images/projects/this-website/${image.filename}`)}
-                  alt='First slide'
-                /> */}
-                <Carousel.Caption
+                <div className='overlay' role='button' onClick={onOpenModal}>
+                  <h3 className='text-light overlay-text text-center'>
+                    {/* VIEW GALLERY */}DETAILS
+                  </h3>
+                </div>
+
+                {/* <Carousel.Caption
                   bsPrefix={`carousel-caption pt-1 px-4 ${
                     width > 991 ? 'd-flex align-items-center' : 'd-none'
                   }`}
                 >
                   <small className='mx-auto'>{image.description}</small>
-                </Carousel.Caption>
+                </Carousel.Caption> */}
               </Carousel.Item>
             ))}
           </Carousel>
@@ -69,6 +82,42 @@ const Project = ({ project }) => {
             </a>
           )}
         </div>
+      </div>
+      <div>
+        <Modal
+          open={isModalOpen}
+          onClose={onCloseModal}
+          blockScroll={false}
+          center
+        >
+          <Carousel>
+            {project.images.map((image, index) => (
+              <Carousel.Item key={index}>
+                <LazyLoadImage
+                  className='d-block w-100'
+                  width='100%'
+                  src={require(`../../../assets/images/projects/this-website/${image.filename}`)}
+                  alt={''}
+                  effect='opacity'
+                ></LazyLoadImage>
+                {/* <img
+                  className='d-block w-100'
+                  src={require(`../../../assets/images/projects/this-website/${image.filename}`)}
+                  alt='First slide'
+                /> */}
+                <Carousel.Caption
+                  bsPrefix={`carousel-caption pt-1 px-4 d-flex align-items-center`}
+                >
+                  {width > 991 ? (
+                    <medium className='mx-auto'>{image.description}</medium>
+                  ) : (
+                    <small className='mx-auto'>{image.description}</small>
+                  )}
+                </Carousel.Caption>
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </Modal>
       </div>
     </div>
   );
