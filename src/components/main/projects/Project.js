@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
 import useWindowDimensions from '../../../hooks/WindowDimensions';
 import Carousel from 'react-bootstrap/Carousel';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 import './projects.scss';
 // import image from '../../../assets/images/projects/this-website/el-capitan.jpg';
 const Project = ({ project }) => {
@@ -12,11 +14,18 @@ const Project = ({ project }) => {
           <Carousel>
             {project.images.map((image, index) => (
               <Carousel.Item key={index}>
-                <img
+                <LazyLoadImage
+                  className='d-block w-100'
+                  width='100%'
+                  src={require(`../../../assets/images/projects/this-website/${image.filename}`)}
+                  alt={''}
+                  effect='opacity'
+                ></LazyLoadImage>
+                {/* <img
                   className='d-block w-100'
                   src={require(`../../../assets/images/projects/this-website/${image.filename}`)}
                   alt='First slide'
-                />
+                /> */}
                 <Carousel.Caption
                   bsPrefix={`carousel-caption pt-1 px-4 ${
                     width > 991 ? 'd-flex align-items-center' : 'd-none'
@@ -44,9 +53,9 @@ const Project = ({ project }) => {
               href={project.url}
               target='_blank'
               rel='noopener noreferrer'
-              className='btn slide-up-button mr-2'
+              className='btn btn-sm slide-up-button mr-2'
             >
-              Demo
+              Visit Site
             </a>
           )}
           {project.repoUrl != '' && (
@@ -54,9 +63,9 @@ const Project = ({ project }) => {
               href={project.repoUrl}
               target='_blank'
               rel='noopener noreferrer'
-              className='btn slide-up-button'
+              className='btn btn-sm  px-3 slide-up-button'
             >
-              GitHub Repo
+              <i className='fab fa-github' style={{ fontSize: '13px' }}></i>
             </a>
           )}
         </div>

@@ -7,7 +7,7 @@ const NavMobile = ({ duration, header }) => {
   let menuOptionsContainer = useRef(null);
   let about = useRef(null);
   let stack = useRef(null);
-  let education = useRef(null);
+  // let education = useRef(null);
   let projects = useRef(null);
   let contact = useRef(null);
   const [hamAnimation, setHamAnimation] = useState(
@@ -111,11 +111,11 @@ const NavMobile = ({ duration, header }) => {
           opacity: 0,
           ease: Power1.easeInOut,
         })
-        .from(education, 0.1, {
-          x: 50,
-          opacity: 0,
-          ease: Power1.easeInOut,
-        })
+        // .from(education, 0.1, {
+        //   x: 50,
+        //   opacity: 0,
+        //   ease: Power1.easeInOut,
+        // })
         .from(contact, 0.1, {
           x: 50,
           opacity: 0,
@@ -216,7 +216,7 @@ const NavMobile = ({ duration, header }) => {
             </Link>
             <hr></hr>
           </div>
-          <div
+          {/* <div
             className='  mx-4 '
             ref={(el) => {
               education = el;
@@ -234,7 +234,7 @@ const NavMobile = ({ duration, header }) => {
               <h5 className=' text-light link'>Education</h5>
             </Link>
             <hr></hr>
-          </div>
+          </div> */}
           <div
             className='  mx-4 '
             ref={(el) => {

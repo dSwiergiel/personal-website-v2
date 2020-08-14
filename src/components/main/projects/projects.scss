@@ -1,22 +1,20 @@
 @import '../../../assets/css/variables.scss';
 .carousel-caption {
   position: relative;
-  //   text-align: left;
   border: none !important;
-  // background-color: $splash;
   background-color: rgb(94, 94, 94);
   // background-color: rgb(235, 235, 235);
   color: $light;
-  height: 65px;
+  height: 60px;
   // height: 85px;
   font-size: medium;
   left: 0;
-  top: 0;
+  top: -10px;
 }
 .carousel-indicators {
   position: absolute;
   right: 0;
-  bottom: -15px;
+  bottom: -8px;
   left: 0;
   z-index: 15;
   display: flex;
@@ -26,25 +24,3 @@
   margin-left: 15%;
   list-style: none;
 }
-
-.card-zoom {
-  transition: transform 0.2s; /* Animation */
-  transform: translateZ(0);
-  backface-visibility: hidden;
-
-  // z-index: 9999 !important;
-}
-
-.card-zoom:hover {
-  // transform: scale(1.5) translate(5vw, 0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  transform: scale(1.03);
-}
-// .carousel-zoom {
-//   transition: transform 0.2s; /* Animation */
-//   z-index: 9999 !important;
-// }
-
-// .carousel-zoom:hover {
-//   // transform: scale(1.5) translate(5vw, 0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-//   transform: scale(1.5) translate(10vw, 0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-// }

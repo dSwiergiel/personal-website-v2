@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 const NavMenu = ({ duration }) => {
   let about = useRef(null);
   let stack = useRef(null);
-  let education = useRef(null);
+  // let education = useRef(null);
   let projects = useRef(null);
   let contact = useRef(null);
   useEffect(() => {
@@ -32,12 +32,12 @@ const NavMenu = ({ duration }) => {
         y: -20,
         ease: Power1.easeOut,
       })
-      .from(education, duration / 1000 / 20, {
-        opacity: 0,
-        x: -10,
-        y: -30,
-        ease: Power1.easeOut,
-      })
+      // .from(education, duration / 1000 / 20, {
+      //   opacity: 0,
+      //   x: -10,
+      //   y: -30,
+      //   ease: Power1.easeOut,
+      // })
       .from(contact, duration / 1000 / 20, {
         opacity: 0,
         x: -10,
@@ -106,7 +106,7 @@ const NavMenu = ({ duration }) => {
           </h5>
         </Link>
       </div>
-      <div className=' px-2 '>
+      {/* <div className=' px-2 '>
         <Link
           activeClass='active'
           to='education'
@@ -124,7 +124,7 @@ const NavMenu = ({ duration }) => {
             Education
           </h5>
         </Link>
-      </div>
+      </div> */}
       <div className=' px-2 '>
         <Link
           activeClass='active'

@@ -60,9 +60,9 @@ function Home() {
         </div>
       </div>
       <div className='bg-warning diagonal-container' name='projects'>
-        <LazyRender>
-          <Projects></Projects>
-        </LazyRender>
+        {/* <LazyRender> */}
+        <Projects></Projects>
+        {/* </LazyRender> */}
       </div>
       <div name='education'>
         <LazyRender>
