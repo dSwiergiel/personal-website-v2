@@ -1,17 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
+
 import { BrowserView, MobileView } from 'react-device-detect';
 import Parallax from '../wrapers/parallax/Parallax';
 import Splash from '../main/splash/Splash';
 import Nav from '../main/nav/Nav';
-import Landing from '../main/landing/Landing';
-import About from '../main/about/About';
-import Stack from '../main/stack/Stack';
+
+// import Landing from '../main/landing/Landing';
+// import About from '../main/about/About';
+// import Stack from '../main/stack/Stack';
+// import Projects from '../main/projects/Projects';
 import UnderConstruction from '../main/construction/UnderConstruction';
 
 import landingBackground from '../../assets/images/el-capitan.jpg';
-import Projects from '../main/projects/Projects';
 import LazyRender from '../wrapers/lazy-render/LazyRender';
-
+const Landing = lazy(() => import('../main/landing/Landing'));
+const About = lazy(() => import('../main/about/About'));
+const Stack = lazy(() => import('../main/stack/Stack'));
+const Projects = lazy(() => import('../main/projects/Projects'));
 function Home() {
   const [loading, setLoading] = useState(true);
   const loadingTime = 3000;
@@ -49,21 +54,26 @@ function Home() {
           </div>
         </Parallax>
       </MobileView>
-      <div className='container py-4 px-4'>
-        <div className='row'>
-          <div name='about' className='col-lg-6'>
-            <About></About>
-          </div>
-          <div name='stack' className='col-lg-6'>
-            <Stack></Stack>
+      <Suspense fallback={<h1>Still Loading…</h1>}>
+        <div className='container py-4 px-4'>
+          <div className='row'>
+            <div name='about' className='col-lg-6'>
+              <About></About>
+            </div>
+            <div name='stack' className='col-lg-6'>
+              <Stack></Stack>
+            </div>
           </div>
         </div>
-      </div>
-      <div className='bg-warning diagonal-container' name='projects'>
-        <LazyRender>
+      </Suspense>
+
+      <Suspense fallback={<h1>Still Loading…</h1>}>
+        <div className='bg-warning diagonal-container' name='projects'>
+          {/* <LazyRender> */}
           <Projects></Projects>
-        </LazyRender>
-      </div>
+          {/* </LazyRender> */}
+        </div>
+      </Suspense>
       <div name='education'>
         <LazyRender>
           <UnderConstruction></UnderConstruction>

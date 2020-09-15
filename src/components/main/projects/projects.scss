@@ -7,14 +7,15 @@
   color: $light;
   // height: 60px;
   height: 85px;
+  overflow-y: auto;
   font-size: medium;
   left: 0;
-  top: -10px;
+  top: -0px;
 }
 .carousel-indicators {
   position: absolute;
   right: 0;
-  bottom: -8px;
+  bottom: -15px;
   left: 0;
   z-index: 15;
   display: flex;

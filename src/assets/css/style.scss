@@ -28,9 +28,14 @@ body {
   margin: 0;
   padding: 0px;
 }
+// responsive title
+// font-size: calc(2rem + 2*(100vw - 30rem)/30);
 
+// responsive p text
+// font-size: calc(1.125rem + 0.375*(100vw - 30rem)/30);
 p {
   letter-spacing: $letter-spacing;
+  // font-size: calc(1.125rem + 0.375 * (100vw - 30rem) / 175);
 }
 .less-letter-spacing {
   letter-spacing: 4px;

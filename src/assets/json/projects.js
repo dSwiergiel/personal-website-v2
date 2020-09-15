@@ -13,7 +13,7 @@ export const projects = [
       {
         header: 'blah1',
         description:
-          'This is a test of readability. Can you read this? Maybe? Not sure if you can',
+          'This is a test of readability. Can you read this? MayanThis is a test of readability. Can you read this? Maybe? Not sure if you canThis is a test of readability. Can you read this? Maybe? Not sure if you can',
         filename: 'el-capitan.jpg',
       },
       {
