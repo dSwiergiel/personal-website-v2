@@ -87,6 +87,14 @@ p {
   color: $dark !important;
   background-position: 0 -100%;
 }
+.slide-up-button.active {
+  text-decoration: none;
+  color: $dark !important;
+  background-position: 0 -100%;
+  border-style: none;
+  box-shadow: rgba(43, 60, 88, 0.25) 0 0 0 0.2rem;
+}
+
 button:focus,
 a:focus {
   outline: none;

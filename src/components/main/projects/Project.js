@@ -24,7 +24,7 @@ const Project = ({ project }) => {
     <LazyLoad offset={0}>
       <div className='card card-shadow card-zoom bg-dark mt-4'>
         <div className='card-body row'>
-          <div className={`col-lg-3 carousel-container`}>
+          <div className='col-lg-3 carousel-container'>
             <Carousel>
               {project.images.map((image, index) => (
                 <Carousel.Item key={index}>
@@ -108,7 +108,7 @@ const Project = ({ project }) => {
                     bsPrefix={`carousel-caption pt-1 px-4 d-flex align-items-center`}
                   >
                     {width > 991 ? (
-                      <medium className='mx-auto'>{image.description}</medium>
+                      <div className='mx-auto'>{image.description}</div>
                     ) : (
                       <small className='mx-auto'>{image.description}</small>
                     )}
