@@ -1,65 +1,91 @@
 import React, { useState, useEffect, useRef } from 'react';
+import AnimateHeight from 'react-animate-height';
 import Project from './Project';
 import { projects } from '../../../assets/json/projects';
 import FadeInSlide from '../../wrapers/fade-in-slide/FadeInSlide';
-import { gsap, TimelineMax, Expo } from 'gsap';
 // import * as ScrollMagic from 'scrollmagic';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-if (typeof window !== `undefined`) {
-  gsap.registerPlugin(ScrollTrigger);
-  gsap.core.globals('ScrollTrigger', ScrollTrigger);
-}
+
 const Projects = () => {
+  const [minHeight, setMinHeight] = useState('auto');
   const [isPersonalProjects, setIsPersonalProjects] = useState(true);
-  const [personalProjects, setPersonalProjects] = useState(
+  // const [personalProjects, setPersonalProjects] = useState(
+  //   projects.filter((project) => project.projectType === 'personal')
+  // );
+  // const [professionalProjects, setProfessionalProjects] = useState(
+  //   projects.filter((project) => project.projectType === 'professional')
+  // );
+  const [projectsToShow, setProjectsToShow] = useState(
     projects.filter((project) => project.projectType === 'personal')
   );
-  const [professionalProjects, setProfessionalProjects] = useState(
-    projects.filter((project) => project.projectType === 'professional')
-  );
 
-  const contentRefs = useRef([]);
-  contentRefs.current = [];
+  // useEffect(() => {
+  //   setMinHeight('auto');
+  // }, []);
 
-  const addToRefs = (el) => {
-    if (el && !contentRefs.current.includes(el)) {
-      contentRefs.current.push(el);
-    }
-  };
-
-  useEffect(() => {
-    contentRefs.current.forEach((el, index) => {
-      gsap.from(
-        el,
-        {
-          scrollTrigger: {
-            // start: '1500px 80%',
-            tigger: el,
-            toggleActions: 'restart none none restart',
-            markers: true,
-          },
-          duration: 1,
-          y: 100,
-          opacity: 0,
-        },
-        0
-      );
-    });
-
-    // filterProjectList();
-    //eslint-disable-next-line
-  }, []);
   const handleClick = (e) => {
     const buttonClicked = e.target.value;
     if (buttonClicked === 'personal') {
       setIsPersonalProjects(true);
+      let projectCount = projects.filter(
+        (project) => project.projectType === 'personal'
+      ).length;
+      setMinHeight(projectCount * 200 + 300);
+      console.log('proj', projectCount);
+
+      for (let i = 0; i <= projectCount; i++) {
+        setTimeout(() => {
+          setProjectsToShow(
+            projects
+              .filter((project) => project.projectType === 'personal')
+              .slice(0, i)
+          );
+          // if (i >= projectCount) {
+          //   setTimeout(() => {
+          //     setMinHeight('120%');
+          //   }, projectCount * 0.5 * 1000);
+          // }
+        }, i * 0.2 * 1000);
+      }
     } else {
       setIsPersonalProjects(false);
+      let projectCount = projects.filter(
+        (project) => project.projectType === 'professional'
+      ).length;
+
+      setMinHeight(projectCount * 200 + 300);
+      for (let i = 0; i <= projectCount; i++) {
+        setTimeout(() => {
+          setProjectsToShow(
+            projects
+              .filter((project) => project.projectType === 'professional')
+              .slice(0, i)
+          );
+          // if (i >= projectCount) {
+          //   setTimeout(() => {
+          //     setMinHeight('auto');
+          //   }, projectCount * 1000);
+          // }
+        }, i * 0.2 * 1000);
+      }
     }
   };
 
+  // const test = (newHeight) => {
+  //   console.log('newheight', newHeight.newHeight);
+  //   setMinHeight('80%');
+  //   // if (newHeight.newHeight === minHeight) {
+  //   //   setMinHeight('auto');
+  //   // } else {
+  //   //   setMinHeight('auto');
+  //   // }
+  // };
+
   return (
-    <div className='py-4 container'>
+    <AnimateHeight
+      className='container projectsContainer py-4 px-5'
+      duration={1000}
+      height={minHeight}
+    >
       <h1 className='mb-4 text-center text-light'>The Projects</h1>
       <div className='d-flex justify-content-center'>
         <button
@@ -81,15 +107,19 @@ const Projects = () => {
           Professional
         </button>
       </div>
-      {isPersonalProjects === true ? (
+
+      <div>
+        {projectsToShow.map((project, index) => (
+          <FadeInSlide key={index} delay={0} duration={1}>
+            <Project key={index} project={project}></Project>
+          </FadeInSlide>
+        ))}
+      </div>
+
+      {/* {isPersonalProjects === true ? (
         <div>
           {personalProjects.map((project, index) => (
-            <FadeInSlide
-              ref={addToRefs}
-              key={index}
-              delay={index * 0.2}
-              duration={2}
-            >
+            <FadeInSlide key={index} delay={index * 0.2} duration={1}>
               <Project key={index} project={project}></Project>
             </FadeInSlide>
           ))}
@@ -97,17 +127,12 @@ const Projects = () => {
       ) : (
         <div>
           {professionalProjects.map((project, index) => (
-            <FadeInSlide
-              ref={addToRefs}
-              key={index}
-              delay={index * 0.5}
-              duration={1}
-            >
+            <FadeInSlide key={index} delay={index * 0.5} duration={1}>
               <Project key={index} project={project}></Project>
             </FadeInSlide>
           ))}
         </div>
-      )}
+      )} */}
       {/* <div>
         {projects.map((project, index) => (
           <FadeInSlide key={index} delay={index * 0.2} duration={1}>
@@ -115,7 +140,7 @@ const Projects = () => {
           </FadeInSlide>
         ))}
       </div> */}
-    </div>
+    </AnimateHeight>
   );
 };
 
