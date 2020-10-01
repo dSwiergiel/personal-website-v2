@@ -68,7 +68,7 @@ function Home() {
       </Suspense>
 
       <Suspense fallback={<h1>Still Loading…</h1>}>
-        <div className='bg-warning pt-4 pb-5' name='projects'>
+        <div className='bg-warning pt-4' name='projects'>
           {/* <LazyRender> */}
           <Projects></Projects>
           {/* </LazyRender> */}

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { gsap, TimelineMax, Power3 } from 'gsap';
+import { TimelineMax, Power3 } from 'gsap';
 import * as ScrollMagic from 'scrollmagic';
 
 const FadeInSlide = ({ children, delay = 0, duration = 1 }) => {
