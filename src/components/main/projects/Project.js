@@ -33,7 +33,7 @@ const Project = ({ project, scrollPosition }) => {
                   width='100%'
                   src={require(`../../../assets/images/projects/this-website/${image.filename}`)}
                   alt={''}
-                  effect='opacity'
+                  // effect='opacity'
                 ></LazyLoadImage>
                 <div className='overlay' role='button' onClick={onOpenModal}>
                   <h3 className='text-light overlay-text text-center'>
