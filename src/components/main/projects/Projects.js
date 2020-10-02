@@ -75,6 +75,7 @@ const Projects = () => {
     <AnimateHeight
       className='container px-5 '
       duration={500}
+      easing={'ease'}
       height={minHeight}
     >
       <h1 className='mb-4 text-center text-light'>The Projects</h1>
