@@ -26,20 +26,13 @@ const Project = ({ project }) => {
           <Carousel>
             {project.images.map((image, index) => (
               <Carousel.Item key={index}>
-                {/* <LazyLoadImage
+                <LazyLoadImage
                   className='w-100 carousel-image-tint'
                   width='100%'
                   src={require(`../../../assets/images/projects/this-website/${image.filename}`)}
                   alt={''}
                   effect='opacity'
-                ></LazyLoadImage> */}
-                <img
-                  className='w-100 carousel-image-tint'
-                  width='100%'
-                  src={require(`../../../assets/images/projects/this-website/${image.filename}`)}
-                  alt={''}
-                  effect='opacity'
-                ></img>
+                ></LazyLoadImage>
                 <div className='overlay' role='button' onClick={onOpenModal}>
                   <h3 className='text-light overlay-text text-center'>
                     {/* VIEW GALLERY */}DETAILS
@@ -100,20 +93,13 @@ const Project = ({ project }) => {
           <Carousel>
             {project.images.map((image, index) => (
               <Carousel.Item key={index}>
-                {/* <LazyLoadImage
+                <LazyLoadImage
                   className='w-100'
                   width='100%'
                   src={require(`../../../assets/images/projects/this-website/${image.filename}`)}
                   alt={''}
                   effect='opacity'
-                ></LazyLoadImage> */}
-                <img
-                  className='w-100'
-                  width='100%'
-                  src={require(`../../../assets/images/projects/this-website/${image.filename}`)}
-                  alt={''}
-                  effect='opacity'
-                ></img>
+                ></LazyLoadImage>
                 <Carousel.Caption
                   bsPrefix={`carousel-caption pt-1 px-4 d-flex align-items-center`}
                 >
