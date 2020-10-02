@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import LazyLoad from 'react-lazyload';
 import useWindowDimensions from '../../../hooks/WindowDimensions';
 import Carousel from 'react-bootstrap/Carousel';
 import 'react-responsive-modal/styles.css';
