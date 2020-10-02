@@ -7,7 +7,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 import './projects.scss';
 // import image from '../../../assets/images/projects/this-website/el-capitan.jpg';
-const Project = ({ project }) => {
+const Project = ({ project, scrollPosition }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { width } = useWindowDimensions();
 
@@ -27,6 +27,11 @@ const Project = ({ project }) => {
             {project.images.map((image, index) => (
               <Carousel.Item key={index}>
                 <LazyLoadImage
+                  scrollPosition={scrollPosition}
+                  delayMethod={'debounce'}
+                  delayTime={100}
+                  threshold={500}
+                  visibleByDefault={true}
                   className='w-100 carousel-image-tint'
                   width='100%'
                   src={require(`../../../assets/images/projects/this-website/${image.filename}`)}

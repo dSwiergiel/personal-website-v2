@@ -3,8 +3,11 @@ import AnimateHeight from 'react-animate-height';
 import Project from './Project';
 import { projects } from '../../../assets/json/projects';
 import FadeInSlide from '../../wrapers/fade-in-slide/FadeInSlide';
-
-const Projects = () => {
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from 'react-lazy-load-image-component';
+const Projects = ({ scrollPosition }) => {
   const [minHeight, setMinHeight] = useState('auto');
   const [isPersonalProjects, setIsPersonalProjects] = useState(true);
 
@@ -103,7 +106,11 @@ const Projects = () => {
       <div className='pb-5'>
         {projectsToShow.map((project, index) => (
           <FadeInSlide key={index} delay={0} duration={0.5}>
-            <Project key={index} project={project}></Project>
+            <Project
+              key={index}
+              project={project}
+              scrollPosition={scrollPosition}
+            ></Project>
           </FadeInSlide>
         ))}
       </div>
@@ -111,4 +118,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default trackWindowScroll(Projects);
