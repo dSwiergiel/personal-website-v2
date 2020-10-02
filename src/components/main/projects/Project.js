@@ -28,9 +28,8 @@ const Project = ({ project, scrollPosition }) => {
               <Carousel.Item key={index}>
                 <LazyLoadImage
                   scrollPosition={scrollPosition}
-                  delayMethod={'debounce'}
                   delayTime={100}
-                  threshold={500}
+                  threshold={300}
                   visibleByDefault={true}
                   className='w-100 carousel-image-tint'
                   width='100%'
