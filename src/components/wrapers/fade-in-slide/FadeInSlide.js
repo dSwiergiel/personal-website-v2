@@ -7,11 +7,8 @@ const FadeInSlide = ({ children, delay = 0, duration = 1 }) => {
   const controller = new ScrollMagic.Controller();
 
   useEffect(() => {
-    // newAnimate();
     animateOnscrol();
-    // setTimeout(() => {
-    //   animateOnscrol();
-    // }, delay * 1000);
+
     //eslint-disable-next-line
   }, []);
 
