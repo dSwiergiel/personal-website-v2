@@ -39,7 +39,7 @@ const Projects = () => {
               setMinHeight('auto');
             }, projectCount * 0.2 * 1000);
           }
-        }, i * 0.2 * 1000);
+        }, i * 0.1 * 1000);
       }
     } else {
       setIsPersonalProjects(false);
@@ -66,7 +66,7 @@ const Projects = () => {
               setMinHeight('auto');
             }, projectCount * 0.2 * 1000);
           }
-        }, i * 0.2 * 1000);
+        }, i * 0.1 * 1000);
       }
     }
   };
@@ -74,7 +74,7 @@ const Projects = () => {
   return (
     <AnimateHeight
       className='container px-5 '
-      duration={1000}
+      duration={500}
       height={minHeight}
     >
       <h1 className='mb-4 text-center text-light'>The Projects</h1>
@@ -101,7 +101,7 @@ const Projects = () => {
 
       <div className='pb-5'>
         {projectsToShow.map((project, index) => (
-          <FadeInSlide key={index} delay={0} duration={1}>
+          <FadeInSlide key={index} delay={0} duration={0.5}>
             <Project key={index} project={project}></Project>
           </FadeInSlide>
         ))}

@@ -1,5 +1,4 @@
 import React from 'react';
-// import LazyLoad from 'react-lazyload';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-scroll';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
