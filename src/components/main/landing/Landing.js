@@ -11,16 +11,27 @@ const Landing = () => {
   return (
     <div className='container landing-box py-3'>
       <div className='row '>
-        <div className='col-lg-4 mb-lg-0 mb-3'>
-          <LazyLoadImage
-            className='portrait'
-            width='100%'
-            src={portrait}
-            alt={'Deven Swiergiel'}
-            effect='opacity'
-          ></LazyLoadImage>
+        <div className='col-lg-3 col-md-3 mb-lg-0 mb-3'>
+          <div className='d-flex justify-content-center'>
+            <LazyLoadImage
+              className='portrait'
+              width='100%'
+              src={portrait}
+              alt={'Deven Swiergiel'}
+              effect='opacity'
+            ></LazyLoadImage>
+          </div>
+          <h6 className='mt-3 text-center text-light less-letter-spacing capital-case'>
+            3 years full-stack experience
+          </h6>
+          <hr></hr>
+          <h6 className='text-center text-light less-letter-spacing capital-case'>
+            Computer Science (B.S) Summa Cum Laude
+            <br></br>
+            University At Albany
+          </h6>
         </div>
-        <div className='col-lg-8'>
+        <div className='col-lg-9  col-md-9'>
           <p className='text-light'>
             My name is Deven Swiergiel and I like to make stuff. I'm a
             Full-Stack Developer with an emphasis on the frontend, building
