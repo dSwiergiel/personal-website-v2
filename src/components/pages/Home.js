@@ -12,6 +12,7 @@ const Landing = lazy(() => import('../main/landing/Landing'));
 const About = lazy(() => import('../main/about/About'));
 const Stack = lazy(() => import('../main/stack/Stack'));
 const Projects = lazy(() => import('../main/projects/Projects'));
+const Contact = lazy(() => import('../main/contact/Contact'));
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -68,11 +69,13 @@ function Home() {
           <Projects></Projects>
         </div>
       </Suspense>
-      <div name='contact'>
-        <LazyRender>
-          <UnderConstruction></UnderConstruction>
-        </LazyRender>
-      </div>
+      <Suspense fallback={<h1>Still Loading…</h1>}>
+        <div className='container py-4 mb-5' name='contact'>
+          <LazyRender>
+            <Contact></Contact>
+          </LazyRender>
+        </div>
+      </Suspense>
     </div>
   );
 }
