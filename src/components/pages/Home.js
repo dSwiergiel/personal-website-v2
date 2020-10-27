@@ -71,7 +71,7 @@ function Home() {
         </div>
       </Suspense>
       <Suspense fallback={<h1>Still Loading…</h1>}>
-        <div className='container py-4 mb-5' name='contact'>
+        <div className='container pt-4 mb-5' name='contact'>
           <LazyRender delay={0} duration={1}>
             <Contact></Contact>
           </LazyRender>
