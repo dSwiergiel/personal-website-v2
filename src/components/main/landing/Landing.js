@@ -40,7 +40,7 @@ const Landing = () => {
           <p className='text-light'>
             Currently working as Frontend Lead building a multi-persona
             screening tool as part of New York's COVID-19 efforts to ensure a
-            safe return to the office. Over 16,000 active daily users and
+            safe return to the office. Over 50,000 active daily users and
             anticipating over 100,000 as more workers return to the office.
           </p>
           <p className='text-light mb-0'>

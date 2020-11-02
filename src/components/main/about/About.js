@@ -9,8 +9,9 @@ const About = () => {
       <p>
         You've heard the cliche, the one where from an early age they've been
         interested in knowing how things work, even taking things apart to find
-        out. That was me, and many of the skills I've acquired as a developer
-        are self-taught coming from this natural interest to learn and create!
+        out. That was me, my mom loved it(especially when it was her printers
+        turn) and many of the skills I've acquired as a developer are
+        self-taught coming from this natural interest to learn and create!
       </p>
       <p>
         I'm the first in my entire family to attend college and recently
