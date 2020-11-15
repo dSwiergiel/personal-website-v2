@@ -24,28 +24,7 @@ const Project = ({ project, scrollPosition }) => {
     <div className='card project-card card-shadow card-zoom bg-dark mt-4'>
       <div className='card-body '>
         <div className='row'>
-          <div className='col-lg-4 p-0'>
-            {/* <Carousel>
-            {project.images.map((image, index) => (
-              <Carousel.Item key={index}>
-                <LazyLoadImage
-                  scrollPosition={scrollPosition}
-                  visibleByDefault={true}
-                  placeholder={<div></div>}
-                  className='w-100 carousel-image-tint'
-                  width='100%'
-                  src={require(`../../../assets/images/projects/${image.filename}`)}
-                  alt={''}
-                ></LazyLoadImage>
-                <div className='overlay' role='button' onClick={onOpenModal}>
-                  <h3 className='text-light overlay-text text-center'>
-                    DETAILS
-                  </h3>
-                </div>
-              </Carousel.Item>
-            ))}
-          </Carousel> */}
-
+          <div className='col-lg-4 carousel-container'>
             <div className='project-image-container'>
               <SimpleSlider
                 settings={{
@@ -59,7 +38,7 @@ const Project = ({ project, scrollPosition }) => {
                   slidesToScroll: 1,
                   adaptiveHeight: true,
                   autoplay: true,
-                  autoplaySpeed: 3000,
+                  autoplaySpeed: 5000,
                   pauseOnHover: true,
                 }}
                 project={project}
@@ -67,6 +46,26 @@ const Project = ({ project, scrollPosition }) => {
                 onOpenModal={onOpenModal}
               ></SimpleSlider>
             </div>
+            <Carousel controls={false} indicators={false}>
+              {project.images.map((image, index) => (
+                <Carousel.Item key={index}>
+                  <LazyLoadImage
+                    scrollPosition={scrollPosition}
+                    visibleByDefault={true}
+                    className='carousel-image-tint project-image'
+                    style={{ maxHeight: '175px' }}
+                    width='100%'
+                    src={require(`../../../assets/images/projects/${image.filename}`)}
+                    alt={image.header}
+                  ></LazyLoadImage>
+                  <div className='overlay' role='button' onClick={onOpenModal}>
+                    <h3 className='text-light overlay-text text-center'>
+                      DETAILS
+                    </h3>
+                  </div>
+                </Carousel.Item>
+              ))}
+            </Carousel>
           </div>
           <div className='col-lg-8 mt-2 mt-lg-0'>
             <h3 className='less-letter-spacing capital-case text-lighter'>

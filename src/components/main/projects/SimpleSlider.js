@@ -32,7 +32,7 @@ export const SimpleSlider = ({
             <img
               alt={image.header}
               className='project-image'
-              style={{ maxHeight: isThumbnail ? '150px' : '' }}
+              style={{ maxHeight: isThumbnail ? '175px' : '' }}
               src={require(`../../../assets/images/projects/${image.filename}`)}
             />
             {!isThumbnail && (
