@@ -3,7 +3,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-scroll';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 
-import portrait from '../../../assets/images/landing-portrait.jpg';
+import portrait from '../../../assets/images/projects/personal/this-website/landing-portrait.jpg';
 import resume from '../../../assets/resume/currentresume.pdf';
 import './landing.scss';
 

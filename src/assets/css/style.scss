@@ -1,6 +1,7 @@
 // google fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
 
+// bootstrap base theme
 @import '~bootswatch/dist/lux/variables';
 // bootstrap variable overrides
 @import './variables.scss';
@@ -109,7 +110,7 @@ a:focus {
 }
 
 .landing-background {
-  background-image: url('../../assets/images/el-capitan.jpg');
+  background-image: url('/assets/images/projects/personal/this-website/el-capitan.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -134,6 +135,14 @@ a:focus {
 
 .sticky + .content {
   padding-top: calc(90px + 2 * ((100vw) / 680));
+}
+.testing {
+  max-height: 800px;
+  max-width: 800px;
+}
+.responsive-image {
+  max-width: 800px;
+  height: auto;
 }
 .link {
   text-decoration: none;

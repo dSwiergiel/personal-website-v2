@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { TweenLite, Power0, Power1 } from 'gsap';
 
 import './splashscreen.scss';
-import logo from '../../../assets/images/react-logo.svg';
+import logo from '../../../assets/images/projects/personal/this-website/react-logo.svg';
 
 const Splash = ({ duration }) => {
   useEffect(() => {

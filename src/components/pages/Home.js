@@ -5,7 +5,7 @@ import Parallax from '../wrapers/parallax/Parallax';
 import Splash from '../main/splash/Splash';
 import Nav from '../main/nav/Nav';
 import UnderConstruction from '../main/construction/UnderConstruction';
-import landingBackground from '../../assets/images/el-capitan.jpg';
+import landingBackground from '../../assets/images/projects/personal/this-website/el-capitan.jpg';
 import LazyRender from '../wrapers/lazy-render/LazyRender';
 
 const Landing = lazy(() => import('../main/landing/Landing'));

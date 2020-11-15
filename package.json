@@ -22,6 +22,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",
     "react-scroll": "^1.7.16",
+    "react-slick": "^0.27.13",
     "scrollmagic": "^2.0.7",
     "scrollmagic-plugin-gsap": "^1.0.4"
   },

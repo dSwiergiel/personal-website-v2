@@ -1,40 +1,35 @@
 @import '../../../assets/css/variables.scss';
-.carousel-caption {
+
+.customOverlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+.customModal {
+  background: #3a3a3a;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 1000px;
+  max-height: 750px;
+  object-fit: contain;
+}
+
+.project-image-caption {
   position: relative;
   border: none !important;
-  background-color: rgb(94, 94, 94);
-  // background-color: rgb(235, 235, 235);
   color: $light;
-  // height: 60px;
-  height: 85px;
   overflow-y: auto;
   font-size: medium;
   left: 0;
   top: -0px;
 }
-.carousel-indicators {
-  position: absolute;
-  right: 0;
-  bottom: -15px;
-  left: 0;
-  z-index: 15;
-  display: flex;
-  justify-content: center;
-  padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
-  list-style: none;
+
+.project-card {
+  min-height: 200px;
 }
 
-.react-responsive-modal-modal {
-  padding: 0rem;
-  background: none;
-
-  margin: auto auto;
-}
-.react-responsive-modal-closeButton {
-  display: none;
-}
 .overlay {
   position: absolute;
   top: 0;
@@ -47,30 +42,4 @@
   opacity: 0;
   transition: 0.3s ease-in-out;
   background-color: #0000007a;
-}
-
-.carousel-container:hover .overlay {
-  opacity: 1;
-  transition: 0.4s ease-in-out;
-}
-.carousel-container:hover .carousel-image-tint {
-  transform: scale(1.2);
-  transition: 0.3s ease-in-out;
-}
-
-.carousel-image-tint {
-  transition: 0.3s ease-in-out;
-}
-.carousel-container:hover .carousel-control-next,
-.carousel-container:hover .carousel-control-prev,
-.carousel-container:hover .carousel-indicators {
-  display: none;
-}
-.overlay-text:hover {
-  transform: scale(1.1);
-  transition: 0.3s ease-in-out;
-}
-.overlay-text {
-  margin-top: 25%;
-  transition: 0.3s ease-in-out;
 }

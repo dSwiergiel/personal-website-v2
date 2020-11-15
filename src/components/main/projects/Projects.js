@@ -76,7 +76,7 @@ const Projects = ({ scrollPosition }) => {
 
   return (
     <AnimateHeight
-      className='container px-5 '
+      className='container'
       duration={500}
       easing={'ease'}
       height={minHeight}
