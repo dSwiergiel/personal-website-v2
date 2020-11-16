@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import useWindowDimensions from '../../../hooks/WindowDimensions';
 import AnimateHeight from 'react-animate-height';
 import Project from './Project';
 import { projects } from '../../../assets/json/projects';
@@ -8,6 +9,7 @@ import {
   trackWindowScroll,
 } from 'react-lazy-load-image-component';
 const Projects = ({ scrollPosition }) => {
+  const { width } = useWindowDimensions();
   const [minHeight, setMinHeight] = useState('auto');
   const [isPersonalProjects, setIsPersonalProjects] = useState(true);
 
@@ -76,7 +78,7 @@ const Projects = ({ scrollPosition }) => {
 
   return (
     <AnimateHeight
-      className='container'
+      className={width > 576 ? 'container px-5' : 'container'}
       duration={500}
       easing={'ease'}
       height={minHeight}

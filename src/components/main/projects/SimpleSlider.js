@@ -1,6 +1,20 @@
 import React from 'react';
 import Slider from 'react-slick';
 import useWindowDimensions from '../../../hooks/WindowDimensions';
+
+function CustomPrevArrow(props) {
+  const { onClick } = props;
+  return (
+    <i className='customPrevArrow fas fa-chevron-left' onClick={onClick}></i>
+  );
+}
+function CustomNextArrow(props) {
+  const { onClick } = props;
+  return (
+    <i className='customNextArrow fas fa-chevron-right' onClick={onClick}></i>
+  );
+}
+
 export const SimpleSlider = ({
   settings = {
     className: '',
@@ -14,6 +28,9 @@ export const SimpleSlider = ({
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
+    customPaging: (i) => <i class='fas fa-minus'></i>,
   },
   project,
   isThumbnail = false,

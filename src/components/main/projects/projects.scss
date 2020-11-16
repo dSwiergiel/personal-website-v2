@@ -4,7 +4,7 @@
   background: rgba(0, 0, 0, 0.7);
 }
 .customModal {
-  background: #3a3a3a;
+  background: #282c34;
   max-width: 1000px;
   width: 100%;
 }
@@ -56,11 +56,7 @@
 .carousel-image-tint {
   transition: 0.3s ease-in-out;
 }
-.carousel-container:hover .carousel-control-next,
-.carousel-container:hover .carousel-control-prev,
-.carousel-container:hover .carousel-indicators {
-  display: none;
-}
+
 .overlay-text:hover {
   transform: scale(1.1);
   transition: 0.3s ease-in-out;
@@ -68,5 +64,31 @@
 .overlay-text {
   margin-top: 25%;
   transition: 0.3s ease-in-out;
-  z-index: 1000;
+  z-index: -1;
+}
+
+// prev
+.customPrevArrow {
+  appearance: button;
+  cursor: pointer;
+  // color: $light;
+  left: -25px;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+}
+
+// next
+.customNextArrow {
+  appearance: button;
+  cursor: pointer;
+  // color: $light;
+  right: -25px;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
 }

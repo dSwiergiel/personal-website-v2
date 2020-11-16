@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import useWindowDimensions from '../../../hooks/WindowDimensions';
 import Carousel from 'react-bootstrap/Carousel';
-import 'react-responsive-modal/styles.css';
-import { Modal } from 'react-responsive-modal';
+
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { SimpleSlider } from './SimpleSlider';
+import { Modal } from 'react-responsive-modal';
+
+import 'react-responsive-modal/styles.css';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 import './projects.scss';
-import { SimpleSlider } from './SimpleSlider';
-// import image from '../../../assets/images/projects/this-website/el-capitan.jpg';
+
 const Project = ({ project, scrollPosition }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { width } = useWindowDimensions();
@@ -25,27 +27,25 @@ const Project = ({ project, scrollPosition }) => {
       <div className='card-body '>
         <div className='row'>
           <div className='col-lg-4 carousel-container'>
-            <div className='project-image-container'>
-              <SimpleSlider
-                settings={{
-                  className: 'project-overlay-image',
-                  dots: false,
-                  arrows: false,
-                  infinite: true,
-                  lazyLoad: true,
-                  speed: 500,
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  adaptiveHeight: true,
-                  autoplay: true,
-                  autoplaySpeed: 5000,
-                  pauseOnHover: true,
-                }}
-                project={project}
-                isThumbnail={true}
-                onOpenModal={onOpenModal}
-              ></SimpleSlider>
-            </div>
+            {/* <SimpleSlider
+              settings={{
+                className: 'project-image',
+                dots: false,
+                arrows: false,
+                infinite: true,
+                lazyLoad: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                pauseOnHover: true,
+              }}
+              project={project}
+              isThumbnail={true}
+              onOpenModal={onOpenModal}
+            ></SimpleSlider> */}
             <Carousel controls={false} indicators={false}>
               {project.images.map((image, index) => (
                 <Carousel.Item key={index}>
@@ -54,7 +54,6 @@ const Project = ({ project, scrollPosition }) => {
                     visibleByDefault={true}
                     className='carousel-image-tint project-image'
                     style={{ maxHeight: '175px' }}
-                    width='100%'
                     src={require(`../../../assets/images/projects/${image.filename}`)}
                     alt={image.header}
                   ></LazyLoadImage>
@@ -135,27 +134,6 @@ const Project = ({ project, scrollPosition }) => {
           }}
         >
           <SimpleSlider project={project}></SimpleSlider>
-          {/* <Carousel>
-            {project.images.map((image, index) => (
-              <Carousel.Item key={index} className='project-image-container'>
-                <LazyLoadImage
-                  className=' test justify-content-center'
-                  src={require(`../../../assets/images/projects/${image.filename}`)}
-                  alt={''}
-                  effect='opacity'
-                ></LazyLoadImage>
-                <Carousel.Caption
-                  bsPrefix={`carousel-caption pt-1 px-4 d-flex align-items-center`}
-                >
-                  {width > 991 ? (
-                    <div className='mx-auto'>{image.description}</div>
-                  ) : (
-                    <small className='mx-auto'>{image.description}</small>
-                  )}
-                </Carousel.Caption>
-              </Carousel.Item>
-            ))}
-          </Carousel> */}
         </Modal>
       </div>
     </div>
