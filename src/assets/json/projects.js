@@ -12,6 +12,11 @@ export const projects = [
     projectType: 'personal',
     images: [
       {
+        header: 'Shows app in use',
+        description: '',
+        filename: 'personal/farmers-market-finder/farmers-market-finder.webp',
+      },
+      {
         header: 'Farmers market search results',
         description:
           'Farmers markets within a specified mile radius of searched zipcode',
@@ -108,72 +113,84 @@ export const projects = [
     ],
   },
   {
-    isActive: false,
-    header: 'Test',
-    subheader: 'test made with love',
-    projectName: 'Test',
-    date: '8/5/20 - Present',
+    isActive: true,
+    header: 'COVID-19 AI Chatbot',
+    subheader: '',
+    projectName: 'COVID-19 AI Chatbot',
+    date: '2/25/20',
     description:
-      'sdf asdff. dsfj asdfas dfasd fasd fasdf asdfasdfasg ergrt hytjert herfaf.',
+      "An AI chatbot powered by Google's Dialogflow natural language processing API. Was in production during the early stages of COVID-19 spread in the US to help alleviate the volume of questions flooding the NYS phone operators. It has since been decommissioned.",
     url: '',
-    repoUrl: 'sdfsdf.com',
+    repoUrl: 'https://github.com/dSwiergiel/coronavirus-ai-chatbot',
     projectType: 'professional',
     images: [
       {
-        header: 'blah1',
-        description: 'sdfffsa. asdfasdfasdg.',
-        filename: 'personal/this-website/react-logo.svg',
+        header: 'COVID-19 AI Chatbot',
+        description:
+          'Uses natural language processing to help understand and parse the questions. 3rd grade spelling friendly!',
+        filename: 'professional/covid-19-ai-chatbot/covid-19-ai-chatbot.webp',
       },
       {
-        header: 'blah2',
-        description: 'sdfffsa. dfsgh.',
-        filename: 'personal/this-website/react-logo.svg',
-      },
-      {
-        header: 'blah3',
-        description: 'sdfffsa.',
-        filename: 'personal/this-website/react-logo.svg',
-      },
-      {
-        header: 'blah4',
-        description: 'sdfffsa. d.',
-        filename: 'personal/this-website/react-logo.svg',
+        header: 'COVID-19 AI Chatbot',
+        description: 'Mobile Version',
+        filename: 'professional/covid-19-ai-chatbot/covid-19-ai-chatbot.png',
       },
     ],
   },
   {
-    isActive: false,
-    header: 'This Website',
-    subheader: 'made with love',
-    projectName: 'Personal Website',
-    date: '1/24/20 - Present',
+    isActive: true,
+    header: 'COVID-19 Screening App',
+    subheader: '',
+    projectName: 'COVID-19 Screening App',
+    date: '5/24/20 - Present',
     description:
-      'sdf asdff asdfasdf asg dgh sfgjkladwf dfjasdf. asd fasdf.  asdfasdfasdfjasldd kjsldfajlkdsfj asdfas dfasd fasd fasdf asdfasdfasg ergrt hytjert herfaf.',
-    url: 'http://devenswiergiel.com',
-    repoUrl: 'sdfsdf.com',
+      'COVID-19 screening app used to manage and monitor the safety of those entering physical workspaces. Used each day by any NYS employee entering a physical workspace to verify no COVID-19 exposure or symptoms are present.',
+    url: 'https://screening.ny.gov',
+    repoUrl: '',
     projectType: 'professional',
     images: [
       {
-        header: 'blah1',
+        header: 'COVID-19 Screening',
+        description: 'Homepage for employee self-screening',
+        filename:
+          'professional/screening-ny/screening-dev.ny.gov_self-screening.png',
+      },
+      {
+        header: 'COVID-19 Screening',
         description:
-          'This is a test of readability. Can you read this? MayanThis is a test of readability. Can you read this? Maybe? Not sure if you canThis is a test of readability. Can you read this? Maybe? Not sure if you can',
-        filename: 'personal/this-website/el-capitan.jpg',
+          'One of the questions asked during employee self-screening.',
+        filename:
+          'professional/screening-ny/screening-dev.ny.gov_self-screening-symptoms.png',
       },
       {
-        header: 'blah2',
-        description: 'asdf   adfasdfasdf asd fasd fasd fsdfsdfa',
-        filename: 'personal/this-website/el-capitan.jpg',
-      },
-      {
-        header: 'blah3',
-        description: 'sdfffsa.',
-        filename: 'personal/this-website/el-capitan.jpg',
-      },
-      {
-        header: 'blah4',
+        header: 'COVID-19 Screening',
         description:
-          'sasdf   adfasdfasdf asd fasd fasd fsdfsdfa asdf    adfasdfasdf asd fasd fasd fsdfsdfa',
-        filename: 'personal/this-website/el-capitan.jpg',
+          'After screening, employee either gets a confirmation to come into work or is told to stay home',
+        filename:
+          'professional/screening-ny/screening-dev.ny.gov_self-screening_confirmation.png',
+      },
+      {
+        header: 'COVID-19 Screening',
+        description:
+          'Coordinator screeners are supervisors who need to check in their employees as well as offer in person screenings for those unable to before coming in. They can search by email or scan the QR code.',
+        filename:
+          'professional/screening-ny/screening-dev.ny.gov_coordinator-screening(1).png',
+      },
+      {
+        header: 'COVID-19 Screening',
+        description: 'Dashboard for quick reporting.',
+        filename: 'professional/screening-ny/screening.ny.gov_dashboard.png',
+      },
+      {
+        header: 'COVID-19 Screening',
+        description: 'Dashboard for quick reporting.',
+        filename: 'professional/screening-ny/screening.ny.gov_dashboard.png',
+      },
+      {
+        header: 'COVID-19 Screening',
+        description: 'Data exporting for finer control.',
+        filename:
+          'professional/screening-ny/screening-dev.ny.gov_data-export.png',
       },
     ],
   },
