@@ -1,10 +1,9 @@
 import React from 'react';
-// import LazyLoad from 'react-lazyload';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-scroll';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 
-import portrait from '../../../assets/images/landing-portrait.jpg';
+import portrait from '../../../assets/images/projects/personal/this-website/landing-portrait.jpg';
 import resume from '../../../assets/resume/currentresume.pdf';
 import './landing.scss';
 
@@ -12,16 +11,27 @@ const Landing = () => {
   return (
     <div className='container landing-box py-3'>
       <div className='row '>
-        <div className='col-lg-4'>
-          <LazyLoadImage
-            className='portrait'
-            width='100%'
-            src={portrait}
-            alt={'Deven Swiergiel'}
-            effect='opacity'
-          ></LazyLoadImage>
+        <div className='col-lg-3 col-md-3 mb-lg-0 mb-3'>
+          <div className='d-flex justify-content-center'>
+            <LazyLoadImage
+              className='portrait'
+              width='100%'
+              src={portrait}
+              alt={'Deven Swiergiel'}
+              effect='opacity'
+            ></LazyLoadImage>
+          </div>
+          <h6 className='mt-3 text-center text-light less-letter-spacing capital-case'>
+            3 years full-stack experience
+          </h6>
+          <hr></hr>
+          <h6 className='text-center text-light less-letter-spacing capital-case'>
+            Computer Science (B.S) Summa Cum Laude
+            <br></br>
+            University At Albany
+          </h6>
         </div>
-        <div className='col-lg-8'>
+        <div className='col-lg-9  col-md-9'>
           <p className='text-light'>
             My name is Deven Swiergiel and I like to make stuff. I'm a
             Full-Stack Developer with an emphasis on the frontend, building
@@ -30,12 +40,12 @@ const Landing = () => {
           <p className='text-light'>
             Currently working as Frontend Lead building a multi-persona
             screening tool as part of New York's COVID-19 efforts to ensure a
-            safe return to the office. Over 10,000 active daily users and
+            safe return to the office. Over 50,000 active daily users and
             anticipating over 100,000 as more workers return to the office.
           </p>
           <p className='text-light mb-0'>
             Previously worked alongside Google to rebuild New York's legacy
-            Unemployment Insurance app to support the million's of New Yorkers
+            Unemployment Insurance system to support the millions of New Yorkers
             sadly affected by COVID-19.
           </p>
           {/* <p className='text-light'>

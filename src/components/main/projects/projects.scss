@@ -1,0 +1,94 @@
+@import '../../../assets/css/variables.scss';
+
+.customOverlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+.customModal {
+  background: #282c34;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 1000px;
+  max-height: 750px;
+  object-fit: contain;
+}
+
+.project-image-caption {
+  position: relative;
+  border: none !important;
+  color: $light;
+  overflow-y: auto;
+  font-size: medium;
+  left: 0;
+  top: -0px;
+}
+
+.project-card {
+  min-height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // height: 90%;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  background-color: #0000007a;
+}
+
+.carousel-container:hover .overlay {
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+}
+.carousel-container:hover .carousel-image-tint {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
+
+.carousel-image-tint {
+  transition: 0.3s ease-in-out;
+}
+
+.overlay-text:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+.overlay-text {
+  margin-top: 25%;
+  transition: 0.3s ease-in-out;
+  z-index: -1;
+}
+
+// prev
+.customPrevArrow {
+  appearance: button;
+  cursor: pointer;
+  // color: $light;
+  left: -25px;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+}
+
+// next
+.customNextArrow {
+  appearance: button;
+  cursor: pointer;
+  // color: $light;
+  right: -25px;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+}

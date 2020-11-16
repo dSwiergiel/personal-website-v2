@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { TimelineLite, Power1 } from 'gsap/all';
 
 const Hamburger = ({ fill, height = '30px', classes, duration = '3000' }) => {

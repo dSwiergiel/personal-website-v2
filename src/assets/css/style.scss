@@ -1,6 +1,7 @@
 // google fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
 
+// bootstrap base theme
 @import '~bootswatch/dist/lux/variables';
 // bootstrap variable overrides
 @import './variables.scss';
@@ -28,11 +29,25 @@ body {
   margin: 0;
   padding: 0px;
 }
+// responsive title
+// font-size: calc(2rem + 2*(100vw - 30rem)/30);
 
+// responsive p text
+// font-size: calc(1.125rem + 0.375*(100vw - 30rem)/30);
 p {
   letter-spacing: $letter-spacing;
+  // font-size: calc(1.125rem + 0.375 * (100vw - 30rem) / 175);
+}
+.less-letter-spacing {
+  letter-spacing: 4px;
+}
+.text-lighter {
+  color: $grayish !important;
 }
 
+.capital-case {
+  text-transform: capitalize;
+}
 /* Custom Scroll bar*/
 /* width */
 ::-webkit-scrollbar {
@@ -73,6 +88,14 @@ p {
   color: $dark !important;
   background-position: 0 -100%;
 }
+.slide-up-button.active {
+  text-decoration: none;
+  color: $dark !important;
+  background-position: 0 -100%;
+  border-style: none;
+  box-shadow: rgba(43, 60, 88, 0.25) 0 0 0 0.2rem;
+}
+
 button:focus,
 a:focus {
   outline: none;
@@ -87,12 +110,17 @@ a:focus {
 }
 
 .landing-background {
-  background-image: url('../../assets/images/el-capitan.jpg');
+  background-image: url('/assets/images/projects/personal/this-website/el-capitan.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
   box-shadow: 100vw 100vh rgba(0, 0, 0, 0.3) inset;
+}
+.card-shadow {
+  -webkit-box-shadow: 0px 13px 46px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0p x 13px 46px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 13px 46px 2px rgba(0, 0, 0, 0.75);
 }
 
 .sticky {
@@ -108,6 +136,14 @@ a:focus {
 .sticky + .content {
   padding-top: calc(90px + 2 * ((100vw) / 680));
 }
+.testing {
+  max-height: 800px;
+  max-width: 800px;
+}
+.responsive-image {
+  max-width: 800px;
+  height: auto;
+}
 .link {
   text-decoration: none;
   cursor: pointer !important;
@@ -119,4 +155,7 @@ a:focus {
 }
 .real-link:hover {
   text-decoration: underline !important;
+}
+.less-letter-spacing {
+  letter-spacing: 3px;
 }

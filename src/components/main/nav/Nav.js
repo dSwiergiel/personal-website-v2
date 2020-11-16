@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import { TimelineMax, TweenMax, Power0, Power1 } from 'gsap';
 import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap';
 import * as ScrollMagic from 'scrollmagic';
-import useWindowDimensions from '../../hooks/WindowDimensions';
+import useWindowDimensions from '../../../hooks/WindowDimensions';
 import NavMenu from './NavMenu';
 import NavMenuMobile from './NavMenuMobile';
 import ScrollProgressBar from './ScrollProgressBar';
@@ -45,7 +45,7 @@ const Nav = ({ duration }) => {
   };
 
   const animateOnLoad = () => {
-    TweenMax.from(name, duration / 1000 / 3, {
+    TweenMax.from(name, duration / 1000 / 2.8, {
       opacity: 0,
       x: -200,
       delay: duration / 1000 - (duration / 1000) * 0.5,

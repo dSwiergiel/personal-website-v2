@@ -1,16 +1,15 @@
-import React, { useEffect, useRef, Fragment } from 'react';
-import { TimelineMax, TweenMax, Power0, Back } from 'gsap';
+import React, { useEffect, useRef } from 'react';
+import { TimelineMax, Back } from 'gsap';
 import * as ScrollMagic from 'scrollmagic';
-import './underconstruction.scss';
 
-const UnderConstruction = () => {
+const LazyRender = ({ children, delay = 1.5, duration = 2 }) => {
   let content = useRef(null);
   const controller = new ScrollMagic.Controller();
 
   useEffect(() => {
     setTimeout(() => {
       animateOnscrol();
-    }, 1500);
+    }, delay * 1000);
     //eslint-disable-next-line
   }, []);
 
@@ -19,7 +18,7 @@ const UnderConstruction = () => {
 
     t1.from(
       content,
-      2,
+      duration,
       {
         ease: Back.easeInOut,
         opacity: 0,
@@ -39,21 +38,13 @@ const UnderConstruction = () => {
 
   return (
     <div
-      className='text-center mb-5 container'
       ref={(el) => {
         content = el;
       }}
     >
-      <h1 className='mb-4'>Under Construction</h1>
-      <i className='fas fa-tools under-construction-logo mb-4'></i>
-      <p>
-        Unfortunately, this part of the site is still in progress but will soon
-        feature a projects section where some of my best work will be shown, as
-        well as education, experience, and contact sections.
-      </p>
-      <p>Thanks for your patience</p>
+      {children}
     </div>
   );
 };
 
-export default UnderConstruction;
+export default LazyRender;
