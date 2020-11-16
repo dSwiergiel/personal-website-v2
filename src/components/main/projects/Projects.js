@@ -12,9 +12,12 @@ const Projects = ({ scrollPosition }) => {
   const { width } = useWindowDimensions();
   const [minHeight, setMinHeight] = useState('auto');
   const [isPersonalProjects, setIsPersonalProjects] = useState(true);
+  const [projectsMasterList, setProjectsMasterList] = useState(
+    projects.filter((project) => project.isActive)
+  );
 
   const [projectsToShow, setProjectsToShow] = useState(
-    projects.filter((project) => project.projectType === 'personal')
+    projectsMasterList.filter((project) => project.projectType === 'personal')
   );
 
   const handleClick = (e) => {
@@ -22,7 +25,7 @@ const Projects = ({ scrollPosition }) => {
     if (buttonClicked === 'personal') {
       setIsPersonalProjects(true);
 
-      let projectCount = projects.filter(
+      let projectCount = projectsMasterList.filter(
         (project) => project.projectType === 'personal'
       ).length;
 
@@ -33,7 +36,7 @@ const Projects = ({ scrollPosition }) => {
       for (let i = 0; i <= projectCount; i++) {
         setTimeout(() => {
           setProjectsToShow(
-            projects
+            projectsMasterList
               .filter((project) => project.projectType === 'personal')
               .slice(0, i)
           );
@@ -49,7 +52,7 @@ const Projects = ({ scrollPosition }) => {
     } else {
       setIsPersonalProjects(false);
 
-      let projectCount = projects.filter(
+      let projectCount = projectsMasterList.filter(
         (project) => project.projectType === 'professional'
       ).length;
 
@@ -60,7 +63,7 @@ const Projects = ({ scrollPosition }) => {
       for (let i = 0; i <= projectCount; i++) {
         setTimeout(() => {
           setProjectsToShow(
-            projects
+            projectsMasterList
               .filter((project) => project.projectType === 'professional')
               .slice(0, i)
           );
@@ -115,6 +118,11 @@ const Projects = ({ scrollPosition }) => {
             ></Project>
           </FadeInSlide>
         ))}
+        {projectsToShow.length === 0 && (
+          <h4 className='mt-5 mb-4 pt-4 pb-4 text-center text-light'>
+            No projects being shown at the moment
+          </h4>
+        )}
       </div>
     </AnimateHeight>
   );
