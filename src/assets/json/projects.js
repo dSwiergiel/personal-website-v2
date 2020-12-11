@@ -77,6 +77,57 @@ export const projects = [
     ],
   },
   {
+    isActive: true,
+    header: 'Rental Analysis Calculator',
+    subheader: '',
+    projectName: 'Rental Analysis Calculator',
+    date: '12/20/17',
+    description:
+      'A quick and dirty rental analysis calculator to help analyze investment properties for determining buy and hold rental potential. \n\nNOTE: This was a quick project for when I was searching for a rental property. I was new to web dev — best practices were definitively not considered...',
+    url: 'https://rental-analysis-calculator.vercel.app/',
+    repoUrl: 'https://github.com/dSwiergiel/rental_analysis_calculator',
+    projectType: 'personal',
+    images: [
+      {
+        header: 'Results Video',
+        description:
+          'Generates various calculations as well as expenses pie chart, cashflow, amortization schedule, and future projections table',
+        filename: 'personal/rental-analysis-calculator/rental-analysis.webp',
+      },
+      {
+        header: 'Property Info',
+        description: 'Enter basic info about the property for personal use.',
+        filename: 'personal/rental-analysis-calculator/rental-analysis.png',
+      },
+      {
+        header: 'Purchase Info',
+        description:
+          'Enter more specifics about the property and financing details.',
+        filename:
+          'personal/rental-analysis-calculator/rental-analysis-purchase-info.png',
+      },
+      {
+        header: 'Rental Info',
+        description: 'Enter rental numbers.',
+        filename:
+          'personal/rental-analysis-calculator/rental-analysis-rental-info.png',
+      },
+      {
+        header: 'Calculated Results',
+        description:
+          'Calculated results are shown with various charts to help visualize the numbers.',
+        filename:
+          'personal/rental-analysis-calculator/rental-analysis-results.png',
+      },
+      {
+        header: 'Future Projections',
+        description: 'Calculated future projections.',
+        filename:
+          'personal/rental-analysis-calculator/rental-analysis-future-projections.png',
+      },
+    ],
+  },
+  {
     isActive: false,
     header: 'This Website',
     subheader: 'made with love',
