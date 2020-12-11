@@ -195,7 +195,7 @@ export const projects = [
     ],
   },
   {
-    isActive: false,
+    isActive: true,
     header: 'My Open FOIL',
     subheader: '',
     projectName: 'My Open FOIL',
@@ -208,23 +208,32 @@ export const projects = [
     images: [
       {
         header: 'Landing page',
-        description: 'Users decide if they want to use the My Open FOIL to submit a FOIL request or to submit a FOIL request as a guest without access to My Open FOIL features. ',
-        filename: 'personal/this-website/react-logo.svg',
+        description:
+          'Users decide if they want to use the My Open FOIL to submit a FOIL request or to submit a FOIL request as a guest without access to My Open FOIL features. ',
+        filename: 'professional/foil-ny/my-open-foil-landing.png',
       },
       {
         header: 'My FOIL requests',
-        description: 'Landing page for the My Open FOIL portal. Users can view all of their FOIL requests or submit a new one.',
-        filename: 'personal/this-website/react-logo.svg',
+        description:
+          'Landing page for the My Open FOIL portal. Users can view all of their FOIL requests or submit a new one.',
+        filename: 'professional/foil-ny/my-open-foil.png',
       },
       {
         header: 'FOIL request details',
-        description: 'FOIL request details. Users can see all information regarding the details of their FOIL request.',
-        filename: 'personal/this-website/react-logo.svg',
+        description:
+          'FOIL request details. Users can see all information regarding the details of their FOIL request.',
+        filename: 'professional/foil-ny/my-open-foil-details.png',
       },
       {
         header: 'Message Agency',
-        description: 'Ability to message with Records Access Officers about their FOIL request.',
-        filename: 'personal/this-website/react-logo.svg',
+        description:
+          'Ability to message with Records Access Officers about their FOIL request.',
+        filename: 'professional/foil-ny/my-open-foil-message.png',
+      },
+      {
+        header: 'Profile Edit',
+        description: 'Basic user info editing.',
+        filename: 'professional/foil-ny/my-open-foil-edit-profile.png',
       },
     ],
   },
