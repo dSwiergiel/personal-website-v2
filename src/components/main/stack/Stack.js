@@ -37,7 +37,7 @@ const Stack = () => {
         percent={55}
         offset={0}
       ></ProgressBar>
-      <ProgressBar name={'SQL'} percent={44} offset={0}></ProgressBar>
+      <ProgressBar name={'SQL Server'} percent={44} offset={0}></ProgressBar>
       <ProgressBar name={'Java'} percent={35} offset={0}></ProgressBar>
 
       {/* <ProgressBar name={'Java'} percent={35} offset={0}></ProgressBar>
