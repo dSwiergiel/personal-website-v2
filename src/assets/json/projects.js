@@ -170,7 +170,7 @@ export const projects = [
     projectName: 'COVID-19 AI Chatbot',
     date: '2/25/20',
     description:
-      "An AI chatbot powered by Google's Dialogflow natural language processing API. Was in production during the early stages of COVID-19 spread in the US to help alleviate the volume of questions flooding the NYS phone operators. It has since been decommissioned.",
+      "An AI chatbot powered by Google's Dialogflow natural language processing API. Was in production during the early stages of COVID-19 spread in the US to help alleviate the volume of questions flooding the NYS phone operators. It has since been decommissioned. Angular 8 frontend, Node.js backend.",
     url: '',
     repoUrl: 'https://github.com/dSwiergiel/coronavirus-ai-chatbot',
     projectType: 'professional',
@@ -195,7 +195,7 @@ export const projects = [
     projectName: 'COVID-19 Screening App',
     date: '5/24/20 - Present',
     description:
-      'COVID-19 screening app used to manage and monitor the safety of those entering physical workspaces. Used each day by any NYS employee entering a physical workspace to verify no COVID-19 exposure or symptoms are present.',
+      'COVID-19 screening app used to manage and monitor the safety of those entering physical workspaces. Used each day by any NYS employee entering a physical workspace to verify no COVID-19 exposure or symptoms are present. Angular 9 frontend, ASP.NET MVC backend.',
     url: 'https://screening.ny.gov',
     repoUrl: '',
     projectType: 'professional',
@@ -247,12 +247,47 @@ export const projects = [
   },
   {
     isActive: true,
+    header: 'Nourish-NY',
+    subheader: '',
+    projectName: 'Nourish-NY',
+    date: '5/1/20',
+    description:
+      'Web portal allowing farmers to donate surplus products that would otherwise expire to food banks and homeless shelters. Angular 9 frontend, ASP.NET MVC backend.',
+    url: 'https://nourish.ny.gov/',
+    repoUrl: '',
+    projectType: 'professional',
+    images: [
+      {
+        header: 'Search for products',
+        description:
+          'Once in the portal, users can search using various filters.',
+        filename: 'professional/nourish-ny/nourish-ny-search-results.png',
+      },
+      {
+        header: 'Search for products',
+        description: '',
+        filename: 'professional/nourish-ny/nourish-ny-search.png',
+      },
+      {
+        header: 'Product and farm details',
+        description: 'Product and farm details',
+        filename: 'professional/nourish-ny/nourish-ny-details.png',
+      },
+      {
+        header: 'Farmer portal',
+        description: 'Portal for farmers to add their products.',
+        filename: 'professional/nourish-ny/nourish-ny-farmer-portal.png',
+      },
+    ],
+  },
+  {
+    isActive: true,
     header: 'My Open FOIL',
     subheader: '',
     projectName: 'My Open FOIL',
     date: '10/1/18 - 1/31/19',
     description:
-      'My Open FOIL is an extension of Open FOIL NY that gives users the ability to track and manage their FOIL requests. Users can upload/download documents, communicate with case workers on their FOIL request, and view various details and milestones about their FOIL request. \n\nNOTE: Images shown are from an early test build.',
+      'My Open FOIL is an extension of Open FOIL NY that gives users the ability to track and manage their FOIL requests. Users can upload/download documents, communicate with case workers, and view various details of their FOIL request. \nNOTE: Images shown are from an early test build.',
     url: '',
     repoUrl: '',
     projectType: 'professional',
