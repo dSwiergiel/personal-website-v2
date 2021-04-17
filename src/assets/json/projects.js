@@ -165,9 +165,9 @@ export const projects = [
   },
   {
     isActive: true,
-    header: 'COVID-19 AI Chatbot',
+    header: 'COVID-19 FAQ AI Chatbot',
     subheader: '',
-    projectName: 'COVID-19 AI Chatbot',
+    projectName: 'COVID-19 FAQ AI Chatbot',
     date: '2/25/20',
     description:
       "An AI chatbot powered by Google's Dialogflow natural language processing API. Was in production during the early stages of COVID-19 spread in the US to help alleviate the volume of questions flooding the NYS phone operators. It has since been decommissioned. Angular 8 frontend, Node.js backend.",
@@ -176,13 +176,13 @@ export const projects = [
     projectType: 'professional',
     images: [
       {
-        header: 'COVID-19 AI Chatbot',
+        header: 'COVID-19 FAQ AI Chatbot',
         description:
           'Uses natural language processing to help understand and parse the questions. 3rd grade spelling friendly!',
         filename: 'professional/covid-19-ai-chatbot/covid-19-ai-chatbot.webp',
       },
       {
-        header: 'COVID-19 AI Chatbot',
+        header: 'COVID-19 FAQ AI Chatbot',
         description: 'Mobile Version',
         filename: 'professional/covid-19-ai-chatbot/covid-19-ai-chatbot.png',
       },
