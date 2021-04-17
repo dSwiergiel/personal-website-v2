@@ -74,11 +74,11 @@ const Project = ({ project, scrollPosition }) => {
               {project.date}
             </h6>
             <small>
-              <p className='card-text text-lighter mb-2'>
+              <p className='card-text text-lighter mb-2'  style={{"whiteSpace" : "pre-wrap"}}>
                 {project.description}
               </p>
             </small>
-            <div className=' d-flex'>
+            <div className='d-flex'>
               <button
                 className={
                   width > 991

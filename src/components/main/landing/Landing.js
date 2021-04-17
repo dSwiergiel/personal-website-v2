@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 import portrait from '../../../assets/images/projects/personal/this-website/landing-portrait.jpg';
-import resume from '../../../assets/resume/currentresume.pdf';
+import resume from '../../../assets/resume/Deven-Swiergiel_resume.pdf';
 import './landing.scss';
 
 const Landing = () => {
@@ -26,8 +26,10 @@ const Landing = () => {
           </h6>
           <hr></hr>
           <h6 className='text-center text-light less-letter-spacing capital-case'>
-            Computer Science (B.S) Summa Cum Laude
-            <br></br>
+            Computer Science (B.S)
+            <br />
+            <small className='d-block'>(Summa Cum Laude)</small>
+            <br />
             University At Albany
           </h6>
         </div>

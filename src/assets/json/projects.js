@@ -77,6 +77,57 @@ export const projects = [
     ],
   },
   {
+    isActive: true,
+    header: 'Rental Analysis Calculator',
+    subheader: '',
+    projectName: 'Rental Analysis Calculator',
+    date: '12/20/17',
+    description:
+      'A quick and dirty rental analysis calculator to help analyze investment properties for determining buy and hold rental potential. \n\nNOTE: This was a quick project for when I was searching for a rental property. I was new to web dev — best practices were definitively not considered...',
+    url: 'https://rental-analysis-calculator.vercel.app/',
+    repoUrl: 'https://github.com/dSwiergiel/rental_analysis_calculator',
+    projectType: 'personal',
+    images: [
+      {
+        header: 'Results Video',
+        description:
+          'Generates various calculations as well as expenses pie chart, cashflow, amortization schedule, and future projections table',
+        filename: 'personal/rental-analysis-calculator/rental-analysis.webp',
+      },
+      {
+        header: 'Property Info',
+        description: 'Enter basic info about the property for personal use.',
+        filename: 'personal/rental-analysis-calculator/rental-analysis.png',
+      },
+      {
+        header: 'Purchase Info',
+        description:
+          'Enter more specifics about the property and financing details.',
+        filename:
+          'personal/rental-analysis-calculator/rental-analysis-purchase-info.png',
+      },
+      {
+        header: 'Rental Info',
+        description: 'Enter rental numbers.',
+        filename:
+          'personal/rental-analysis-calculator/rental-analysis-rental-info.png',
+      },
+      {
+        header: 'Calculated Results',
+        description:
+          'Calculated results are shown with various charts to help visualize the numbers.',
+        filename:
+          'personal/rental-analysis-calculator/rental-analysis-results.png',
+      },
+      {
+        header: 'Future Projections',
+        description: 'Calculated future projections.',
+        filename:
+          'personal/rental-analysis-calculator/rental-analysis-future-projections.png',
+      },
+    ],
+  },
+  {
     isActive: false,
     header: 'This Website',
     subheader: 'made with love',
@@ -119,7 +170,7 @@ export const projects = [
     projectName: 'COVID-19 AI Chatbot',
     date: '2/25/20',
     description:
-      "An AI chatbot powered by Google's Dialogflow natural language processing API. Was in production during the early stages of COVID-19 spread in the US to help alleviate the volume of questions flooding the NYS phone operators. It has since been decommissioned.",
+      "An AI chatbot powered by Google's Dialogflow natural language processing API. Was in production during the early stages of COVID-19 spread in the US to help alleviate the volume of questions flooding the NYS phone operators. It has since been decommissioned. Angular 8 frontend, Node.js backend.",
     url: '',
     repoUrl: 'https://github.com/dSwiergiel/coronavirus-ai-chatbot',
     projectType: 'professional',
@@ -144,7 +195,7 @@ export const projects = [
     projectName: 'COVID-19 Screening App',
     date: '5/24/20 - Present',
     description:
-      'COVID-19 screening app used to manage and monitor the safety of those entering physical workspaces. Used each day by any NYS employee entering a physical workspace to verify no COVID-19 exposure or symptoms are present.',
+      'COVID-19 screening app used to manage and monitor the safety of those entering physical workspaces. Used each day by any NYS employee entering a physical workspace to verify no COVID-19 exposure or symptoms are present. Angular 9 frontend, ASP.NET MVC backend.',
     url: 'https://screening.ny.gov',
     repoUrl: '',
     projectType: 'professional',
@@ -195,36 +246,80 @@ export const projects = [
     ],
   },
   {
-    isActive: false,
-    header: 'Test',
-    subheader: 'test made with love',
-    projectName: 'Test',
-    date: '8/5/20 - Present',
+    isActive: true,
+    header: 'Nourish-NY',
+    subheader: '',
+    projectName: 'Nourish-NY',
+    date: '5/1/20',
     description:
-      'sdf asdff. dsfj asdfas dfasd fasd fasdf asdfasdfasg ergrt hytjert herfaf.',
-    url: '',
-    repoUrl: 'sdfsdf.com',
+      'Web portal allowing farmers to donate surplus products that would otherwise expire to food banks and homeless shelters. Angular 9 frontend, ASP.NET MVC backend.',
+    url: 'https://nourish.ny.gov/',
+    repoUrl: '',
     projectType: 'professional',
     images: [
       {
-        header: 'blah1',
-        description: 'sdfffsa. asdfasdfasdg.',
-        filename: 'personal/this-website/react-logo.svg',
+        header: 'Search for products',
+        description:
+          'Once in the portal, users can search using various filters.',
+        filename: 'professional/nourish-ny/nourish-ny-search-results.png',
       },
       {
-        header: 'blah2',
-        description: 'sdfffsa. dfsgh.',
-        filename: 'personal/this-website/react-logo.svg',
+        header: 'Search for products',
+        description: '',
+        filename: 'professional/nourish-ny/nourish-ny-search.png',
       },
       {
-        header: 'blah3',
-        description: 'sdfffsa.',
-        filename: 'personal/this-website/react-logo.svg',
+        header: 'Product and farm details',
+        description: 'Product and farm details',
+        filename: 'professional/nourish-ny/nourish-ny-details.png',
       },
       {
-        header: 'blah4',
-        description: 'sdfffsa. d.',
-        filename: 'personal/this-website/react-logo.svg',
+        header: 'Farmer portal',
+        description: 'Portal for farmers to add their products.',
+        filename: 'professional/nourish-ny/nourish-ny-farmer-portal.png',
+      },
+    ],
+  },
+  {
+    isActive: true,
+    header: 'My Open FOIL',
+    subheader: '',
+    projectName: 'My Open FOIL',
+    date: '10/1/18 - 1/31/19',
+    description:
+      'My Open FOIL is an extension of Open FOIL NY that gives users the ability to track and manage their FOIL requests. Users can upload/download documents, communicate with case workers, and view various details of their FOIL request. \nNOTE: Images shown are from an early test build.',
+    url: '',
+    repoUrl: '',
+    projectType: 'professional',
+    images: [
+      {
+        header: 'Landing page',
+        description:
+          'Users decide if they want to use the My Open FOIL to submit a FOIL request or to submit a FOIL request as a guest without access to My Open FOIL features. ',
+        filename: 'professional/foil-ny/my-open-foil-landing.png',
+      },
+      {
+        header: 'My FOIL requests',
+        description:
+          'Landing page for the My Open FOIL portal. Users can view all of their FOIL requests or submit a new one.',
+        filename: 'professional/foil-ny/my-open-foil.png',
+      },
+      {
+        header: 'FOIL request details',
+        description:
+          'FOIL request details. Users can see all information regarding the details of their FOIL request.',
+        filename: 'professional/foil-ny/my-open-foil-details.png',
+      },
+      {
+        header: 'Message Agency',
+        description:
+          'Ability to message with Records Access Officers about their FOIL request.',
+        filename: 'professional/foil-ny/my-open-foil-message.png',
+      },
+      {
+        header: 'Profile Edit',
+        description: 'Basic user info editing.',
+        filename: 'professional/foil-ny/my-open-foil-edit-profile.png',
       },
     ],
   },
