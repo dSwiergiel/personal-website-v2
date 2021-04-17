@@ -25,7 +25,7 @@ export const SimpleSlider = ({
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     pauseOnHover: true,
     // prevArrow: <CustomPrevArrow />,
