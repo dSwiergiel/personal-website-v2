@@ -10,8 +10,6 @@ const Hamburger = ({ fill, height = '30px', classes, duration = '3000' }) => {
   const animateOnload = () => {
     let t1 = new TimelineLite();
 
-    t1.defaultOverwrite = false;
-
     t1.from('#ham-top', duration / 1000 / 10, {
       opacity: 0,
       x: 75,

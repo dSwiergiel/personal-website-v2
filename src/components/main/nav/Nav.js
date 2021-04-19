@@ -10,7 +10,7 @@ import ScrollProgressBar from './ScrollProgressBar';
 
 import './nav.scss';
 
-ScrollMagicPluginGsap(ScrollMagic, TweenMax.defaultOverwrite = false, TimelineMax.defaultOverwrite = false);
+ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
 const Nav = ({ duration }) => {
   const { width } = useWindowDimensions();
@@ -27,7 +27,6 @@ const Nav = ({ duration }) => {
 
   const animateNavOnscrol = () => {
     let t1 = new TimelineMax();
-    t1.defaultOverwrite = false;
 
     t1.to(nav, {
       // background: '#2b3c58',
