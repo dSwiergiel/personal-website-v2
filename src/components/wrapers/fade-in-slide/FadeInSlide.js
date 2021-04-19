@@ -15,6 +15,8 @@ const FadeInSlide = ({ children, delay = 0, duration = 1 }) => {
   const animateOnscrol = () => {
     let t1 = new TimelineMax();
 
+    t1.defaultOverwrite = false;
+
     t1.from(
       content,
       duration,

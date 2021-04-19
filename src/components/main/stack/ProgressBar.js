@@ -17,6 +17,8 @@ const ProgressBar = ({ percent, offset, name }) => {
   const animateOnscrol = () => {
     let t1 = new TimelineMax();
 
+    t1.defaultOverwrite = false;
+
     t1.to(
       bar,
       1,

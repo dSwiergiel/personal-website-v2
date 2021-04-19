@@ -16,6 +16,8 @@ const LazyRender = ({ children, delay = 1.5, duration = 2 }) => {
   const animateOnscrol = () => {
     let t1 = new TimelineMax();
 
+    t1.defaultOverwrite = false;
+
     t1.from(
       content,
       duration,
