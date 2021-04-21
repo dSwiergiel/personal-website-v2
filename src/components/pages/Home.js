@@ -4,7 +4,7 @@ import { BrowserView, MobileView } from 'react-device-detect';
 import Parallax from '../wrapers/parallax/Parallax';
 import Splash from '../main/splash/Splash';
 import Nav from '../main/nav/Nav';
-import UnderConstruction from '../main/construction/UnderConstruction';
+
 import landingBackground from '../../assets/images/projects/personal/this-website/el-capitan.jpg';
 import LazyRender from '../wrapers/lazy-render/LazyRender';
 
@@ -42,7 +42,11 @@ function Home() {
        */}
       {/* <MobileView> */}
       <Nav duration={loadingTime}></Nav>
-      <Parallax
+      <div className=' pb-5 container content' name='landing'>
+        <div class="landing-bg"></div>
+          <Landing></Landing>
+        </div>
+      {/* <Parallax
         background={landingBackground}
         speed={0.1}
         alt='landing backgound'
@@ -50,10 +54,10 @@ function Home() {
         <div className=' pb-5 container content' name='landing'>
           <Landing></Landing>
         </div>
-      </Parallax>
+      </Parallax> */}
       {/* </MobileView> */}
       <Suspense fallback={<h1>Still Loading…</h1>}>
-        <div className='container py-4 px-4'>
+        <div className='container bg-white py-4 px-4'>
           <div className='row'>
             <div name='about' className='col-lg-6'>
               <About></About>
@@ -64,23 +68,24 @@ function Home() {
           </div>
         </div>
       </Suspense>
-
       <Suspense fallback={<h1>Still Loading…</h1>}>
         <div className='bg-warning pt-4' name='projects'>
           <Projects></Projects>
         </div>
       </Suspense>
       <Suspense fallback={<h1>Still Loading…</h1>}>
-        <div className='container pt-4 mb-5' name='contact'>
+        <div className='container py-4 bg-white' name='contact'>
           <LazyRender delay={0} duration={1}>
             <Contact></Contact>
           </LazyRender>
         </div>
       </Suspense>
       <Suspense fallback={<h1>Still Loading…</h1>}>
+      <div class="bg-white">
         <LazyRender delay={0} duration={1.2}>
           <Footer></Footer>
         </LazyRender>
+        </div>
       </Suspense>
     </div>
   );
