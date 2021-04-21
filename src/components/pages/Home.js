@@ -42,7 +42,7 @@ function Home() {
        */}
       {/* <MobileView> */}
       <Nav duration={loadingTime}></Nav>
-      <div className=' pb-5 container content' name='landing'>
+      <div className='pb-5 container content' name='landing'>
         <div class="landing-bg"></div>
           <Landing></Landing>
         </div>
@@ -57,7 +57,8 @@ function Home() {
       </Parallax> */}
       {/* </MobileView> */}
       <Suspense fallback={<h1>Still Loading…</h1>}>
-        <div className='container bg-white py-4 px-4'>
+        <div class="bg-white">
+        <div className='container  py-4 px-4'>
           <div className='row'>
             <div name='about' className='col-lg-6'>
               <About></About>
@@ -67,6 +68,8 @@ function Home() {
             </div>
           </div>
         </div>
+        </div>
+
       </Suspense>
       <Suspense fallback={<h1>Still Loading…</h1>}>
         <div className='bg-warning pt-4' name='projects'>
@@ -74,10 +77,12 @@ function Home() {
         </div>
       </Suspense>
       <Suspense fallback={<h1>Still Loading…</h1>}>
-        <div className='container py-4 bg-white' name='contact'>
+      <div class="bg-white">
+        <div className='container py-4' name='contact'>
           <LazyRender delay={0} duration={1}>
             <Contact></Contact>
           </LazyRender>
+        </div>
         </div>
       </Suspense>
       <Suspense fallback={<h1>Still Loading…</h1>}>
