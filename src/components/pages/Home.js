@@ -21,19 +21,7 @@ function Home() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    //   document.body.addEventListener('touchstart', function( event ){
-    //     if( this.scrollTop === 0 ) {
-    //         this.scrollTop += 1;
-    //     } else if( this.scrollTop + this.offsetHeight >= this.scrollHeight ) {
-    //         this.scrollTop -= 1;
-    //     }
-    // });
-      
-    document.body.addEventListener('touchmove', function(e) { 
-      e.preventDefault(); 
-  });
     }, loadingTime);
-    
     //eslint-disable-next-line
   }, []);
 
