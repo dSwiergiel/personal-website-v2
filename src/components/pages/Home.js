@@ -1,11 +1,8 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 
-import { BrowserView, MobileView } from 'react-device-detect';
-import Parallax from '../wrapers/parallax/Parallax';
 import Splash from '../main/splash/Splash';
 import Nav from '../main/nav/Nav';
 
-import landingBackground from '../../assets/images/projects/personal/this-website/el-capitan.jpg';
 import LazyRender from '../wrapers/lazy-render/LazyRender';
 
 const Landing = lazy(() => import('../main/landing/Landing'));
@@ -29,45 +26,24 @@ function Home() {
     <div>
       {/* Splash Screen */}
       {loading && <Splash duration={loadingTime}></Splash>}
-      {/* <BrowserView>
-        <div className='landing-background '>
-          <Nav duration={loadingTime}></Nav>
-          <div className=' pb-5 container content' name='landing'>
-            <Landing></Landing>
-          </div>
-        </div>
-      </BrowserView> */}
-      {/* background fixed on mobile devices is disabled due to
-       high repaint cost so a parallax plugin is used for mobile
-       */}
-      {/* <MobileView> */}
       <Nav duration={loadingTime}></Nav>
       <div className='pb-5 container content' name='landing'>
         <div class="landing-bg"></div>
-          <Landing></Landing>
-        </div>
-      {/* <Parallax
-        background={landingBackground}
-        speed={0.1}
-        alt='landing backgound'
-      >
-        <div className=' pb-5 container content' name='landing'>
-          <Landing></Landing>
-        </div>
-      </Parallax> */}
-      {/* </MobileView> */}
+        <Landing></Landing>
+      </div>
+
       <Suspense fallback={<h1>Still Loading…</h1>}>
         <div class="bg-white">
-        <div className='container  py-4 px-4'>
-          <div className='row'>
-            <div name='about' className='col-lg-6'>
-              <About></About>
-            </div>
-            <div name='stack' className='col-lg-6'>
-              <Stack></Stack>
+          <div className='container  py-4 px-4'>
+            <div className='row'>
+              <div name='about' className='col-lg-6'>
+                <About></About>
+              </div>
+              <div name='stack' className='col-lg-6'>
+                <Stack></Stack>
+              </div>
             </div>
           </div>
-        </div>
         </div>
 
       </Suspense>
@@ -77,19 +53,19 @@ function Home() {
         </div>
       </Suspense>
       <Suspense fallback={<h1>Still Loading…</h1>}>
-      <div class="bg-white">
-        <div className='container py-4' name='contact'>
-          <LazyRender delay={0} duration={1}>
-            <Contact></Contact>
-          </LazyRender>
-        </div>
+        <div class="bg-white">
+          <div className='container py-4' name='contact'>
+            <LazyRender delay={0} duration={1}>
+              <Contact></Contact>
+            </LazyRender>
+          </div>
         </div>
       </Suspense>
       <Suspense fallback={<h1>Still Loading…</h1>}>
-      <div class="bg-white">
-        <LazyRender delay={0} duration={1.2}>
-          <Footer></Footer>
-        </LazyRender>
+        <div class="bg-white">
+          <LazyRender delay={0} duration={1.2}>
+            <Footer></Footer>
+          </LazyRender>
         </div>
       </Suspense>
     </div>

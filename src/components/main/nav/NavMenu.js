@@ -4,7 +4,6 @@ import { Link } from 'react-scroll';
 const NavMenu = ({ duration }) => {
   let about = useRef(null);
   let stack = useRef(null);
-  // let education = useRef(null);
   let projects = useRef(null);
   let contact = useRef(null);
   useEffect(() => {
@@ -32,12 +31,6 @@ const NavMenu = ({ duration }) => {
         y: -20,
         ease: Power1.easeOut,
       })
-      // .from(education, duration / 1000 / 20, {
-      //   opacity: 0,
-      //   x: -10,
-      //   y: -30,
-      //   ease: Power1.easeOut,
-      // })
       .from(contact, duration / 1000 / 20, {
         opacity: 0,
         x: -10,
@@ -51,6 +44,7 @@ const NavMenu = ({ duration }) => {
       <div className=' px-2 '>
         <Link
           activeClass='active'
+          className="text-decoration-none"
           to='about'
           spy={true}
           smooth={true}
@@ -70,6 +64,7 @@ const NavMenu = ({ duration }) => {
       <div className=' px-2 '>
         <Link
           activeClass='active'
+          className="text-decoration-none"
           to='stack'
           spy={true}
           smooth={true}
@@ -90,6 +85,7 @@ const NavMenu = ({ duration }) => {
       <div className=' px-2 '>
         <Link
           activeClass='active'
+          className="text-decoration-none"
           to='projects'
           spy={true}
           smooth={true}
@@ -106,28 +102,11 @@ const NavMenu = ({ duration }) => {
           </h5>
         </Link>
       </div>
-      {/* <div className=' px-2 '>
-        <Link
-          activeClass='active'
-          to='education'
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={1000}
-        >
-          <h5
-            className='mb-0 text-light link'
-            ref={(el) => {
-              education = el;
-            }}
-          >
-            Education
-          </h5>
-        </Link>
-      </div> */}
+
       <div className=' px-2 '>
         <Link
           activeClass='active'
+          className="text-decoration-none"
           to='contact'
           spy={true}
           smooth={true}

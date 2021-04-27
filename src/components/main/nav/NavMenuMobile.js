@@ -7,7 +7,6 @@ const NavMobile = ({ duration, header }) => {
   let menuOptionsContainer = useRef(null);
   let about = useRef(null);
   let stack = useRef(null);
-  // let education = useRef(null);
   let projects = useRef(null);
   let contact = useRef(null);
   const [hamAnimation, setHamAnimation] = useState(
@@ -111,11 +110,6 @@ const NavMobile = ({ duration, header }) => {
           opacity: 0,
           ease: Power1.easeInOut,
         })
-        // .from(education, 0.1, {
-        //   x: 50,
-        //   opacity: 0,
-        //   ease: Power1.easeInOut,
-        // })
         .from(contact, 0.1, {
           x: 50,
           opacity: 0,
@@ -166,6 +160,7 @@ const NavMobile = ({ duration, header }) => {
           >
             <Link
               activeClass='active'
+              className="text-decoration-none"
               to='about'
               spy={true}
               smooth={true}
@@ -184,6 +179,7 @@ const NavMobile = ({ duration, header }) => {
             >
               <Link
                 activeClass='active'
+                className="text-decoration-none"
                 to='stack'
                 spy={true}
                 smooth={true}
@@ -205,6 +201,7 @@ const NavMobile = ({ duration, header }) => {
           >
             <Link
               activeClass='active'
+              className="text-decoration-none"
               to='projects'
               spy={true}
               smooth={true}
@@ -216,25 +213,7 @@ const NavMobile = ({ duration, header }) => {
             </Link>
             <hr></hr>
           </div>
-          {/* <div
-            className='  mx-4 '
-            ref={(el) => {
-              education = el;
-            }}
-          >
-            <Link
-              activeClass='active'
-              to='education'
-              spy={true}
-              smooth={true}
-              offset={-85}
-              duration={1000}
-              onClick={animateHam}
-            >
-              <h5 className=' text-light link'>Education</h5>
-            </Link>
-            <hr></hr>
-          </div> */}
+
           <div
             className='  mx-4 '
             ref={(el) => {
@@ -243,6 +222,7 @@ const NavMobile = ({ duration, header }) => {
           >
             <Link
               activeClass='active'
+              className="text-decoration-none"
               to='contact'
               spy={true}
               smooth={true}
