@@ -22,7 +22,7 @@ const Landing = () => {
             ></LazyLoadImage>
           </div>
           <h6 className='mt-3 text-center text-light less-letter-spacing capital-case'>
-            3 years full-stack experience
+            4 years full-stack experience
           </h6>
           <hr></hr>
           <h6 className='text-center text-light less-letter-spacing capital-case'>
@@ -50,12 +50,6 @@ const Landing = () => {
             Unemployment Insurance system to support the millions of New Yorkers
             sadly affected by COVID-19.
           </p>
-          {/* <p className='text-light'>
-            This website was designed and developed in React as a V2. The
-            previous version was made with no frameworks while I was first
-            learning web development, and while it may have looked good on the
-            outside, it was an absolute dumpster fire on the inside!
-          </p> */}
 
           <div className=' align-items-center mt-3'>
             <Link

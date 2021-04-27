@@ -65,7 +65,8 @@ const Nav = ({ duration }) => {
       <div className=' container  header-container py-2 '>
         <div className=' row mb-0 ' ref={header}>
           <Link
-            activeClass='active'
+            activeClass='active '
+            className="text-decoration-none"
             to='landing'
             spy={true}
             smooth={true}
