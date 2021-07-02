@@ -135,10 +135,7 @@ a:focus {
 .sticky + .content {
 	padding-top: calc(90px + 2 * ((100vw) / 680));
 }
-.testing {
-	max-height: 800px;
-	max-width: 800px;
-}
+
 .responsive-image {
 	max-width: 800px;
 	height: auto;
@@ -160,6 +157,22 @@ a:focus {
 }
 .landing-bg {
 	background-image: url("../images/projects/personal/this-website/el-capitan.jpg");
+	background-color: rgba(0, 0, 0, 0.3); /* black tint */
+	background-blend-mode: multiply;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: -1;
+	-webkit-transform: translateZ(0);
+	pointer-events: none;
+}
+.testing {
+	background: lightblue;
 	background-color: rgba(0, 0, 0, 0.3); /* black tint */
 	background-blend-mode: multiply;
 	background-position: center;

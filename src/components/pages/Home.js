@@ -27,10 +27,9 @@ function Home() {
       {/* Splash Screen */}
       {loading && <Splash duration={loadingTime}></Splash>}
       <Nav duration={loadingTime}></Nav>
-      <div className='pb-5 container content' name='landing'>
-        <div class="landing-bg">
+      <div className='pb-5 container content test' name='landing'>
+        <div class="landing-bg"></div>
         <Landing></Landing>
-        </div>
       </div>
 
       <Suspense fallback={<h1>Still Loading…</h1>}>
@@ -69,6 +68,7 @@ function Home() {
           </LazyRender>
         </div>
       </Suspense>
+      <div className="testing"></div>
     </div>
   );
 }
