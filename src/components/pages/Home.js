@@ -28,8 +28,9 @@ function Home() {
       {loading && <Splash duration={loadingTime}></Splash>}
       <Nav duration={loadingTime}></Nav>
       <div className='pb-5 container content' name='landing'>
-        <div class="landing-bg"></div>
+        <div class="landing-bg">
         <Landing></Landing>
+        </div>
       </div>
 
       <Suspense fallback={<h1>Still Loading…</h1>}>
