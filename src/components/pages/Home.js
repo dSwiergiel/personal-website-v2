@@ -68,7 +68,6 @@ function Home() {
           </LazyRender>
         </div>
       </Suspense>
-      <div className="testing"></div>
     </div>
   );
 }
