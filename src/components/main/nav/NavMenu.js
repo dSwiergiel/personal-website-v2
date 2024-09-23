@@ -5,7 +5,7 @@ const NavMenu = ({ duration }) => {
   let about = useRef(null);
   let stack = useRef(null);
   let projects = useRef(null);
-  let contact = useRef(null);
+  // let contact = useRef(null);
   useEffect(() => {
     animateOnload();
     //eslint-disable-next-line
@@ -31,12 +31,12 @@ const NavMenu = ({ duration }) => {
         y: -20,
         ease: Power1.easeOut,
       })
-      .from(contact, duration / 1000 / 20, {
-        opacity: 0,
-        x: -10,
-        y: -30,
-        ease: Power1.easeOut,
-      });
+      // .from(contact, duration / 1000 / 20, {
+      //   opacity: 0,
+      //   x: -10,
+      //   y: -30,
+      //   ease: Power1.easeOut,
+      // });
   };
 
   return (
@@ -103,7 +103,7 @@ const NavMenu = ({ duration }) => {
         </Link>
       </div>
 
-      <div className=' px-2 '>
+      {/* <div className=' px-2 '>
         <Link
           activeClass='active'
           className="text-decoration-none"
@@ -122,7 +122,7 @@ const NavMenu = ({ duration }) => {
             Contact
           </h5>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };

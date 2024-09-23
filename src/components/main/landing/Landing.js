@@ -22,7 +22,7 @@ const Landing = () => {
             ></LazyLoadImage>
           </div>
           <h6 className='mt-3 text-center text-light less-letter-spacing capital-case'>
-            4 years full-stack experience
+            6 years full-stack experience
           </h6>
           <hr></hr>
           <h6 className='text-center text-light less-letter-spacing capital-case'>
@@ -36,8 +36,8 @@ const Landing = () => {
         <div className='col-lg-9  col-md-9'>
           <p className='text-light'>
             My name is Deven Swiergiel and I like to make stuff. I'm a
-            Full-Stack Developer with an emphasis on the frontend, building
-            modern enterprise web applications for the government.
+            Full-Stack Developer with an emphasis on the frontend, experienced in building
+            modern enterprise web applications.
           </p>
           <p className='text-light'>
             Currently working as Frontend Lead building a multi-persona
@@ -52,7 +52,7 @@ const Landing = () => {
           </p>
 
           <div className=' align-items-center mt-3'>
-            <Link
+            {/* <Link
               activeClass='active'
               to='contact'
               spy={true}
@@ -63,7 +63,7 @@ const Landing = () => {
               <button className='btn btn-primary slide-up-button mt-3 mr-3'>
                 Contact Me
               </button>
-            </Link>
+            </Link> */}
             <a
               href={resume}
               target='_blank'
