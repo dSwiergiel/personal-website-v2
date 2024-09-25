@@ -8,7 +8,7 @@ const NavMobile = ({ duration, header }) => {
   let about = useRef(null);
   let stack = useRef(null);
   let projects = useRef(null);
-  let contact = useRef(null);
+  // let contact = useRef(null);
   const [hamAnimation, setHamAnimation] = useState(
     new TimelineLite({ paused: true })
   );
@@ -110,11 +110,11 @@ const NavMobile = ({ duration, header }) => {
           opacity: 0,
           ease: Power1.easeInOut,
         })
-        .from(contact, 0.1, {
-          x: 50,
-          opacity: 0,
-          ease: Power1.easeInOut,
-        })
+        // .from(contact, 0.1, {
+        //   x: 50,
+        //   opacity: 0,
+        //   ease: Power1.easeInOut,
+        // })
 
         .reverse()
     );
@@ -201,7 +201,7 @@ const NavMobile = ({ duration, header }) => {
           >
             <Link
               activeClass='active'
-              className="text-decoration-none"
+              className="mb-0 text-decoration-none"
               to='projects'
               spy={true}
               smooth={true}
@@ -211,10 +211,9 @@ const NavMobile = ({ duration, header }) => {
             >
               <h5 className='text-light link'>Projects</h5>
             </Link>
-            <hr></hr>
           </div>
 
-          <div
+          {/* <div
             className='  mx-4 '
             ref={(el) => {
               contact = el;
@@ -232,7 +231,7 @@ const NavMobile = ({ duration, header }) => {
             >
               <h5 className='mb-0 text-light link'>Contact</h5>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </Fragment>
