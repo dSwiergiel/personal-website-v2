@@ -42,8 +42,8 @@ const Landing = () => {
           <p className='text-light'>
           At the Red Sox, I developed an app-wide offline autosave system, 
           addressing connectivity challenges faced by scouts while traveling. 
-          I also led the frontend development of a Roster Summary and Trade Simulation feature to support key decision-making processes. 
-          Additionally, I engineered a comprehensive Roster Contracts feature to replace a legacy spreadsheet system, 
+          I also led the frontend development of a roster summary and trade simulation feature to support key decision-making processes. 
+          Additionally, I engineered a comprehensive roster contracts feature to replace a legacy spreadsheet system, 
           reducing data inconsistencies and improving real-time collaboration.
           </p>
           <p className='text-light mb-0'>
