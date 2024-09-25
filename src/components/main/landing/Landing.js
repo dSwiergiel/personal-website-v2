@@ -35,20 +35,19 @@ const Landing = () => {
         </div>
         <div className='col-lg-9  col-md-9'>
           <p className='text-light'>
-            My name is Deven Swiergiel and I like to make stuff. I'm a
-            Full-Stack Developer with an emphasis on the frontend, experienced in building
-            modern enterprise web applications.
+          Hey there! I'm Deven Swiergiel, and I love turning ideas into reality. I'm a Full-Stack Software Engineer with a passion for the 
+          frontend, specializing in crafting sleek, scalable, and modern web applications. 
+          Whether it's breathing life into a UI or building a backend that gets the job done, I'm all about creating the best digital experiences possible.
           </p>
           <p className='text-light'>
-            Currently working as Frontend Lead building a multi-persona
-            screening tool as part of New York's COVID-19 efforts to ensure a
-            safe return to the office. Over 50,000 active daily users and
-            anticipating over 100,000 as more workers return to the office.
+          At the Red Sox, I developed an app-wide offline Autosave system, 
+          addressing connectivity challenges faced by scouts while traveling. 
+          I also led the frontend development of a Roster Summary and Trade Simulation feature to support key decision-making processes. 
+          Additionally, I engineered a comprehensive Roster Contracts feature to replace a legacy spreadsheet system, 
+          reducing data inconsistencies and improving real-time collaboration.
           </p>
           <p className='text-light mb-0'>
-            Previously worked alongside Google to rebuild New York's legacy
-            Unemployment Insurance system to support the millions of New Yorkers
-            sadly affected by COVID-19.
+          Previously, I led frontend development at the New York State Government CTO Office, modernizing critical systems like unemployment insurance during the COVID-19 pandemic and developing a screening app used by up to 50,000 state employees. 
           </p>
 
           <div className=' align-items-center mt-3'>
