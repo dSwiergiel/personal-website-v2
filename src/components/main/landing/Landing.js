@@ -37,7 +37,7 @@ const Landing = () => {
           <p className='text-light'>
           Hey there! I'm Deven Swiergiel, and I love turning ideas into reality. I'm a Full-Stack Software Engineer with a passion for the 
           frontend, specializing in crafting sleek, scalable, and modern web applications. 
-          Whether it's breathing life into a UI or building a backend that gets the job done, I'm all about creating the best digital experiences possible.
+          {/* Whether it's breathing life into a UI or building a backend that gets the job done, I'm all about creating the best digital experiences possible. */}
           </p>
           <p className='text-light'>
           At the Red Sox, I developed an app-wide offline Autosave system, 
