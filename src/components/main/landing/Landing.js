@@ -47,7 +47,7 @@ const Landing = () => {
           reducing data inconsistencies and improving real-time collaboration.
           </p>
           <p className='text-light mb-0'>
-          Previously, I led frontend development at the New York State Government CTO Office, modernizing critical systems like unemployment insurance during the COVID-19 pandemic and developing a screening app used by up to 50,000 state employees. 
+          Previously, I led frontend development at the New York State Government CTO Office, modernizing critical systems like unemployment insurance during the COVID-19 pandemic and developing a screening app used by up to 50,000 state employees daily. 
           </p>
 
           <div className=' align-items-center mt-3'>
