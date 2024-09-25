@@ -40,7 +40,7 @@ const Landing = () => {
           {/* Whether it's breathing life into a UI or building a backend that gets the job done, I'm all about creating the best digital experiences possible. */}
           </p>
           <p className='text-light'>
-          At the Red Sox, I developed an app-wide offline Autosave system, 
+          At the Red Sox, I developed an app-wide offline autosave system, 
           addressing connectivity challenges faced by scouts while traveling. 
           I also led the frontend development of a Roster Summary and Trade Simulation feature to support key decision-making processes. 
           Additionally, I engineered a comprehensive Roster Contracts feature to replace a legacy spreadsheet system, 
