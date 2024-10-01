@@ -1,5 +1,5 @@
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import React, { useState, useEffect, lazy, Suspense } from 'react';
-
 import Splash from '../main/splash/Splash';
 import Nav from '../main/nav/Nav';
 
@@ -24,6 +24,7 @@ function Home() {
 
   return (
     <div>
+      <SpeedInsights/>
       {/* Splash Screen */}
       {loading && <Splash duration={loadingTime}></Splash>}
       <Nav duration={loadingTime}></Nav>
