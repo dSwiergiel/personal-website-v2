@@ -22,15 +22,19 @@ const Landing = () => {
             ></LazyLoadImage>
           </div>
           <h6 className='mt-3 text-center text-light less-letter-spacing capital-case'>
-            6 years full-stack experience
+            7+ years full-stack experience
           </h6>
           <hr></hr>
           <h6 className='text-center text-light less-letter-spacing capital-case'>
-            Computer Science (B.S)
+          &gt; Boston Red Sox (2/21-9/24)
             <br />
-            <small className='d-block'>(Summa Cum Laude)</small>
+            &gt; NYS Government (3/17-1/21)
+          </h6>
+          <hr></hr>
+          <h6 className='text-center text-light less-letter-spacing capital-case'>
+            Computer Science (B.S.)
             <br />
-            University At Albany
+            <small className='d-block'>University At Albany</small>
           </h6>
         </div>
         <div className='col-lg-9  col-md-9'>
