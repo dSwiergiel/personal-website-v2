@@ -1,10 +1,9 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { Link } from 'react-scroll';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 import portrait from '../../../assets/images/projects/personal/this-website/landing-portrait.jpg';
-import resume from '../../../assets/resume/Deven-Swiergiel_resume.pdf';
+import resume from '../../../assets/resume/Deven_Swiergiel_Resume.pdf';
 import './landing.scss';
 
 const Landing = () => {
@@ -41,10 +40,9 @@ const Landing = () => {
           <p className='text-light'>
           Hey there! I'm Deven Swiergiel, and I love turning ideas into reality. I'm a Full-Stack Software Engineer with a passion for the 
           frontend, specializing in crafting sleek, scalable, and modern web applications. 
-          {/* Whether it's breathing life into a UI or building a backend that gets the job done, I'm all about creating the best digital experiences possible. */}
           </p>
           <p className='text-light'>
-          At the Red Sox, I developed an app-wide offline autosave system, 
+          At the Boston Red Sox, I developed an app-wide offline autosave system, 
           addressing connectivity challenges faced by scouts while traveling. 
           I also led the frontend development of a roster summary and trade simulation feature to support key decision-making processes. 
           Additionally, I engineered a comprehensive roster contracts feature to replace a legacy spreadsheet system, 
@@ -55,18 +53,6 @@ const Landing = () => {
           </p>
 
           <div className=' align-items-center mt-3'>
-            {/* <Link
-              activeClass='active'
-              to='contact'
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={1000}
-            >
-              <button className='btn btn-primary slide-up-button mt-3 mr-3'>
-                Contact Me
-              </button>
-            </Link> */}
             <a
               href={resume}
               target='_blank'

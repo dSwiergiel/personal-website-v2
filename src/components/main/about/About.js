@@ -7,22 +7,20 @@ const About = () => {
     <div>
       <h1 className='mb-4'>The Bio</h1>
       <p>
-        You've heard the cliche, the one where from an early age they've been
-        interested in knowing how things work, even taking things apart to find
-        out. That was me, my mom loved it(especially when it was her printers
-        turn) and many of the skills I've acquired as a developer are
-        self-taught coming from this natural interest to learn and create!
+      You know the classic story—the kid who just has to know how everything works, taking stuff apart 
+      (and maybe not always putting it back together)? Yeah, that was me. My mom was thrilled—especially when 
+      I decided her printer needed an “upgrade.” Fast forward, and that same curiosity is what fueled me to 
+      dive into coding, where I picked up many of the skills I use as an engineer today.
       </p>
       <p>
-        I'm the first in my entire family to attend college and recently
-        graduated Summa Cum Laude with a Bachelor's degree in Computer Science
-        with a Minor in Applied Mathematics. Its been both a challenging yet
-        rewarding experience and I feel fortunate to have such a great group of
-        friends who've helped me along the way.
+     I was the first in my family to attend college, graduating summa cum laude with a Bachelor's 
+     in Computer Science and a minor in Applied Mathematics. It was both a challenging and rewarding 
+     experience, and I feel fortunate to have had the support of a great group of friends along the way.
       </p>
       <p>
-        I also have a passion for personal finance and investing. Some of my
-        early software projects were tools to help with investing. Check out the{' '}
+      I'm also passionate about personal finance and investing. My early software projects were investment 
+      tools that doubled as my introduction to web development.
+        Check out the{' '}
         <Link
           to='projects'
           className='real-link'
