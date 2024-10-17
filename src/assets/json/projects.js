@@ -6,7 +6,7 @@ export const projects = [
     projectName: 'Farmers Market Finder',
     date: '2/5/20',
     description:
-      'Explore and display farmers market data via the data.ny.gov APIs. This app allows users to search for nearby farmers markets based on various parameters and visualizes the results on an interactive map. Built as a learning project to deepen my experience with React while incorporating real-world data and dynamic user search functionality.',
+      'This app allows users to search for nearby farmers markets based on various parameters and visualizes the results on an interactive map. Built as a learning project to deepen my experience with React while incorporating real-world data sourced from data.ny.gov APIs',
     url: 'https://farmermarketfinder.now.sh/',
     repoUrl: 'https://github.com/dSwiergiel/FarmerMarketFinder',
     projectType: 'personal',
