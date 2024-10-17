@@ -6,7 +6,7 @@ export const projects = [
     projectName: 'Farmers Market Finder',
     date: '2/5/20',
     description:
-      'Simple web app built for the purposes of learning React with an interesting project. Utilizes farmers market data exposed though data.ny.gov APIs and displays results on a map based on various search parameters.',
+      'Explore and display farmers market data via the data.ny.gov APIs. This app allows users to search for nearby farmers markets based on various parameters and visualizes the results on an interactive map. Built as a learning project to deepen my experience with React while incorporating real-world data and dynamic user search functionality.',
     url: 'https://farmermarketfinder.now.sh/',
     repoUrl: 'https://github.com/dSwiergiel/FarmerMarketFinder',
     projectType: 'personal',
@@ -83,7 +83,7 @@ export const projects = [
     projectName: 'Rental Analysis Calculator',
     date: '12/20/17',
     description:
-      'A quick and dirty rental analysis calculator to help analyze investment properties for determining buy and hold rental potential. \n\nNOTE: This was a quick project for when I was searching for a rental property. I was new to web dev — best practices were definitively not considered...',
+      'A quick and dirty rental analysis calculator to help analyze investment properties for determining buy and hold rental potential. \nNOTE: Built quickly during a rental search, with no focus on best practices, as I was new to web development.',
     url: 'https://rental-analysis-calculator.vercel.app/',
     repoUrl: 'https://github.com/dSwiergiel/rental_analysis_calculator',
     projectType: 'personal',
