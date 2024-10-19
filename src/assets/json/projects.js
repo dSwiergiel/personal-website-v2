@@ -1,4 +1,38 @@
 export const projects = [
+
+  {
+    isActive: true,
+    header: 'Rickrolled Guest Wi-Fi Prank',
+    subheader: '',
+    projectName: 'Rickrolled Guest Wi-Fi Prank',
+    date: '4/20/24',
+    description:
+      'Created a fun little web app mimicking a public guest Wi-Fi page with a hidden twist. Pressing “Connect” triggers a rickroll video via the browser’s play button API, then reveals Wi-Fi details and copies the password to the clipboard. Users can easily access the app by scanning a printed QR code.',
+    url: 'https://rickrolled-public-guest-wifi.vercel.app/',
+    repoUrl: 'https://github.com/dSwiergiel/rickrolled-public-guest-wifi',
+    projectType: 'personal',
+    images: [
+      {
+        header: 'Landing page featuring a disguised ‘Connect’ button',
+        description: 'When the user clicks the button, they are in for a surprise.',
+        filename: 'personal/rickrolled-public-guest-wifi/rickrolled-public-guest-wifi_landing.png',
+      },
+      {
+        header: 'Rickrolled!',
+        description:
+          'When users click “Connect,” they’re greeted with Rick Astley’s “Never Gonna Give You Up” video. Due to browser restrictions on autoplay with sound, the “Connect” button cleverly acts as the disguised play button to bypass this limitation.',
+        filename:
+          'personal/rickrolled-public-guest-wifi/rickrolled-public-guest-wifi_rickrolled.png',
+      },
+      {
+        header: 'Network Details',
+        description:
+          'After 5 seconds of Rick, the Wi-Fi details fade in.',
+        filename:
+          'personal/rickrolled-public-guest-wifi/rickrolled-public-guest-wifi_network_details.png',
+      },
+    ],
+  },
   {
     isActive: true,
     header: 'Farmers Market Finder',
@@ -6,7 +40,7 @@ export const projects = [
     projectName: 'Farmers Market Finder',
     date: '2/5/20',
     description:
-      'This app allows users to search for nearby farmers markets based on various parameters and visualizes the results on an interactive map. Built as a learning project to deepen my experience with React while incorporating real-world data sourced from data.ny.gov APIs',
+      'Web app which allows users to search for nearby farmers markets based on various parameters and visualizes the results on an interactive map. Built as a learning project to deepen my experience with React while incorporating real-world data sourced from data.ny.gov APIs',
     url: 'https://farmermarketfinder.now.sh/',
     repoUrl: 'https://github.com/dSwiergiel/FarmerMarketFinder',
     projectType: 'personal',
@@ -195,7 +229,7 @@ export const projects = [
     projectName: 'COVID-19 Screening App',
     date: '5/24/20 - Present',
     description:
-      'COVID-19 screening app used to manage and monitor the safety of those entering physical workspaces. Used each day by any NYS employee entering a physical workspace to verify no COVID-19 exposure or symptoms are present. Angular 9 frontend, ASP.NET MVC backend.',
+      'Led the frontend development of New York State’s COVID-19 screening web application, utilized by over 50,000 employees daily to ensure workplace safety. The application was built with Angular 9.',
     url: 'https://screening.ny.gov',
     repoUrl: '',
     projectType: 'professional',
@@ -252,7 +286,7 @@ export const projects = [
     projectName: 'Nourish-NY',
     date: '5/1/20',
     description:
-      'Web portal allowing farmers to donate surplus products that would otherwise expire to food banks and homeless shelters. Angular 9 frontend, ASP.NET MVC backend.',
+      'Led the frontend development of a web portal for Nourish NY, a state initiative that connects farmers with surplus produce to food banks and shelters. Directed a small team to build the frontend using Angular 9 and integrated it with a backend powered by ASP.NET MVC Core.',
     url: 'https://nourish.ny.gov/',
     repoUrl: '',
     projectType: 'professional',
@@ -287,7 +321,7 @@ export const projects = [
     projectName: 'My Open FOIL',
     date: '10/1/18 - 1/31/19',
     description:
-      'My Open FOIL is an extension of Open FOIL NY that gives users the ability to track and manage their FOIL requests. Users can upload/download documents, communicate with case workers, and view various details of their FOIL request. \nNOTE: Images shown are from an early test build.',
+      'My Open FOIL is an extension of Open FOIL NY that gives users the ability to track and manage their FOIL requests. Users can upload/download documents, communicate with case workers, and view various details of their FOIL request. \nNOTE: Images shown are from an early prototype build.',
     url: '',
     repoUrl: '',
     projectType: 'professional',
