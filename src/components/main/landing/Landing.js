@@ -8,7 +8,7 @@ import './landing.scss';
 
 const Landing = () => {
   return (
-    <div className='container landing-box py-3'>
+    <section className='container landing-box py-3'>
       <div className='row '>
         <div className='col-lg-3 col-md-3 mb-lg-0 mb-3'>
           <div className='d-flex justify-content-center'>
@@ -78,7 +78,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -86,6 +86,8 @@ const Projects = ({ scrollPosition }) => {
       easing={'ease'}
       height={minHeight}
     >
+      <section>
+
       <h1 className='mb-4 text-center text-light'>The Projects</h1>
       <div className='d-flex justify-content-center'>
         <button
@@ -124,6 +126,8 @@ const Projects = ({ scrollPosition }) => {
           </h4>
         )}
       </div>
+      </section>
+
     </AnimateHeight>
   );
 };

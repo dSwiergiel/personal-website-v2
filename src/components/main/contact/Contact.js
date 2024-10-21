@@ -35,7 +35,7 @@ function Contact() {
     setMessage('');
   };
   return (
-    <div>
+    <section>
       <h1 className='mb-4 text-center'>Contact</h1>
       <form className='contact-form' onSubmit={(e) => formSubmit(e)}>
         <div className='form-group row'>
@@ -95,7 +95,7 @@ function Contact() {
           </button>
         </div>
       </form>
-    </div>
+    </section>
   );
 }
 

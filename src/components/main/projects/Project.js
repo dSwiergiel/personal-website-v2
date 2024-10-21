@@ -27,25 +27,6 @@ const Project = ({ project, scrollPosition }) => {
       <div className='card-body '>
         <div className='row'>
           <div className='col-lg-4 carousel-container'>
-            {/* <SimpleSlider
-              settings={{
-                className: 'project-image',
-                dots: false,
-                arrows: false,
-                infinite: true,
-                lazyLoad: true,
-                speed: 500,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                adaptiveHeight: true,
-                autoplay: true,
-                autoplaySpeed: 5000,
-                pauseOnHover: true,
-              }}
-              project={project}
-              isThumbnail={true}
-              onOpenModal={onOpenModal}
-            ></SimpleSlider> */}
             <Carousel controls={false} indicators={false}>
               {project.images.map((image, index) => (
                 <Carousel.Item key={index}>
@@ -66,7 +47,7 @@ const Project = ({ project, scrollPosition }) => {
               ))}
             </Carousel>
           </div>
-          <div className='col-lg-8 mt-2 mt-lg-0'>
+          <section className='col-lg-8 mt-2 mt-lg-0'>
             <h3 className='less-letter-spacing capital-case text-lighter'>
               {project.header}
             </h3>
@@ -118,7 +99,7 @@ const Project = ({ project, scrollPosition }) => {
                 </a>
               )}
             </div>
-          </div>
+          </section>
         </div>
       </div>
       <div>
