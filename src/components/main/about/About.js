@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 import './about.scss';
 const About = () => {
   return (
-    <div>
+    <section>
       <h1 className='mb-4'>The Bio</h1>
       <p>
       You know the classic story—the kid who just has to know how everything works, taking stuff apart 
@@ -33,7 +33,7 @@ const About = () => {
         </Link>{' '}
         to see some of them!
       </p>
-    </div>
+    </section>
   );
 };
 
