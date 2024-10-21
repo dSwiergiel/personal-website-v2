@@ -28,6 +28,7 @@ function Home() {
       {/* Splash Screen */}
       {loading && <Splash duration={loadingTime}></Splash>}
       <Nav duration={loadingTime}></Nav>
+      <main>
       <div className='pb-5 container content' name='landing'>
         <div class="landing-bg"></div>
         <Landing></Landing>
@@ -53,15 +54,7 @@ function Home() {
           <Projects></Projects>
         </div>
       </Suspense>
-      {/* <Suspense fallback={<h1>Still Loading…</h1>}>
-        <div class="bg-white">
-          <div className='container py-4' name='contact'>
-            <LazyRender delay={0} duration={1}>
-              <Contact></Contact>
-            </LazyRender>
-          </div>
-        </div>
-      </Suspense> */}
+      </main>
       <Suspense fallback={<h1>Still Loading…</h1>}>
         <div class="bg-white">
           <LazyRender delay={0} duration={1.2}>
