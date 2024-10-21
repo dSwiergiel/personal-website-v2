@@ -34,7 +34,7 @@ const Project = ({ project, scrollPosition }) => {
                     scrollPosition={scrollPosition}
                     visibleByDefault={true}
                     className='carousel-image-tint project-image'
-                    style={{ maxHeight: '175px' }}
+                    style={{ height: '250px' }}
                     src={require(`../../../assets/images/projects/${image.filename}`)}
                     alt={image.header}
                   ></LazyLoadImage>
