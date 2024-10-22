@@ -25,9 +25,9 @@ const Landing = () => {
           </h6>
           <hr></hr>
           <h6 className='text-center text-light less-letter-spacing capital-case'>
-          &gt; Boston Red Sox (2/21-9/24)
+          &gt; Boston Red Sox (2/21-10/24)
             <br />
-            &gt; NYS Government (3/17-1/21)
+            &gt; NYS Government (3/17-2/21)
           </h6>
           <hr></hr>
           <h6 className='text-center text-light less-letter-spacing capital-case'>
