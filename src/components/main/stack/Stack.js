@@ -28,6 +28,7 @@ const Stack = () => {
       ></ProgressBar>
       <ProgressBar name={"Angular 14+"} percent={89} offset={0}></ProgressBar>
       <ProgressBar name={"Tailwind CSS"} percent={82} offset={0}></ProgressBar>
+      <ProgressBar name={"Bootstrap"} percent={77} offset={0}></ProgressBar>
       <ProgressBar
         name={"Node.js & Express"}
         percent={76}
