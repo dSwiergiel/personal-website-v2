@@ -1,68 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Personal Website
 
-## Available Scripts
+This repository contains the source code for my personal website, which I built back in **2020** to learn **React** and expand my web development skills. At the time, I was exploring modern front-end development and experimenting with tools and techniques to create engaging user experiences. While this project marked an important milestone in my growth as a developer, it now stands as a snapshot of how much I’ve learned since.
 
-In the project directory, you can run:
+## About the Website
 
-### `npm start`
+The website was designed to showcase my work, share my thoughts, and serve as a sandbox for learning new technologies. Built with **React** and styled using **Bootstrap**, it reflects the design and development practices I was exploring at the time.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Key Features:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- Static content powered by React
+- Styled using **Bootstrap**, which was still widely regarded as the go-to CSS framework for rapid development
+- Basic responsiveness to accommodate various screen sizes
+- Interactive animations using **GSAP (GreenSock Animation Platform)**, as I was eager to learn how animations could elevate user experiences
 
-### `npm test`
+## Growth and Current Perspective
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Since building this site, I’ve grown into a senior engineer and gained significant experience in modern web development. Looking back, there are many aspects I would approach differently now:
 
-### `npm run build`
+- **Styling:**  
+  While **Bootstrap** was a great tool in 2020, today I would use **Tailwind CSS** for its utility-first approach, which enables rapid development and consistent design systems. Tailwind's flexibility and maintainability align better with my current workflow.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React Practices:**
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+  - Migrate class components to functional components.
+  - Replace the then-new React lifecycle methods with **React hooks** for cleaner, more efficient state management.
+  - Embrace modern optimizations like **code-splitting**, **lazy loading**, and **error boundaries**.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Animations:**  
+  While GSAP was a fantastic library to learn animations, I would now pair it with modern CSS transitions or explore libraries like **Framer Motion** for React, which integrates seamlessly with component-based architecture.
 
-### `npm run eject`
+- **Tooling and Workflow:**  
+  If revisiting this project today, I would utilize **Vite** for its fast bundling and **Hot Module Replacement (HMR)**. Vite's modern toolchain drastically improves development speed and efficiency compared to traditional setups like Create React App.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Why I Haven’t Rewritten It Yet
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+As much as I’d love to modernize this project, I haven’t found the time to rewrite it using the latest conventions. Between building and scaling production-grade applications, and enjoying life away from the computer, this project remains a reminder of my learning journey.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+That said, if I were to revisit this project, I would:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Rewrite the codebase to adopt **modern React practices**.
+- Introduce **Tailwind CSS** to replace Bootstrap for more efficient styling.
+- Integrate **Framer Motion** or advanced GSAP animations to further refine the user experience.
+- Use **Vite** for its fast development experience and Hot Module Replacement.
 
-## Learn More
+## Closing Thoughts
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project reflects where I started and how much I’ve grown. While it may no longer represent my current expertise, it’s a reminder of the iterative nature of software development—and the passion that drives it.
