@@ -24,7 +24,7 @@ const Project = ({ project, scrollPosition }) => {
   };
 
   return (
-    <div className="card project-card card-shadow card-zoom bg-dark mt-4">
+    <div className="card project-card card-zoom bg-dark mt-4 rounded-sm">
       <div className="card-body ">
         <div className="row">
           <div className="col-lg-4 carousel-container">

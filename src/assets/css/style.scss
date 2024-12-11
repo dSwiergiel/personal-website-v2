@@ -14,163 +14,158 @@ h3,
 h4,
 h5,
 h6 {
-	letter-spacing: $headings-letter-spacing;
+  letter-spacing: $headings-letter-spacing;
 }
 button,
 a {
-	letter-spacing: $link-letter-spacing;
+  letter-spacing: $link-letter-spacing;
 }
 
 body {
-	overflow: hidden;
-	-webkit-overflow-scrolling: touch;
-	height: 100%;
-	font-family: "Roboto Condensed", sans-serif;
-	margin: 0;
-	padding: 0px;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0px;
 }
-// responsive title
-// font-size: calc(2rem + 2*(100vw - 30rem)/30);
 
-// responsive p text
-// font-size: calc(1.125rem + 0.375*(100vw - 30rem)/30);
 p {
-	letter-spacing: $letter-spacing;
-	// font-size: calc(1.125rem + 0.375 * (100vw - 30rem) / 175);
+  letter-spacing: $letter-spacing;
 }
 .less-letter-spacing {
-	letter-spacing: 4px;
+  letter-spacing: 4px;
 }
 .text-lighter {
-	color: $grayish !important;
+  color: $grayish !important;
 }
 
 .capital-case {
-	text-transform: capitalize;
+  text-transform: capitalize;
 }
 /* Custom Scroll bar*/
 /* width */
 ::-webkit-scrollbar {
-	width: 0px;
+  width: 0px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: #5a5a5a;
+  background: #5a5a5a;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: rgba(158, 158, 158, 0.719);
+  background: rgba(158, 158, 158, 0.719);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: rgba(153, 153, 153, 0.432);
+  background: rgba(153, 153, 153, 0.432);
 }
 /* //Custom Scroll bar*/
 
 .slide-up-button {
-	font-weight: $font-weight-normal;
-	letter-spacing: $link-letter-spacing;
-	text-transform: uppercase;
-	padding: 10px 20px;
-	border: none;
-	color: $light !important;
-	background-size: 100% 200%;
-	background-image: linear-gradient(to bottom, $primary 50%, $light 50%);
-	transition: 0.4s;
+  font-weight: $font-weight-normal;
+  letter-spacing: $link-letter-spacing;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: none;
+  color: $light !important;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, $primary 50%, $light 50%);
+  transition: 0.4s;
 }
 
 .slide-up-button:hover {
-	text-decoration: none;
-	color: $dark !important;
-	background-position: 0 -100%;
+  text-decoration: none;
+  color: $dark !important;
+  background-position: 0 -100%;
 }
 .slide-up-button.active {
-	text-decoration: none;
-	color: $dark !important;
-	background-position: 0 -100%;
-	border-style: none;
-	box-shadow: rgba(43, 60, 88, 0.25) 0 0 0 0.2rem;
+  text-decoration: none;
+  color: $dark !important;
+  background-position: 0 -100%;
+  border-style: none;
+  box-shadow: rgba(43, 60, 88, 0.25) 0 0 0 0.2rem;
 }
 
 button:focus,
 a:focus {
-	outline: none;
+  outline: none;
 }
 
 .parallax-tint {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	box-shadow: 100vw 100vh rgba(0, 0, 0, 0.3) inset;
-	z-index: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-shadow: 100vw 100vh rgba(0, 0, 0, 0.3) inset;
+  z-index: 0;
 }
 
 .landing-background {
-	background-image: url("/assets/images/projects/personal/this-website/el-capitan.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center center;
-	box-shadow: 100vw 100vh rgba(0, 0, 0, 0.3) inset;
+  background-image: url("/assets/images/projects/personal/this-website/el-capitan.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 100vw 100vh rgba(0, 0, 0, 0.3) inset;
 }
 .card-shadow {
-	-webkit-box-shadow: 0px 13px 46px 2px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 0p x 13px 46px 2px rgba(0, 0, 0, 0.75);
-	box-shadow: 0px 13px 46px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 13px 46px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0p x 13px 46px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 13px 46px 2px rgba(0, 0, 0, 0.75);
 }
 
 .sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 .content {
-	padding-top: calc(80px + 2 * ((100vw) / 680)) !important;
+  padding-top: calc(80px + 2 * ((100vw) / 680)) !important;
 }
 
 .sticky + .content {
-	padding-top: calc(90px + 2 * ((100vw) / 680));
+  padding-top: calc(90px + 2 * ((100vw) / 680));
 }
 .testing {
-	max-height: 800px;
-	max-width: 800px;
+  max-height: 800px;
+  max-width: 800px;
 }
 .responsive-image {
-	max-width: 800px;
-	height: auto;
+  max-width: 800px;
+  height: auto;
 }
 .link {
-	text-decoration: none;
-	cursor: pointer !important;
+  text-decoration: none;
+  cursor: pointer !important;
 }
 .real-link {
-	color: $warning !important;
-	font-weight: bold;
-	cursor: pointer !important;
+  color: $warning !important;
+  font-weight: bold;
+  cursor: pointer !important;
 }
 .real-link:hover {
-	text-decoration: underline !important;
+  text-decoration: underline !important;
 }
 .less-letter-spacing {
-	letter-spacing: 3px;
+  letter-spacing: 3px;
 }
 .landing-bg {
-	background-image: url("../images/projects/personal/this-website/el-capitan.jpg");
-	background-color: rgba(0, 0, 0, 0.3); /* black tint */
-	background-blend-mode: multiply;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: fixed;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	z-index: -1;
-	-webkit-transform: translateZ(0);
-	pointer-events: none;
+  background-image: url("../images/projects/personal/this-website/el-capitan.jpg");
+  background-color: rgba(0, 0, 0, 0.3); /* black tint */
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -1;
+  -webkit-transform: translateZ(0);
+  pointer-events: none;
 }

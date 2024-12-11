@@ -18,62 +18,40 @@ const Projects = ({ scrollPosition }) => {
   );
 
   const handleClick = (e) => {
-    const buttonClicked = e.target.value;
-    if (buttonClicked === "personal") {
-      setIsPersonalProjects(true);
+    const projectType = e.target.value;
+    const isPersonal = projectType === "personal";
+    setIsPersonalProjects(isPersonal);
 
-      let projectCount = projectsMasterList.filter(
-        (project) => project.projectType === "personal"
-      ).length;
+    const projectCount = projectsMasterList.filter(
+      (project) => project.projectType === projectType
+    ).length;
 
-      // set new height to rough estimate of project card heights multiplied by the amount of projects
-      setMinHeight(projectCount * 225 + 300);
+    // Set initial height estimate
+    setMinHeight(projectCount * 225 + 300);
 
-      // loop over each project and delay it being added to invoke animation effect of each card individually
-      for (let i = 0; i <= projectCount; i++) {
-        setTimeout(() => {
-          setProjectsToShow(
-            projectsMasterList
-              .filter((project) => project.projectType === "personal")
-              .slice(0, i)
-          );
+    // Animate projects appearing one by one
+    const animateProjects = (index) => {
+      if (index > projectCount) return;
 
-          // on the last loop, set height to auto to correct height estimate
-          if (i >= projectCount) {
-            setTimeout(() => {
-              setMinHeight("auto");
-            }, projectCount * 0.2 * 1000);
-          }
-        }, i * 0.1 * 1000);
-      }
-    } else {
-      setIsPersonalProjects(false);
+      setTimeout(() => {
+        setProjectsToShow(
+          projectsMasterList
+            .filter((project) => project.projectType === projectType)
+            .slice(0, index)
+        );
 
-      let projectCount = projectsMasterList.filter(
-        (project) => project.projectType === "professional"
-      ).length;
+        // Reset height to auto after all projects are shown
+        if (index >= projectCount) {
+          setTimeout(() => {
+            setMinHeight("auto");
+          }, projectCount * 200); // 0.2 * 1000
+        }
 
-      // set new height to rough estimate of project card heights multiplied by the amount of projects
-      setMinHeight(projectCount * 225 + 300);
+        animateProjects(index + 1);
+      }, 100); // 0.1 * 1000
+    };
 
-      // loop over each project and delay it being added to invoke animation effect of each card individually
-      for (let i = 0; i <= projectCount; i++) {
-        setTimeout(() => {
-          setProjectsToShow(
-            projectsMasterList
-              .filter((project) => project.projectType === "professional")
-              .slice(0, i)
-          );
-
-          // on the last loop, set height to auto to correct height estimate
-          if (i >= projectCount) {
-            setTimeout(() => {
-              setMinHeight("auto");
-            }, projectCount * 0.2 * 1000);
-          }
-        }, i * 0.1 * 1000);
-      }
-    }
+    animateProjects(0);
   };
 
   return (

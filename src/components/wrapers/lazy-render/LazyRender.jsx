@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react';
-import { TimelineMax, Back } from 'gsap';
-import * as ScrollMagic from 'scrollmagic';
+import React, { useEffect, useRef } from "react";
+import { TimelineMax, Back } from "gsap";
+import * as ScrollMagic from "scrollmagic";
 
 const LazyRender = ({ children, delay = 1.5, duration = 2 }) => {
   let content = useRef(null);
@@ -29,7 +29,7 @@ const LazyRender = ({ children, delay = 1.5, duration = 2 }) => {
     //eslint-disable-next-line
     const scene = new ScrollMagic.Scene({
       triggerElement: content,
-      triggerHook: 'onEnter',
+      triggerHook: "onEnter",
     })
       //   .offset(175)
       .setTween(t1)
