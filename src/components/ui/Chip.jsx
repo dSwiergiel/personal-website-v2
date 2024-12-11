@@ -22,7 +22,7 @@ const Chip = ({ tech }) => {
 
   return (
     <div
-      className="badge px-2 py-1 ml-2 rounded-pill d-inline-block"
+      className="badge px-2 py-1 mr-2 rounded-pill d-inline-block"
       style={{
         backgroundColor: colors.bg,
         opacity: 0.9,
