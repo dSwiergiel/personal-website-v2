@@ -233,7 +233,7 @@ export const projects = [
     header: "COVID-19 Screening App",
     subheader: "",
     projectName: "COVID-19 Screening App",
-    date: "5/24/20 - Present",
+    date: "5/24/20",
     description:
       "Led the frontend development of New York State’s COVID-19 screening web application, utilized by over 50,000 employees daily to ensure workplace safety. The application was built with Angular 9.",
     url: "https://screening.ny.gov",

@@ -53,7 +53,7 @@ const Project = ({ project, scrollPosition }) => {
               {project.header}
             </h3>
             <h6 className=" mb-2 text-muted less-letter-spacing capital-case">
-              {project.date}
+              <span className="mb-2">{project.date}</span>
               <span className="ml-2">
                 {project.stack.map((tech) => (
                   <Chip tech={tech} />
