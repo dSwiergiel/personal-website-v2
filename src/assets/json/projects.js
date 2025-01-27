@@ -78,7 +78,7 @@ export const projects = [
           "personal/farmers-market-finder/farmermarketfinder.now.sh.png",
       },
     ],
-    stack: ["React", "JavaScript"],
+    stack: ["React 16", "JavaScript"],
   },
   {
     isActive: true,
@@ -320,7 +320,7 @@ export const projects = [
         filename: "professional/nourish-ny/nourish-ny-farmer-portal.png",
       },
     ],
-    stack: ["Angular 2+", "TypeScript", "C#"],
+    stack: ["React 16", "TypeScript", "Node.js 12"],
   },
   {
     isActive: true,

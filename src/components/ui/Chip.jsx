@@ -1,10 +1,11 @@
 import React from "react";
 
+// Define a techColorMap where tech names are normalized (no versions included).
 const techColorMap = {
   React: { bg: "#61DAFB", text: "#000000" },
   "Next.js": { bg: "#000000", text: "#ffffff" },
-  "Angular 2+": { bg: "#DD0031", text: "#ffffff" },
-  "Node.js": { bg: "#68A063", text: "#ffffff" },
+  Angular: { bg: "#DD0031", text: "#ffffff" },
+  Node: { bg: "#68A063", text: "#ffffff" },
   JavaScript: { bg: "#F7DF1E", text: "#000000" },
   TypeScript: { bg: "#3178C6", text: "#ffffff" },
   HTML: { bg: "#E34F26", text: "#ffffff" },
@@ -15,7 +16,10 @@ const techColorMap = {
 };
 
 const Chip = ({ tech }) => {
-  const colors = techColorMap[tech] || {
+  // Normalize the tech name by stripping versions and extra details.
+  const normalizedTech = tech.split(/[\s\d+.-]+/)[0]; // Extract the base tech name (e.g., "Angular" from "Angular 2+").
+  
+  const colors = techColorMap[normalizedTech] || {
     bg: "#808080",
     text: "#ffffff",
   };
