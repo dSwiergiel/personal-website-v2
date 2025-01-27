@@ -293,7 +293,7 @@ export const projects = [
     projectName: "Nourish-NY",
     date: "5/1/20",
     description:
-      "Led the frontend development of a web portal for Nourish NY, a state initiative that connects farmers with surplus produce to food banks and shelters. Directed a small team to build the frontend using React 16 and integrated it with a backend powered by Node.js and express",
+      "Led the frontend development of a web portal for Nourish NY, a state initiative that connects farmers with surplus produce to food banks and shelters. Directed a small team to build the frontend using React 16 and integrated it with a backend powered by Node.js and express.",
     url: "https://nourish.ny.gov/",
     repoUrl: "",
     projectType: "professional",
