@@ -226,7 +226,7 @@ export const projects = [
         filename: "professional/covid-19-ai-chatbot/covid-19-ai-chatbot.png",
       },
     ],
-    stack: ["Angular 2+", "Node.js", "TypeScript"],
+    stack: ["Angular 8", "Node.js", "TypeScript"],
   },
   {
     isActive: true,
@@ -284,7 +284,7 @@ export const projects = [
           "professional/screening-ny/screening-dev.ny.gov_data-export.png",
       },
     ],
-    stack: ["Angular 2+", "TypeScript", "C#"],
+    stack: ["Angular 9", "TypeScript", "C#"],
   },
   {
     isActive: true,
@@ -293,7 +293,7 @@ export const projects = [
     projectName: "Nourish-NY",
     date: "5/1/20",
     description:
-      "Led the frontend development of a web portal for Nourish NY, a state initiative that connects farmers with surplus produce to food banks and shelters. Directed a small team to build the frontend using Angular 9 and integrated it with a backend powered by ASP.NET MVC Core.",
+      "Led the frontend development of a web portal for Nourish NY, a state initiative that connects farmers with surplus produce to food banks and shelters. Directed a small team to build the frontend using React 16 and integrated it with a backend powered by ASP.NET MVC Core.",
     url: "https://nourish.ny.gov/",
     repoUrl: "",
     projectType: "professional",
@@ -364,6 +364,6 @@ export const projects = [
         filename: "professional/foil-ny/my-open-foil-edit-profile.png",
       },
     ],
-    stack: ["Angular 2+", "TypeScript", "C#"],
+    stack: ["Angular 4", "TypeScript", "C#"],
   },
 ];
